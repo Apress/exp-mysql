@@ -1,0 +1,3928 @@
+T@1    : >mysql_real_connect
+T@1    : | enter: host: (Null)  db: mysql  user: (Null)
+T@1    : | >mysql_read_default_options
+T@1    : | | enter: file: my  group: libmysqld_client
+T@1    : | | >load_defaults
+T@1    : | | | >init_alloc_root
+T@1    : | | | | enter: root: 0x12fda0
+T@1    : | | | <init_alloc_root
+T@1    : | | | >init_dynamic_array
+T@1    : | | | | >_mymalloc
+T@1    : | | | | | enter: Size: 4
+T@1    : | | | | | exit: ptr: 0xb094e0
+T@1    : | | | | <_mymalloc
+T@1    : | | | <init_dynamic_array
+T@1    : | | | >my_search_option_files
+T@1    : | | | | >fn_ext
+T@1    : | | | | | mfunkt: name: 'my'
+T@1    : | | | | | >dirname_part
+T@1    : | | | | | | enter: 'my'
+T@1    : | | | | | <dirname_part
+T@1    : | | | | <fn_ext
+T@1    : | | | | >fn_format
+T@1    : | | | | | enter: name: C:\my.ini  dir:   extension:   flag: 4
+T@1    : | | | | | >dirname_part
+T@1    : | | | | | | enter: 'C:\my.ini'
+T@1    : | | | | | <dirname_part
+T@1    : | | | | | >unpack_dirname
+T@1    : | | | | | | >dirname_part
+T@1    : | | | | | | | enter: 'C:\'
+T@1    : | | | | | | <dirname_part
+T@1    : | | | | | | >cleanup_dirname
+T@1    : | | | | | | | enter: from: 'C:\'
+T@1    : | | | | | | | exit: to: 'C:\'
+T@1    : | | | | | | <cleanup_dirname
+T@1    : | | | | | <unpack_dirname
+T@1    : | | | | | >strlength
+T@1    : | | | | | <strlength
+T@1    : | | | | <fn_format
+T@1    : | | | | >my_fopen
+T@1    : | | | | | my: Name: 'C:\my.ini'  flags: 0  MyFlags: 0
+T@1    : | | | | | >check_if_legal_filename
+T@1    : | | | | | <check_if_legal_filename
+T@1    : | | | | | error: Got error 2 on open
+T@1    : | | | | <my_fopen
+T@1    : | | | | >fn_format
+T@1    : | | | | | enter: name: C:\my.cnf  dir:   extension:   flag: 4
+T@1    : | | | | | >dirname_part
+T@1    : | | | | | | enter: 'C:\my.cnf'
+T@1    : | | | | | <dirname_part
+T@1    : | | | | | >unpack_dirname
+T@1    : | | | | | | >dirname_part
+T@1    : | | | | | | | enter: 'C:\'
+T@1    : | | | | | | <dirname_part
+T@1    : | | | | | | >cleanup_dirname
+T@1    : | | | | | | | enter: from: 'C:\'
+T@1    : | | | | | | | exit: to: 'C:\'
+T@1    : | | | | | | <cleanup_dirname
+T@1    : | | | | | <unpack_dirname
+T@1    : | | | | | >strlength
+T@1    : | | | | | <strlength
+T@1    : | | | | <fn_format
+T@1    : | | | | >my_fopen
+T@1    : | | | | | my: Name: 'C:\my.cnf'  flags: 0  MyFlags: 0
+T@1    : | | | | | >check_if_legal_filename
+T@1    : | | | | | <check_if_legal_filename
+T@1    : | | | | | error: Got error 2 on open
+T@1    : | | | | <my_fopen
+T@1    : | | | | >fn_ext
+T@1    : | | | | | mfunkt: name: 'my'
+T@1    : | | | | | >dirname_part
+T@1    : | | | | | | enter: 'my'
+T@1    : | | | | | <dirname_part
+T@1    : | | | | <fn_ext
+T@1    : | | | | >fn_format
+T@1    : | | | | | enter: name: C:\WINDOWS\my.ini  dir:   extension:   flag: 4
+T@1    : | | | | | >dirname_part
+T@1    : | | | | | | enter: 'C:\WINDOWS\my.ini'
+T@1    : | | | | | <dirname_part
+T@1    : | | | | | >unpack_dirname
+T@1    : | | | | | | >dirname_part
+T@1    : | | | | | | | enter: 'C:\WINDOWS\'
+T@1    : | | | | | | <dirname_part
+T@1    : | | | | | | >cleanup_dirname
+T@1    : | | | | | | | enter: from: 'C:\WINDOWS\'
+T@1    : | | | | | | | exit: to: 'C:\WINDOWS\'
+T@1    : | | | | | | <cleanup_dirname
+T@1    : | | | | | <unpack_dirname
+T@1    : | | | | | >strlength
+T@1    : | | | | | <strlength
+T@1    : | | | | <fn_format
+T@1    : | | | | >my_fopen
+T@1    : | | | | | my: Name: 'C:\WINDOWS\my.ini'  flags: 0  MyFlags: 0
+T@1    : | | | | | >check_if_legal_filename
+T@1    : | | | | | <check_if_legal_filename
+T@1    : | | | | | >_mymalloc
+T@1    : | | | | | | enter: Size: 18
+T@1    : | | | | | | exit: ptr: 0xb09208
+T@1    : | | | | | <_mymalloc
+T@1    : | | | | | exit: stream: 0x10706568
+T@1    : | | | | <my_fopen
+T@1    : | | | | >find_type
+T@1    : | | | | | enter: x: 'mysqld'  lib: 0x12fddc
+T@1    : | | | | | exit: Couldn't find type
+T@1    : | | | | <find_type
+T@1    : | | | | >find_type
+T@1    : | | | | | enter: x: 'mysqld'  lib: 0x12fddc
+T@1    : | | | | | exit: Couldn't find type
+T@1    : | | | | <find_type
+T@1    : | | | | >find_type
+T@1    : | | | | | enter: x: 'WinMySQLadmin'  lib: 0x12fddc
+T@1    : | | | | | exit: Couldn't find type
+T@1    : | | | | <find_type
+T@1    : | | | | >find_type
+T@1    : | | | | | enter: x: 'WinMySQLadmin'  lib: 0x12fddc
+T@1    : | | | | | exit: Couldn't find type
+T@1    : | | | | <find_type
+T@1    : | | | | >find_type
+T@1    : | | | | | enter: x: 'WinMySQLadmin'  lib: 0x12fddc
+T@1    : | | | | | exit: Couldn't find type
+T@1    : | | | | <find_type
+T@1    : | | | | >my_fclose
+T@1    : | | | | | my: stream: 0x10706568  MyFlags: 0
+T@1    : | | | | | >_myfree
+T@1    : | | | | | | enter: ptr: 0xb09208
+T@1    : | | | | | <_myfree
+T@1    : | | | | <my_fclose
+T@1    : | | | | >fn_format
+T@1    : | | | | | enter: name: C:\WINDOWS\my.cnf  dir:   extension:   flag: 4
+T@1    : | | | | | >dirname_part
+T@1    : | | | | | | enter: 'C:\WINDOWS\my.cnf'
+T@1    : | | | | | <dirname_part
+T@1    : | | | | | >unpack_dirname
+T@1    : | | | | | | >dirname_part
+T@1    : | | | | | | | enter: 'C:\WINDOWS\'
+T@1    : | | | | | | <dirname_part
+T@1    : | | | | | | >cleanup_dirname
+T@1    : | | | | | | | enter: from: 'C:\WINDOWS\'
+T@1    : | | | | | | | exit: to: 'C:\WINDOWS\'
+T@1    : | | | | | | <cleanup_dirname
+T@1    : | | | | | <unpack_dirname
+T@1    : | | | | | >strlength
+T@1    : | | | | | <strlength
+T@1    : | | | | <fn_format
+T@1    : | | | | >my_fopen
+T@1    : | | | | | my: Name: 'C:\WINDOWS\my.cnf'  flags: 0  MyFlags: 0
+T@1    : | | | | | >check_if_legal_filename
+T@1    : | | | | | <check_if_legal_filename
+T@1    : | | | | | error: Got error 2 on open
+T@1    : | | | | <my_fopen
+T@1    : | | | | >fn_ext
+T@1    : | | | | | mfunkt: name: 'my'
+T@1    : | | | | | >dirname_part
+T@1    : | | | | | | enter: 'my'
+T@1    : | | | | | <dirname_part
+T@1    : | | | | <fn_ext
+T@1    : | | | | >fn_format
+T@1    : | | | | | enter: name: D:\source\C++\mysql-5.0.22\example1_win32\my.ini  dir:   extension:   flag: 4
+T@1    : | | | | | >dirname_part
+T@1    : | | | | | | enter: 'D:\source\C++\mysql-5.0.22\example1_win32\my.ini'
+T@1    : | | | | | <dirname_part
+T@1    : | | | | | >unpack_dirname
+T@1    : | | | | | | >dirname_part
+T@1    : | | | | | | | enter: 'D:\source\C++\mysql-5.0.22\example1_win32\'
+T@1    : | | | | | | <dirname_part
+T@1    : | | | | | | >cleanup_dirname
+T@1    : | | | | | | | enter: from: 'D:\source\C++\mysql-5.0.22\example1_win32\'
+T@1    : | | | | | | | exit: to: 'D:\source\C++\mysql-5.0.22\example1_win32\'
+T@1    : | | | | | | <cleanup_dirname
+T@1    : | | | | | <unpack_dirname
+T@1    : | | | | | >strlength
+T@1    : | | | | | <strlength
+T@1    : | | | | <fn_format
+T@1    : | | | | >my_fopen
+T@1    : | | | | | my: Name: 'D:\source\C++\mysql-5.0.22\example1_win32\my.ini'  flags: 0  MyFlags: 0
+T@1    : | | | | | >check_if_legal_filename
+T@1    : | | | | | <check_if_legal_filename
+T@1    : | | | | | error: Got error 2 on open
+T@1    : | | | | <my_fopen
+T@1    : | | | | >fn_format
+T@1    : | | | | | enter: name: D:\source\C++\mysql-5.0.22\example1_win32\my.cnf  dir:   extension:   flag: 4
+T@1    : | | | | | >dirname_part
+T@1    : | | | | | | enter: 'D:\source\C++\mysql-5.0.22\example1_win32\my.cnf'
+T@1    : | | | | | <dirname_part
+T@1    : | | | | | >unpack_dirname
+T@1    : | | | | | | >dirname_part
+T@1    : | | | | | | | enter: 'D:\source\C++\mysql-5.0.22\example1_win32\'
+T@1    : | | | | | | <dirname_part
+T@1    : | | | | | | >cleanup_dirname
+T@1    : | | | | | | | enter: from: 'D:\source\C++\mysql-5.0.22\example1_win32\'
+T@1    : | | | | | | | exit: to: 'D:\source\C++\mysql-5.0.22\example1_win32\'
+T@1    : | | | | | | <cleanup_dirname
+T@1    : | | | | | <unpack_dirname
+T@1    : | | | | | >strlength
+T@1    : | | | | | <strlength
+T@1    : | | | | <fn_format
+T@1    : | | | | >my_fopen
+T@1    : | | | | | my: Name: 'D:\source\C++\mysql-5.0.22\example1_win32\my.cnf'  flags: 0  MyFlags: 0
+T@1    : | | | | | >check_if_legal_filename
+T@1    : | | | | | <check_if_legal_filename
+T@1    : | | | | | error: Got error 2 on open
+T@1    : | | | | <my_fopen
+T@1    : | | | <my_search_option_files
+T@1    : | | | >alloc_root
+T@1    : | | | | enter: root: 0x12fda0
+T@1    : | | | | >_mymalloc
+T@1    : | | | | | enter: Size: 456
+T@1    : | | | | | exit: ptr: 0xb09208
+T@1    : | | | | <_mymalloc
+T@1    : | | | | exit: ptr: 0xb09218
+T@1    : | | | <alloc_root
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0xb094e0
+T@1    : | | | <_myfree
+T@1    : | | <load_defaults
+T@1    : | | >free_root
+T@1    : | | | enter: root: 0x12fdf4  flags: 0
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0xb09208
+T@1    : | | | <_myfree
+T@1    : | | <free_root
+T@1    : | <mysql_read_default_options
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x0
+T@1    : | <_myfree
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0xb09480
+T@1    : | <_myfree
+T@1    : | >_mymalloc
+T@1    : | | enter: Size: 5
+T@1    : | | exit: ptr: 0xb09208
+T@1    : | <_mymalloc
+T@1    : | >_mymalloc
+T@1    : | | enter: Size: 6
+T@1    : | | exit: ptr: 0xb09258
+T@1    : | <_mymalloc
+T@1    : | >_mymalloc
+T@1    : | | enter: Size: 512
+T@1    : | | exit: ptr: 0xb092a8
+T@1    : | <_mymalloc
+T@1    : | >_mymalloc
+T@1    : | | enter: Size: 5336
+T@1    : | | exit: ptr: 0x2cb3960
+T@1    : | <_mymalloc
+T@1    : | >hash_init
+T@1    : | | enter: hash: 0x2cb4150  size: 0
+T@1    : | | >init_dynamic_array
+T@1    : | | | >_mymalloc
+T@1    : | | | | enter: Size: 8152
+T@1    : | | | | exit: ptr: 0x2cbd5e0
+T@1    : | | | <_mymalloc
+T@1    : | | <init_dynamic_array
+T@1    : | <hash_init
+T@1    : | >init_alloc_root
+T@1    : | | enter: root: 0x2cb3980
+T@1    : | <init_alloc_root
+T@1    : | >hash_init
+T@1    : | | enter: hash: 0x2cb497c  size: 16
+T@1    : | | >init_dynamic_array
+T@1    : | | | >_mymalloc
+T@1    : | | | | enter: Size: 128
+T@1    : | | | | exit: ptr: 0x2cb4e80
+T@1    : | | | <_mymalloc
+T@1    : | | <init_dynamic_array
+T@1    : | <hash_init
+T@1    : | >hash_init
+T@1    : | | enter: hash: 0x2cb49b0  size: 16
+T@1    : | | >init_dynamic_array
+T@1    : | | | >_mymalloc
+T@1    : | | | | enter: Size: 128
+T@1    : | | | | exit: ptr: 0x2cb4f48
+T@1    : | | | <_mymalloc
+T@1    : | | <init_dynamic_array
+T@1    : | <hash_init
+T@1    : | >init_alloc_root
+T@1    : | | enter: root: 0x2cb4c54
+T@1    : | <init_alloc_root
+T@1    : | >_mymalloc
+T@1    : | | enter: Size: 33
+T@1    : | | exit: ptr: 0x2cb5010
+T@1    : | <_mymalloc
+T@1    : | >_mymalloc
+T@1    : | | enter: Size: 33
+T@1    : | | exit: ptr: 0x2cb5080
+T@1    : | <_mymalloc
+T@1    : | >_mymalloc
+T@1    : | | enter: Size: 42
+T@1    : | | exit: ptr: 0x2cb50f0
+T@1    : | <_mymalloc
+T@1    : | >init_alloc_root
+T@1    : | | enter: root: 0x2cb44b4
+T@1    : | | >_mymalloc
+T@1    : | | | enter: Size: 1040
+T@1    : | | | exit: ptr: 0x2cb5168
+T@1    : | | <_mymalloc
+T@1    : | <init_alloc_root
+T@1    : | >hash_init
+T@1    : | | enter: hash: 0x2cb452c  size: 16
+T@1    : | | >init_dynamic_array
+T@1    : | | | >_mymalloc
+T@1    : | | | | enter: Size: 128
+T@1    : | | | | exit: ptr: 0x2cbf600
+T@1    : | | | <_mymalloc
+T@1    : | | <init_dynamic_array
+T@1    : | <hash_init
+T@1    : | >ha_enable_transaction
+T@1    : | | >ha_commit_trans
+T@1    : | | <ha_commit_trans
+T@1    : | | >end_trans
+T@1    : | | | >ha_commit_trans
+T@1    : | | | <ha_commit_trans
+T@1    : | | <end_trans
+T@1    : | <ha_enable_transaction
+T@1    : | >_mymalloc
+T@1    : | | enter: Size: 8208
+T@1    : | | exit: ptr: 0x2cbf6c8
+T@1    : | <_mymalloc
+T@1    : | >_mymalloc
+T@1    : | | enter: Size: 4112
+T@1    : | | exit: ptr: 0x2cc1720
+T@1    : | <_mymalloc
+T@1    : | >init_alloc_root
+T@1    : | | enter: root: 0x2cb2328
+T@1    : | <init_alloc_root
+T@1    : | >_mymalloc
+T@1    : | | enter: Size: 5
+T@1    : | | exit: ptr: 0x2cc2778
+T@1    : | <_mymalloc
+T@1    : | >check_user
+T@1    : | | >_mymalloc
+T@1    : | | | enter: Size: 6
+T@1    : | | | exit: ptr: 0x2cc27c8
+T@1    : | | <_mymalloc
+T@1    : | | >mysql_change_db
+T@1    : | | | enter: name: 'mysql'
+T@1    : | | | info: Use database: mysql
+T@1    : | | | >unpack_dirname
+T@1    : | | | | >dirname_part
+T@1    : | | | | | enter: 'c:\mysql_embedded\data\/mysql'
+T@1    : | | | | <dirname_part
+T@1    : | | | | >cleanup_dirname
+T@1    : | | | | | enter: from: 'c:\mysql_embedded\data\\mysql\'
+T@1    : | | | | | exit: to: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | <cleanup_dirname
+T@1    : | | | <unpack_dirname
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | | >unpack_dirname
+T@1    : | | | | >dirname_part
+T@1    : | | | | | enter: 'c:\mysql_embedded\data\mysql'
+T@1    : | | | | <dirname_part
+T@1    : | | | | >cleanup_dirname
+T@1    : | | | | | enter: from: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | | exit: to: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | <cleanup_dirname
+T@1    : | | | <unpack_dirname
+T@1    : | | | >load_db_opt
+T@1    : | | | | >hash_first
+T@1    : | | | | <hash_first
+T@1    : | | | | rw_unlock: state: 1 waiters: 0
+T@1    : | | | | >my_open
+T@1    : | | | | | my: Name: 'c:\mysql_embedded\data\mysql\db.opt'  Flags: 4096  MyFlags: 0
+T@1    : | | | | | >check_if_legal_filename
+T@1    : | | | | | <check_if_legal_filename
+T@1    : | | | | <my_open
+T@1    : | | | | error: Got error 2 on open
+T@1    : | | | <load_db_opt
+T@1    : | | <mysql_change_db
+T@1    : | | >send_ok
+T@1    : | | | >my_multi_malloc
+T@1    : | | | | >_mymalloc
+T@1    : | | | | | enter: Size: 616
+T@1    : | | | | | exit: ptr: 0x2cc2818
+T@1    : | | | | <_mymalloc
+T@1    : | | | <my_multi_malloc
+T@1    : | | <send_ok
+T@1    : | <check_user
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x2cc2818
+T@1    : | <_myfree
+T@1    : | exit: Mysql handler: 2cb2090
+T@1    : <mysql_real_connect
+T@1    : Showing databases.: Embedded application.
+T@1    : >mysql_real_query
+T@1    : | enter: handle: 2cb2090
+T@1    : | query: Query = 'SHOW DATABASES;'
+T@1    : | >mysql_send_query
+T@1    : | | enter: rpl_parse: 0  rpl_pivot: 1
+T@1    : | <mysql_send_query
+T@1    : | >free_old_query
+T@1    : | | >init_alloc_root
+T@1    : | | | enter: root: 0x2cb2328
+T@1    : | | <init_alloc_root
+T@1    : | <free_old_query
+T@1    : | >dispatch_command
+T@1    : | | >alloc_root
+T@1    : | | | enter: root: 0x2cb3980
+T@1    : | | | exit: ptr: 0x2cbf6d8
+T@1    : | | <alloc_root
+T@1    : | | query: SHOW DATABASES
+T@1    : | | >mysql_parse
+T@1    : | | | >mysql_init_query
+T@1    : | | | | >lex_start
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf718
+T@1    : | | | | | <alloc_root
+T@1    : | | | | <lex_start
+T@1    : | | | | >mysql_reset_thd_for_next_command
+T@1    : | | | | <mysql_reset_thd_for_next_command
+T@1    : | | | <mysql_init_query
+T@1    : | | | >Query_cache::send_result_to_client
+T@1    : | | | <Query_cache::send_result_to_client
+T@1    : | | | >prepare_schema_table
+T@1    : | | | | >mysql_schema_select
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf720
+T@1    : | | | | | <alloc_root
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf738
+T@1    : | | | | | <alloc_root
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf748
+T@1    : | | | | | <alloc_root
+T@1    : | | | | | >st_select_lex::add_item_to_list
+T@1    : | | | | | | info: Item: 02CBF748
+T@1    : | | | | | <st_select_lex::add_item_to_list
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf7d0
+T@1    : | | | | | <alloc_root
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf7d8
+T@1    : | | | | | <alloc_root
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf7e8
+T@1    : | | | | | <alloc_root
+T@1    : | | | | | >add_table_to_list
+T@1    : | | | | | | >alloc_root
+T@1    : | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | exit: ptr: 0x2cbf800
+T@1    : | | | | | | <alloc_root
+T@1    : | | | | | | >alloc_root
+T@1    : | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | exit: ptr: 0x2cbf810
+T@1    : | | | | | | <alloc_root
+T@1    : | | | | | <add_table_to_list
+T@1    : | | | | <mysql_schema_select
+T@1    : | | | <prepare_schema_table
+T@1    : | | | >mysql_execute_command
+T@1    : | | | | >mysql_reset_errors
+T@1    : | | | | | >free_root
+T@1    : | | | | | | enter: root: 0x2cb44b4  flags: 0
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0x2cb5168
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | <free_root
+T@1    : | | | | <mysql_reset_errors
+T@1    : | | | | >alloc_root
+T@1    : | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | exit: ptr: 0x2cbf9d8
+T@1    : | | | | <alloc_root
+T@1    : | | | | >open_and_lock_tables
+T@1    : | | | | | >open_tables
+T@1    : | | | | | | >init_alloc_root
+T@1    : | | | | | | | enter: root: 0x12e7a8
+T@1    : | | | | | | | >_mymalloc
+T@1    : | | | | | | | | enter: Size: 8040
+T@1    : | | | | | | | | exit: ptr: 0xb098a8
+T@1    : | | | | | | | <_mymalloc
+T@1    : | | | | | | <init_alloc_root
+T@1    : | | | | | | >mysql_schema_table
+T@1    : | | | | | | | >create_schema_table
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfa20
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfa60
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfa70
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfa78
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfab8
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfac8
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfad0
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfb10
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfb30
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfb38
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfb78
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfb90
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfb98
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfbd8
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfbe8
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfbf0
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >TMP_TABLE_PARAM::init
+T@1    : | | | | | | | | | enter: this: 0x2cbfbf0
+T@1    : | | | | | | | | <TMP_TABLE_PARAM::init
+T@1    : | | | | | | | | >create_tmp_table
+T@1    : | | | | | | | | | enter: distinct: 0  save_sum_fields: 0  rows_limit: 4294967295  group: 0
+T@1    : | | | | | | | | | >fn_format
+T@1    : | | | | | | | | | | enter: name: #sql_a44_0  dir: C:\DOCUME~1\Chuck\LOCALS~1\Temp\  extension:   flag: 6
+T@1    : | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | enter: '#sql_a44_0'
+T@1    : | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | | enter: from: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | | | | | | | exit: to: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | | >strlength
+T@1    : | | | | | | | | | | <strlength
+T@1    : | | | | | | | | | <fn_format
+T@1    : | | | | | | | | | >init_alloc_root
+T@1    : | | | | | | | | | | enter: root: 0x12e59c
+T@1    : | | | | | | | | | <init_alloc_root
+T@1    : | | | | | | | | | >multi_alloc_root
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x12e59c
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 2056
+T@1    : | | | | | | | | | | | | exit: ptr: 0xb0b858
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | exit: ptr: 0xb0b868
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | <multi_alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | exit: ptr: 0x2cbfc68
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb0bc38
+T@1    : | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | enter: Size: 968
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cb5168
+T@1    : | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | exit: ptr: 0x2cb5178
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb0bc38
+T@1    : | | | | | | | | | | exit: ptr: 0x2cb51e0
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb0bc38
+T@1    : | | | | | | | | | | exit: ptr: 0x2cb5248
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb0bc38
+T@1    : | | | | | | | | | | exit: ptr: 0x2cb52b0
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb0bc38
+T@1    : | | | | | | | | | | exit: ptr: 0x2cb5318
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb0bc38
+T@1    : | | | | | | | | | | exit: ptr: 0x2cb5380
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb0bc38
+T@1    : | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | enter: Size: 11008
+T@1    : | | | | | | | | | | | exit: ptr: 0xb0c0a8
+T@1    : | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | exit: ptr: 0xb0c0b8
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >handler::ha_open
+T@1    : | | | | | | | | | | enter: name: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0  db_type: 6  db_stat: 3  mode: 2  lock_test: 4
+T@1    : | | | | | | | | | | >heap_open
+T@1    : | | | | | | | | | | | >heap_find
+T@1    : | | | | | | | | | | | | enter: name: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0
+T@1    : | | | | | | | | | | | <heap_find
+T@1    : | | | | | | | | | | <heap_open
+T@1    : | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | enter: Size: 0
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cb5578
+T@1    : | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | >fn_format
+T@1    : | | | | | | | | | | | enter: name: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0  dir:   extension:   flag: 6
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | enter: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | | | enter: from: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | | | | | | | | exit: to: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | | | >strlength
+T@1    : | | | | | | | | | | | <strlength
+T@1    : | | | | | | | | | | <fn_format
+T@1    : | | | | | | | | | | >heap_create
+T@1    : | | | | | | | | | | | >heap_find
+T@1    : | | | | | | | | | | | | enter: name: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0
+T@1    : | | | | | | | | | | | <heap_find
+T@1    : | | | | | | | | | | | info: Initializing new table
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 304
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2818
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 43
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2990
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | >thr_lock_init
+T@1    : | | | | | | | | | | | | >list_add
+T@1    : | | | | | | | | | | | | | enter: root: 0x0  element: 0x2cc28b0
+T@1    : | | | | | | | | | | | | <list_add
+T@1    : | | | | | | | | | | | <thr_lock_init
+T@1    : | | | | | | | | | | | >list_add
+T@1    : | | | | | | | | | | | | enter: root: 0x0  element: 0x2cc2928
+T@1    : | | | | | | | | | | | <list_add
+T@1    : | | | | | | | | | | <heap_create
+T@1    : | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | enter: ptr: 0x2cb5578
+T@1    : | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | >heap_open
+T@1    : | | | | | | | | | | | >heap_find
+T@1    : | | | | | | | | | | | | enter: name: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0
+T@1    : | | | | | | | | | | | | exit: Old heap_database: 0x2cc2818
+T@1    : | | | | | | | | | | | <heap_find
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 368
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2a08
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | >list_add
+T@1    : | | | | | | | | | | | | enter: root: 0x0  element: 0x2cc2b6c
+T@1    : | | | | | | | | | | | <list_add
+T@1    : | | | | | | | | | | | exit: heap: 0x2cc2a08  reclength: 3656  records_in_block: 36
+T@1    : | | | | | | | | | | <heap_open
+T@1    : | | | | | | | | | | >heap_extra
+T@1    : | | | | | | | | | | <heap_extra
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0xb0bc38
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cb5468
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | <handler::ha_open
+T@1    : | | | | | | | | | >heap_extra
+T@1    : | | | | | | | | | <heap_extra
+T@1    : | | | | | | | | <create_tmp_table
+T@1    : | | | | | | | <create_schema_table
+T@1    : | | | | | | | >alloc_root
+T@1    : | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | exit: ptr: 0x2cbfdd8
+T@1    : | | | | | | | <alloc_root
+T@1    : | | | | | | | >find_field_in_table_ref
+T@1    : | | | | | | | | enter: table: 'SCHEMATA'  field name: 'SCHEMA_NAME'  item name: 'Database'  ref 0x2cbfdd8
+T@1    : | | | | | | | | >find_field_in_table
+T@1    : | | | | | | | | | enter: table: 'SCHEMATA', field name: 'SCHEMA_NAME'
+T@1    : | | | | | | | | <find_field_in_table
+T@1    : | | | | | | | <find_field_in_table_ref
+T@1    : | | | | | | <mysql_schema_table
+T@1    : | | | | | | >free_root
+T@1    : | | | | | | | enter: root: 0x12e7a8  flags: 0
+T@1    : | | | | | | | >_myfree
+T@1    : | | | | | | | | enter: ptr: 0xb098a8
+T@1    : | | | | | | | <_myfree
+T@1    : | | | | | | <free_root
+T@1    : | | | | | <open_tables
+T@1    : | | | | | >lock_tables
+T@1    : | | | | | | >alloc_root
+T@1    : | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | exit: ptr: 0x2cbfde0
+T@1    : | | | | | | <alloc_root
+T@1    : | | | | | | >mysql_lock_tables
+T@1    : | | | | | | | >get_lock_data
+T@1    : | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | enter: Size: 16
+T@1    : | | | | | | | | | exit: ptr: 0x2cb5578
+T@1    : | | | | | | | | <_mymalloc
+T@1    : | | | | | | | <get_lock_data
+T@1    : | | | | | | | >lock_external
+T@1    : | | | | | | | <lock_external
+T@1    : | | | | | | | >thr_multi_lock
+T@1    : | | | | | | | | lock: data: 0x2cb5588  count: 0
+T@1    : | | | | | | | <thr_multi_lock
+T@1    : | | | | | | <mysql_lock_tables
+T@1    : | | | | | <lock_tables
+T@1    : | | | | <open_and_lock_tables
+T@1    : | | | | >alloc_root
+T@1    : | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | exit: ptr: 0x2cbfde0
+T@1    : | | | | <alloc_root
+T@1    : | | | | >Query_cache::store_query
+T@1    : | | | | <Query_cache::store_query
+T@1    : | | | | >handle_select
+T@1    : | | | | | >mysql_select
+T@1    : | | | | | | >alloc_root
+T@1    : | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | exit: ptr: 0x2cbfdf0
+T@1    : | | | | | | <alloc_root
+T@1    : | | | | | | >TMP_TABLE_PARAM::init
+T@1    : | | | | | | | enter: this: 0x2cc0a74
+T@1    : | | | | | | <TMP_TABLE_PARAM::init
+T@1    : | | | | | | >JOIN::prepare
+T@1    : | | | | | | | >setup_tables
+T@1    : | | | | | | | <setup_tables
+T@1    : | | | | | | | >alloc_root
+T@1    : | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | exit: ptr: 0x2cc0bf8
+T@1    : | | | | | | | <alloc_root
+T@1    : | | | | | | | >setup_fields
+T@1    : | | | | | | | <setup_fields
+T@1    : | | | | | | | >setup_without_group
+T@1    : | | | | | | | | >setup_conds
+T@1    : | | | | | | | | <setup_conds
+T@1    : | | | | | | | <setup_without_group
+T@1    : | | | | | | | >setup_procedure
+T@1    : | | | | | | | <setup_procedure
+T@1    : | | | | | | | >alloc_func_list
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cc0c98
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | <alloc_func_list
+T@1    : | | | | | | <JOIN::prepare
+T@1    : | | | | | | >JOIN::optimize
+T@1    : | | | | | | | >simplify_joins
+T@1    : | | | | | | | <simplify_joins
+T@1    : | | | | | | | >build_bitmap_for_nested_joins
+T@1    : | | | | | | | <build_bitmap_for_nested_joins
+T@1    : | | | | | | | >optimize_cond
+T@1    : | | | | | | | <optimize_cond
+T@1    : | | | | | | | >optimize_cond
+T@1    : | | | | | | | <optimize_cond
+T@1    : | | | | | | | >get_sort_by_table
+T@1    : | | | | | | | <get_sort_by_table
+T@1    : | | | | | | | >make_join_statistics
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cc0ca0
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cc0e28
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cc0f20
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >heap_info
+T@1    : | | | | | | | | <heap_info
+T@1    : | | | | | | | | >choose_plan
+T@1    : | | | | | | | | | >reset_nj_counters
+T@1    : | | | | | | | | | <reset_nj_counters
+T@1    : | | | | | | | | | >greedy_search
+T@1    : | | | | | | | | | | >best_extension_by_limited_search
+part_plan; idx:0, best: DBL_MAX, current:0
+     POSITIONS: 
+BEST_POSITIONS: 
+      BEST_REF: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0(2,2,10) 
+T@1    : | | | | | | | | | | | >best_access_path
+T@1    : | | | | | | | | | | | <best_access_path
+full_plan; idx: 0, best: 10.499, current: 10.5
+     POSITIONS: 
+BEST_POSITIONS: 
+      BEST_REF: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0(2,2,10) 
+T@1    : | | | | | | | | | | <best_extension_by_limited_search
+optimal; idx: 1, best: 10.499, current: 0
+     POSITIONS: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0 
+BEST_POSITIONS: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0 
+      BEST_REF: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0(2,2,10) 
+T@1    : | | | | | | | | | <greedy_search
+T@1    : | | | | | | | | <choose_plan
+T@1    : | | | | | | | <make_join_statistics
+T@1    : | | | | | | | >get_best_combination
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cc0f28
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | info: type: 0
+T@1    : | | | | | | | <get_best_combination
+T@1    : | | | | | | | >make_select
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cc10b0
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | <make_select
+T@1    : | | | | | | | >reset_nj_counters
+T@1    : | | | | | | | <reset_nj_counters
+T@1    : | | | | | | | >make_outerjoin_info
+T@1    : | | | | | | | <make_outerjoin_info
+T@1    : | | | | | | | >make_join_select
+T@1    : | | | | | | | | >add_not_null_conds
+T@1    : | | | | | | | | <add_not_null_conds
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cc1198
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | <make_join_select
+T@1    : | | | | | | | >remove_const
+T@1    : | | | | | | | | exit: simple_order: 1
+T@1    : | | | | | | | <remove_const
+T@1    : | | | | | | | >remove_const
+T@1    : | | | | | | | | exit: simple_order: 1
+T@1    : | | | | | | | <remove_const
+T@1    : | | | | | | | >make_join_readinfo
+T@1    : | | | | | | | <make_join_readinfo
+T@1    : | | | | | | | >TEST_join
+
+Info about JOIN
+SCHEMATA          type: ALL      q_keys: 0  refs: 0  key: -1  len: 0
+                  select used
+T@1    : | | | | | | | <TEST_join
+T@1    : | | | | | | <JOIN::optimize
+T@1    : | | | | | | >JOIN::exec
+T@1    : | | | | | | | >get_schema_tables_result
+T@1    : | | | | | | | | >fill_schema_shemata
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | exit: ptr: 0x2cc1280
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | exit: ptr: 0x2cc1298
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >mysql_find_files
+T@1    : | | | | | | | | | | >my_dir
+T@1    : | | | | | | | | | | | my: path: 'c:\mysql_embedded\data\' stat: 1024  MyFlags: 1238504
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 64
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2bc0
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | >init_dynamic_array
+T@1    : | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | enter: Size: 8192
+T@1    : | | | | | | | | | | | | | exit: ptr: 0x2cc2c48
+T@1    : | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | <init_dynamic_array
+T@1    : | | | | | | | | | | | >init_alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | enter: Size: 32784
+T@1    : | | | | | | | | | | | | | exit: ptr: 0x2cc4c90
+T@1    : | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | <init_alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4ca0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4ca8
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4cd8
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4ce0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4d10
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4d18
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4d48
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4d58
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4d88
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4d90
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4dc0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4dd0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4e00
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4e10
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4e40
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4e48
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4e78
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc4e80
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | U‹ìj: found 9 files
+T@1    : | | | | | | | | | | <my_dir
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: '.'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: '.'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: '..'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: '..'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'cluster'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'cluster'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cc12a0
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cc12a8
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'dragon.err'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'dragon.err'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'ib_logfile0'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'ib_logfile0'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'ib_logfile1'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'ib_logfile1'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'ibdata1'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'ibdata1'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'mysql'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'mysql'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cc12b0
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cc12b8
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'test'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'test'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cc12c0
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cc12c8
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | info: found: 4 files
+T@1    : | | | | | | | | | | >my_dirend
+T@1    : | | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | | enter: ptr: 0x2cc2c48
+T@1    : | | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | | >free_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cc2be0  flags: 0
+T@1    : | | | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | | | enter: ptr: 0x2cc4c90
+T@1    : | | | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | | <free_root
+T@1    : | | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | | enter: ptr: 0x2cc2bc0
+T@1    : | | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | <my_dirend
+T@1    : | | | | | | | | | | >ha_find_files
+T@1    : | | | | | | | | | | | enter: db: (null), path: c:\mysql_embedded\data\, wild: (null), dir: 1
+T@1    : | | | | | | | | | | <ha_find_files
+T@1    : | | | | | | | | | <mysql_find_files
+T@1    : | | | | | | | | | >heap_write
+T@1    : | | | | | | | | | | >next_free_record_pos
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 131760
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2bc0
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | exit: Used new position: 2cc2bc0
+T@1    : | | | | | | | | | | <next_free_record_pos
+T@1    : | | | | | | | | | <heap_write
+T@1    : | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | enter: 'c:\mysql_embedded\data\/cluster'
+T@1    : | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | enter: from: 'c:\mysql_embedded\data\\cluster\'
+T@1    : | | | | | | | | | | | exit: to: 'c:\mysql_embedded\data\cluster\'
+T@1    : | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | >load_db_opt
+T@1    : | | | | | | | | | | >hash_first
+T@1    : | | | | | | | | | | <hash_first
+T@1    : | | | | | | | | | | rw_unlock: state: 1 waiters: 0
+T@1    : | | | | | | | | | | >my_open
+T@1    : | | | | | | | | | | | my: Name: 'c:\mysql_embedded\data\cluster\db.opt'  Flags: 4096  MyFlags: 0
+T@1    : | | | | | | | | | | | >check_if_legal_filename
+T@1    : | | | | | | | | | | | <check_if_legal_filename
+T@1    : | | | | | | | | | | <my_open
+T@1    : | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | enter: Size: 38
+T@1    : | | | | | | | | | | | exit: ptr: 0xb0ebf0
+T@1    : | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | exit: fd: 9
+T@1    : | | | | | | | | | | >init_io_cache
+T@1    : | | | | | | | | | | | enter: cache: 0x12e088  type: 1  pos: 0
+T@1    : | | | | | | | | | | | >my_tell
+T@1    : | | | | | | | | | | | | my: Fd: 9  MyFlags: 0
+T@1    : | | | | | | | | | | | | exit: pos: 0
+T@1    : | | | | | | | | | | | <my_tell
+T@1    : | | | | | | | | | | | >my_seek
+T@1    : | | | | | | | | | | | | my: Fd: 9  Hpos: 0  Pos: 0  Whence: 2  MyFlags: 0
+T@1    : | | | | | | | | | | | | exit: pos: 65
+T@1    : | | | | | | | | | | | <my_seek
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 8192
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2ce2eb8
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | info: init_io_cache: cachesize = 8192
+T@1    : | | | | | | | | | | <init_io_cache
+T@1    : | | | | | | | | | | >my_seek
+T@1    : | | | | | | | | | | | my: Fd: 9  Hpos: 0  Pos: 0  Whence: 0  MyFlags: 0
+T@1    : | | | | | | | | | | <my_seek
+T@1    : | | | | | | | | | | >my_read
+T@1    : | | | | | | | | | | | my: Fd: 9  Buffer: 0x2ce2eb8  Count: 65  MyFlags: 0
+T@1    : | | | | | | | | | | <my_read
+T@1    : | | | | | | | | | | >get_charset_by_csname
+T@1    : | | | | | | | | | | | enter: name: 'latin1'
+T@1    : | | | | | | | | | | <get_charset_by_csname
+T@1    : | | | | | | | | | | >put_dbopt
+T@1    : | | | | | | | | | | | >hash_first
+T@1    : | | | | | | | | | | | <hash_first
+T@1    : | | | | | | | | | | | >my_multi_malloc
+T@1    : | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | enter: Size: 56
+T@1    : | | | | | | | | | | | | | exit: ptr: 0xb0ec60
+T@1    : | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | <my_multi_malloc
+T@1    : | | | | | | | | | | | rw_unlock: state: -1 waiters: 0
+T@1    : | | | | | | | | | | <put_dbopt
+T@1    : | | | | | | | | | | >end_io_cache
+T@1    : | | | | | | | | | | | enter: cache: 0x12e088
+T@1    : | | | | | | | | | | | >my_b_flush_io_cache
+T@1    : | | | | | | | | | | | <my_b_flush_io_cache
+T@1    : | | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | | enter: ptr: 0x2ce2eb8
+T@1    : | | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | <end_io_cache
+T@1    : | | | | | | | | | | >my_close
+T@1    : | | | | | | | | | | | my: fd: 9  MyFlags: 0
+T@1    : | | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | | enter: ptr: 0xb0ebf0
+T@1    : | | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | <my_close
+T@1    : | | | | | | | | | <load_db_opt
+T@1    : | | | | | | | | | >heap_write
+T@1    : | | | | | | | | | | >next_free_record_pos
+T@1    : | | | | | | | | | | | exit: Used new position: 2cc3a0c
+T@1    : | | | | | | | | | | <next_free_record_pos
+T@1    : | | | | | | | | | <heap_write
+T@1    : | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | enter: 'c:\mysql_embedded\data\/mysql'
+T@1    : | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | enter: from: 'c:\mysql_embedded\data\\mysql\'
+T@1    : | | | | | | | | | | | exit: to: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | >load_db_opt
+T@1    : | | | | | | | | | | >hash_first
+T@1    : | | | | | | | | | | <hash_first
+T@1    : | | | | | | | | | | rw_unlock: state: 1 waiters: 0
+T@1    : | | | | | | | | | | >my_open
+T@1    : | | | | | | | | | | | my: Name: 'c:\mysql_embedded\data\mysql\db.opt'  Flags: 4096  MyFlags: 0
+T@1    : | | | | | | | | | | | >check_if_legal_filename
+T@1    : | | | | | | | | | | | <check_if_legal_filename
+T@1    : | | | | | | | | | | <my_open
+T@1    : | | | | | | | | | | error: Got error 2 on open
+T@1    : | | | | | | | | | <load_db_opt
+T@1    : | | | | | | | | | >heap_write
+T@1    : | | | | | | | | | | >next_free_record_pos
+T@1    : | | | | | | | | | | | exit: Used new position: 2cc4858
+T@1    : | | | | | | | | | | <next_free_record_pos
+T@1    : | | | | | | | | | <heap_write
+T@1    : | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | enter: 'c:\mysql_embedded\data\/test'
+T@1    : | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | enter: from: 'c:\mysql_embedded\data\\test\'
+T@1    : | | | | | | | | | | | exit: to: 'c:\mysql_embedded\data\test\'
+T@1    : | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | >load_db_opt
+T@1    : | | | | | | | | | | >hash_first
+T@1    : | | | | | | | | | | <hash_first
+T@1    : | | | | | | | | | | rw_unlock: state: 1 waiters: 0
+T@1    : | | | | | | | | | | >my_open
+T@1    : | | | | | | | | | | | my: Name: 'c:\mysql_embedded\data\test\db.opt'  Flags: 4096  MyFlags: 0
+T@1    : | | | | | | | | | | | >check_if_legal_filename
+T@1    : | | | | | | | | | | | <check_if_legal_filename
+T@1    : | | | | | | | | | | <my_open
+T@1    : | | | | | | | | | | error: Got error 2 on open
+T@1    : | | | | | | | | | <load_db_opt
+T@1    : | | | | | | | | | >heap_write
+T@1    : | | | | | | | | | | >next_free_record_pos
+T@1    : | | | | | | | | | | | exit: Used new position: 2cc56a4
+T@1    : | | | | | | | | | | <next_free_record_pos
+T@1    : | | | | | | | | | <heap_write
+T@1    : | | | | | | | | <fill_schema_shemata
+T@1    : | | | | | | | <get_schema_tables_result
+T@1    : | | | | | | | info: Sending data
+T@1    : | | | | | | | >send_fields
+T@1    : | | | | | | | | >my_multi_malloc
+T@1    : | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | enter: Size: 616
+T@1    : | | | | | | | | | | exit: ptr: 0xb0ece0
+T@1    : | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | <my_multi_malloc
+T@1    : | | | | | | | | >init_alloc_root
+T@1    : | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | <init_alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | enter: Size: 8136
+T@1    : | | | | | | | | | | exit: ptr: 0x2ce2eb8
+T@1    : | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | exit: ptr: 0x2ce2ec8
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | exit: ptr: 0x2ce2f18
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | exit: ptr: 0x2ce2f20
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | exit: ptr: 0x2ce2f30
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | exit: ptr: 0x2ce2f40
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | exit: ptr: 0x2ce2f48
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | exit: ptr: 0x2ce2f58
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | <send_fields
+T@1    : | | | | | | | >do_select
+T@1    : | | | | | | | | >init_read_record
+T@1    : | | | | | | | | | info: using rr_sequential
+T@1    : | | | | | | | | | >ha_rnd_init
+T@1    : | | | | | | | | | <ha_rnd_init
+T@1    : | | | | | | | | | >heap_scan_init
+T@1    : | | | | | | | | | <heap_scan_init
+T@1    : | | | | | | | | | >heap_extra
+T@1    : | | | | | | | | | <heap_extra
+T@1    : | | | | | | | | <init_read_record
+T@1    : | | | | | | | | >heap_scan
+T@1    : | | | | | | | | <heap_scan
+T@1    : | | | | | | | | info: select cond 0x0
+T@1    : | | | | | | | | >end_send
+T@1    : | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2ce2f60
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | <send_data
+T@1    : | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | enter: Size: 24
+T@1    : | | | | | | | | | | | exit: ptr: 0xb0ebf0
+T@1    : | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | | | exit: ptr: 0x2ce2f78
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | <send_data
+T@1    : | | | | | | | | <end_send
+T@1    : | | | | | | | | >heap_scan
+T@1    : | | | | | | | | <heap_scan
+T@1    : | | | | | | | | info: select cond 0x0
+T@1    : | | | | | | | | >end_send
+T@1    : | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2ce2f90
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | <send_data
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | | | exit: ptr: 0x2ce2fa8
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | <send_data
+T@1    : | | | | | | | | <end_send
+T@1    : | | | | | | | | >heap_scan
+T@1    : | | | | | | | | <heap_scan
+T@1    : | | | | | | | | info: select cond 0x0
+T@1    : | | | | | | | | >end_send
+T@1    : | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2ce2fb8
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | <send_data
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | | | exit: ptr: 0x2ce2fd0
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | <send_data
+T@1    : | | | | | | | | <end_send
+T@1    : | | | | | | | | >heap_scan
+T@1    : | | | | | | | | <heap_scan
+T@1    : | | | | | | | | info: select cond 0x0
+T@1    : | | | | | | | | >end_send
+T@1    : | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2ce2fe0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | <send_data
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0xb0ecf0
+T@1    : | | | | | | | | | | | exit: ptr: 0x2ce2ff8
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | <send_data
+T@1    : | | | | | | | | <end_send
+T@1    : | | | | | | | | >heap_scan
+T@1    : | | | | | | | | <heap_scan
+T@1    : | | | | | | | | >end_send
+T@1    : | | | | | | | | <end_send
+T@1    : | | | | | | | | >JOIN::join_free
+T@1    : | | | | | | | | | >JOIN::cleanup
+T@1    : | | | | | | | | | | >free_io_cache
+T@1    : | | | | | | | | | | <free_io_cache
+T@1    : | | | | | | | | | | >close_cached_file
+T@1    : | | | | | | | | | | <close_cached_file
+T@1    : | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | enter: ptr: 0x0
+T@1    : | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | >ha_rnd_end
+T@1    : | | | | | | | | | | <ha_rnd_end
+T@1    : | | | | | | | | | | >heap_extra
+T@1    : | | | | | | | | | | <heap_extra
+T@1    : | | | | | | | | | <JOIN::cleanup
+T@1    : | | | | | | | | | >mysql_unlock_read_tables
+T@1    : | | | | | | | | | <mysql_unlock_read_tables
+T@1    : | | | | | | | | <JOIN::join_free
+T@1    : | | | | | | | | >mysql_unlock_tables
+T@1    : | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | enter: ptr: 0x2cb5578
+T@1    : | | | | | | | | | <_myfree
+T@1    : | | | | | | | | <mysql_unlock_tables
+T@1    : | | | | | | | | info: 4 records output
+T@1    : | | | | | | | <do_select
+T@1    : | | | | | | <JOIN::exec
+T@1    : | | | | | | >st_select_lex::cleanup()
+T@1    : | | | | | | | >JOIN::destroy
+T@1    : | | | | | | | | >JOIN::cleanup
+T@1    : | | | | | | | | <JOIN::cleanup
+T@1    : | | | | | | | | >close_cached_file
+T@1    : | | | | | | | | <close_cached_file
+T@1    : | | | | | | | <JOIN::destroy
+T@1    : | | | | | | <st_select_lex::cleanup()
+T@1    : | | | | | <mysql_select
+T@1    : | | | | | info: res: 0  report_error: 0
+T@1    : | | | | <handle_select
+T@1    : | | | <mysql_execute_command
+T@1    : | | | >query_cache_end_of_result
+T@1    : | | | <query_cache_end_of_result
+T@1    : | | | >st_select_lex_unit::cleanup
+T@1    : | | | | >st_select_lex::cleanup()
+T@1    : | | | | <st_select_lex::cleanup()
+T@1    : | | | <st_select_lex_unit::cleanup
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | | >Query_arena::free_items
+T@1    : | | | | >Item_field::cleanup
+T@1    : | | | | | >Item_ident::cleanup
+T@1    : | | | | | | >Item::cleanup
+T@1    : | | | | | | <Item::cleanup
+T@1    : | | | | | <Item_ident::cleanup
+T@1    : | | | | <Item_field::cleanup
+T@1    : | | | <Query_arena::free_items
+T@1    : | | <mysql_parse
+T@1    : | | info: query ready
+T@1    : | | >close_thread_tables
+T@1    : | | | >free_tmp_table
+T@1    : | | | | enter: table: SCHEMATA
+T@1    : | | | | >heap_close
+T@1    : | | | | | >hp_close
+T@1    : | | | | | | >heap_check_heap
+T@1    : | | | | | | <heap_check_heap
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0x2cc2a08
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | <hp_close
+T@1    : | | | | <heap_close
+T@1    : | | | | >fn_format
+T@1    : | | | | | enter: name: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0  dir:   extension:   flag: 6
+T@1    : | | | | | >dirname_part
+T@1    : | | | | | | enter: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0'
+T@1    : | | | | | <dirname_part
+T@1    : | | | | | >unpack_dirname
+T@1    : | | | | | | >dirname_part
+T@1    : | | | | | | | enter: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | <dirname_part
+T@1    : | | | | | | >cleanup_dirname
+T@1    : | | | | | | | enter: from: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | | exit: to: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | <cleanup_dirname
+T@1    : | | | | | <unpack_dirname
+T@1    : | | | | | >strlength
+T@1    : | | | | | <strlength
+T@1    : | | | | <fn_format
+T@1    : | | | | >heap_delete_table
+T@1    : | | | | | >heap_find
+T@1    : | | | | | | enter: name: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0
+T@1    : | | | | | | exit: Old heap_database: 0x2cc2818
+T@1    : | | | | | <heap_find
+T@1    : | | | | | >hp_clear
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0x2cc2bc0
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | | >hp_clear_keys
+T@1    : | | | | | | <hp_clear_keys
+T@1    : | | | | | <hp_clear
+T@1    : | | | | | >thr_lock_delete
+T@1    : | | | | | <thr_lock_delete
+T@1    : | | | | | >_myfree
+T@1    : | | | | | | enter: ptr: 0x2cc2990
+T@1    : | | | | | <_myfree
+T@1    : | | | | | >_myfree
+T@1    : | | | | | | enter: ptr: 0x2cc2818
+T@1    : | | | | | <_myfree
+T@1    : | | | | <heap_delete_table
+T@1    : | | | | >free_io_cache
+T@1    : | | | | <free_io_cache
+T@1    : | | | | >free_root
+T@1    : | | | | | enter: root: 0x12f9bc  flags: 0
+T@1    : | | | | | >_myfree
+T@1    : | | | | | | enter: ptr: 0xb0c0a8
+T@1    : | | | | | <_myfree
+T@1    : | | | | | >_myfree
+T@1    : | | | | | | enter: ptr: 0xb0b858
+T@1    : | | | | | <_myfree
+T@1    : | | | | | >_myfree
+T@1    : | | | | | | enter: ptr: 0x2cb5168
+T@1    : | | | | | <_myfree
+T@1    : | | | | <free_root
+T@1    : | | | <free_tmp_table
+T@1    : | | | info: thd->open_tables: 00000000
+T@1    : | | <close_thread_tables
+T@1    : | | >free_root
+T@1    : | | | enter: root: 0x2cb3980  flags: 1
+T@1    : | | <free_root
+T@1    : | <dispatch_command
+T@1    : <mysql_real_query
+T@1    : >mysql_store_result
+T@1    : | >_mymalloc
+T@1    : | | enter: Size: 92
+T@1    : | | exit: ptr: 0xb0ef90
+T@1    : | <_mymalloc
+T@1    : <mysql_store_result
+T@1    : >mysql_fetch_row
+T@1    : <mysql_fetch_row
+T@1    : >mysql_fetch_row
+T@1    : <mysql_fetch_row
+T@1    : >mysql_fetch_row
+T@1    : <mysql_fetch_row
+T@1    : >mysql_fetch_row
+T@1    : <mysql_fetch_row
+T@1    : >mysql_fetch_row
+T@1    : | info: end of data
+T@1    : <mysql_fetch_row
+T@1    : Creating the database testdb1.: Embedded application.
+T@1    : >mysql_real_query
+T@1    : | enter: handle: 2cb2090
+T@1    : | query: Query = 'CREATE DATABASE testdb1;'
+T@1    : | >mysql_send_query
+T@1    : | | enter: rpl_parse: 0  rpl_pivot: 1
+T@1    : | <mysql_send_query
+T@1    : | >free_old_query
+T@1    : | | >init_alloc_root
+T@1    : | | | enter: root: 0x2cb2328
+T@1    : | | <init_alloc_root
+T@1    : | <free_old_query
+T@1    : | >dispatch_command
+T@1    : | | >alloc_root
+T@1    : | | | enter: root: 0x2cb3980
+T@1    : | | | exit: ptr: 0x2cbf6d8
+T@1    : | | <alloc_root
+T@1    : | | query: CREATE DATABASE testdb1
+T@1    : | | >mysql_parse
+T@1    : | | | >mysql_init_query
+T@1    : | | | | >lex_start
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf720
+T@1    : | | | | | <alloc_root
+T@1    : | | | | <lex_start
+T@1    : | | | | >mysql_reset_thd_for_next_command
+T@1    : | | | | <mysql_reset_thd_for_next_command
+T@1    : | | | <mysql_init_query
+T@1    : | | | >Query_cache::send_result_to_client
+T@1    : | | | <Query_cache::send_result_to_client
+T@1    : | | | >alloc_root
+T@1    : | | | | enter: root: 0x2cb3980
+T@1    : | | | | exit: ptr: 0x2cbf728
+T@1    : | | | <alloc_root
+T@1    : | | | >mysql_execute_command
+T@1    : | | | | >end_active_trans
+T@1    : | | | | <end_active_trans
+T@1    : | | | | >alloc_root
+T@1    : | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | exit: ptr: 0x2cbf730
+T@1    : | | | | <alloc_root
+T@1    : | | | | >check_access
+T@1    : | | | | | enter: db: testdb1  want_access: 16  master_access: 67108863
+T@1    : | | | | <check_access
+T@1    : | | | | >mysql_create_db
+T@1    : | | | | | >wait_if_global_read_lock
+T@1    : | | | | | <wait_if_global_read_lock
+T@1    : | | | | | >unpack_dirname
+T@1    : | | | | | | >dirname_part
+T@1    : | | | | | | | enter: 'c:\mysql_embedded\data\/testdb1'
+T@1    : | | | | | | <dirname_part
+T@1    : | | | | | | >cleanup_dirname
+T@1    : | | | | | | | enter: from: 'c:\mysql_embedded\data\\testdb1\'
+T@1    : | | | | | | | exit: to: 'c:\mysql_embedded\data\testdb1\'
+T@1    : | | | | | | <cleanup_dirname
+T@1    : | | | | | | >my_open
+T@1    : | | | | | | | my: Name: 'c:\mysql_embedded\data\testdb1.sym'  Flags: 0  MyFlags: 0
+T@1    : | | | | | | | >check_if_legal_filename
+T@1    : | | | | | | | <check_if_legal_filename
+T@1    : | | | | | | <my_open
+T@1    : | | | | | | error: Got error 2 on open
+T@1    : | | | | | <unpack_dirname
+T@1    : | | | | | >my_stat
+T@1    : | | | | | | my: path: 'c:\mysql_embedded\data\testdb1', stat_area: 0x12e5d8, MyFlags: 0
+T@1    : | | | | | | error: Got errno: 2 from stat
+T@1    : | | | | | <my_stat
+T@1    : | | | | | >my_dir
+T@1    : | | | | | | enter: dir: c:\mysql_embedded\data\testdb1
+T@1    : | | | | | <my_dir
+T@1    : | | | | | >put_dbopt
+T@1    : | | | | | | >hash_first
+T@1    : | | | | | | <hash_first
+T@1    : | | | | | | >my_multi_malloc
+T@1    : | | | | | | | >_mymalloc
+T@1    : | | | | | | | | enter: Size: 56
+T@1    : | | | | | | | | exit: ptr: 0x2cb5168
+T@1    : | | | | | | | <_mymalloc
+T@1    : | | | | | | <my_multi_malloc
+T@1    : | | | | | | rw_unlock: state: -1 waiters: 0
+T@1    : | | | | | <put_dbopt
+T@1    : | | | | | >my_create
+T@1    : | | | | | | my: Name: 'c:\mysql_embedded\data\testdb1\db.opt' CreateFlags: 0  AccessFlags: 514  MyFlags: 16
+T@1    : | | | | | <my_create
+T@1    : | | | | | >_mymalloc
+T@1    : | | | | | | enter: Size: 38
+T@1    : | | | | | | exit: ptr: 0x2cb51e8
+T@1    : | | | | | <_mymalloc
+T@1    : | | | | | exit: fd: 9
+T@1    : | | | | | >my_write
+T@1    : | | | | | | my: Fd: 9  Buffer: 0x12e3cc  Count: 65  MyFlags: 20
+T@1    : | | | | | <my_write
+T@1    : | | | | | >my_close
+T@1    : | | | | | | my: fd: 9  MyFlags: 0
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0x2cb51e8
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | <my_close
+T@1    : | | | | | >send_ok
+T@1    : | | | | | | >my_multi_malloc
+T@1    : | | | | | | | >_mymalloc
+T@1    : | | | | | | | | enter: Size: 616
+T@1    : | | | | | | | | exit: ptr: 0x2cb51e8
+T@1    : | | | | | | | <_mymalloc
+T@1    : | | | | | | <my_multi_malloc
+T@1    : | | | | | <send_ok
+T@1    : | | | | | >start_waiting_global_read_lock
+T@1    : | | | | | <start_waiting_global_read_lock
+T@1    : | | | | <mysql_create_db
+T@1    : | | | <mysql_execute_command
+T@1    : | | | >query_cache_end_of_result
+T@1    : | | | <query_cache_end_of_result
+T@1    : | | | >st_select_lex_unit::cleanup
+T@1    : | | | | >st_select_lex::cleanup()
+T@1    : | | | | <st_select_lex::cleanup()
+T@1    : | | | <st_select_lex_unit::cleanup
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | | >Query_arena::free_items
+T@1    : | | | <Query_arena::free_items
+T@1    : | | <mysql_parse
+T@1    : | | info: query ready
+T@1    : | | >free_root
+T@1    : | | | enter: root: 0x2cb3980  flags: 1
+T@1    : | | <free_root
+T@1    : | <dispatch_command
+T@1    : <mysql_real_query
+T@1    : >_myfree
+T@1    : | enter: ptr: 0x2cb51e8
+T@1    : <_myfree
+T@1    : Showing databases.: Embedded application.
+T@1    : >mysql_real_query
+T@1    : | enter: handle: 2cb2090
+T@1    : | query: Query = 'SHOW DATABASES;'
+T@1    : | >mysql_send_query
+T@1    : | | enter: rpl_parse: 0  rpl_pivot: 1
+T@1    : | <mysql_send_query
+T@1    : | >free_old_query
+T@1    : | | >init_alloc_root
+T@1    : | | | enter: root: 0x2cb2328
+T@1    : | | <init_alloc_root
+T@1    : | <free_old_query
+T@1    : | >dispatch_command
+T@1    : | | >alloc_root
+T@1    : | | | enter: root: 0x2cb3980
+T@1    : | | | exit: ptr: 0x2cbf6d8
+T@1    : | | <alloc_root
+T@1    : | | query: SHOW DATABASES
+T@1    : | | >mysql_parse
+T@1    : | | | >mysql_init_query
+T@1    : | | | | >lex_start
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf718
+T@1    : | | | | | <alloc_root
+T@1    : | | | | <lex_start
+T@1    : | | | | >mysql_reset_thd_for_next_command
+T@1    : | | | | <mysql_reset_thd_for_next_command
+T@1    : | | | <mysql_init_query
+T@1    : | | | >Query_cache::send_result_to_client
+T@1    : | | | <Query_cache::send_result_to_client
+T@1    : | | | >prepare_schema_table
+T@1    : | | | | >mysql_schema_select
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf720
+T@1    : | | | | | <alloc_root
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf738
+T@1    : | | | | | <alloc_root
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf748
+T@1    : | | | | | <alloc_root
+T@1    : | | | | | >st_select_lex::add_item_to_list
+T@1    : | | | | | | info: Item: 02CBF748
+T@1    : | | | | | <st_select_lex::add_item_to_list
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf7d0
+T@1    : | | | | | <alloc_root
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf7d8
+T@1    : | | | | | <alloc_root
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf7e8
+T@1    : | | | | | <alloc_root
+T@1    : | | | | | >add_table_to_list
+T@1    : | | | | | | >alloc_root
+T@1    : | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | exit: ptr: 0x2cbf800
+T@1    : | | | | | | <alloc_root
+T@1    : | | | | | | >alloc_root
+T@1    : | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | exit: ptr: 0x2cbf810
+T@1    : | | | | | | <alloc_root
+T@1    : | | | | | <add_table_to_list
+T@1    : | | | | <mysql_schema_select
+T@1    : | | | <prepare_schema_table
+T@1    : | | | >mysql_execute_command
+T@1    : | | | | >mysql_reset_errors
+T@1    : | | | | | >free_root
+T@1    : | | | | | | enter: root: 0x2cb44b4  flags: 0
+T@1    : | | | | | <free_root
+T@1    : | | | | <mysql_reset_errors
+T@1    : | | | | >alloc_root
+T@1    : | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | exit: ptr: 0x2cbf9d8
+T@1    : | | | | <alloc_root
+T@1    : | | | | >open_and_lock_tables
+T@1    : | | | | | >open_tables
+T@1    : | | | | | | >init_alloc_root
+T@1    : | | | | | | | enter: root: 0x12e7a8
+T@1    : | | | | | | | >_mymalloc
+T@1    : | | | | | | | | enter: Size: 8040
+T@1    : | | | | | | | | exit: ptr: 0x2ce4ec8
+T@1    : | | | | | | | <_mymalloc
+T@1    : | | | | | | <init_alloc_root
+T@1    : | | | | | | >mysql_schema_table
+T@1    : | | | | | | | >create_schema_table
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfa20
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfa60
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfa70
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfa78
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfab8
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfac8
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfad0
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfb10
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfb30
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfb38
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfb78
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfb90
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfb98
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfbd8
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfbe8
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cbfbf0
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >TMP_TABLE_PARAM::init
+T@1    : | | | | | | | | | enter: this: 0x2cbfbf0
+T@1    : | | | | | | | | <TMP_TABLE_PARAM::init
+T@1    : | | | | | | | | >create_tmp_table
+T@1    : | | | | | | | | | enter: distinct: 0  save_sum_fields: 0  rows_limit: 4294967295  group: 0
+T@1    : | | | | | | | | | >fn_format
+T@1    : | | | | | | | | | | enter: name: #sql_a44_0  dir: C:\DOCUME~1\Chuck\LOCALS~1\Temp\  extension:   flag: 6
+T@1    : | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | enter: '#sql_a44_0'
+T@1    : | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | | enter: from: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | | | | | | | exit: to: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | | >strlength
+T@1    : | | | | | | | | | | <strlength
+T@1    : | | | | | | | | | <fn_format
+T@1    : | | | | | | | | | >init_alloc_root
+T@1    : | | | | | | | | | | enter: root: 0x12e59c
+T@1    : | | | | | | | | | <init_alloc_root
+T@1    : | | | | | | | | | >multi_alloc_root
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x12e59c
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 2056
+T@1    : | | | | | | | | | | | | exit: ptr: 0xb0e040
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | exit: ptr: 0xb0e050
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | <multi_alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | exit: ptr: 0x2cbfc68
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb0e420
+T@1    : | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | enter: Size: 968
+T@1    : | | | | | | | | | | | exit: ptr: 0xb098a8
+T@1    : | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | exit: ptr: 0xb098b8
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb0e420
+T@1    : | | | | | | | | | | exit: ptr: 0xb09920
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb0e420
+T@1    : | | | | | | | | | | exit: ptr: 0xb09988
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb0e420
+T@1    : | | | | | | | | | | exit: ptr: 0xb099f0
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb0e420
+T@1    : | | | | | | | | | | exit: ptr: 0xb09a58
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb0e420
+T@1    : | | | | | | | | | | exit: ptr: 0xb09ac0
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb0e420
+T@1    : | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | enter: Size: 11008
+T@1    : | | | | | | | | | | | exit: ptr: 0x2ce6e78
+T@1    : | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | exit: ptr: 0x2ce6e88
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >handler::ha_open
+T@1    : | | | | | | | | | | enter: name: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0  db_type: 6  db_stat: 3  mode: 2  lock_test: 4
+T@1    : | | | | | | | | | | >heap_open
+T@1    : | | | | | | | | | | | >heap_find
+T@1    : | | | | | | | | | | | | enter: name: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0
+T@1    : | | | | | | | | | | | <heap_find
+T@1    : | | | | | | | | | | <heap_open
+T@1    : | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | enter: Size: 0
+T@1    : | | | | | | | | | | | exit: ptr: 0xb0e890
+T@1    : | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | >fn_format
+T@1    : | | | | | | | | | | | enter: name: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0  dir:   extension:   flag: 6
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | enter: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | | | enter: from: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | | | | | | | | exit: to: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | | | >strlength
+T@1    : | | | | | | | | | | | <strlength
+T@1    : | | | | | | | | | | <fn_format
+T@1    : | | | | | | | | | | >heap_create
+T@1    : | | | | | | | | | | | >heap_find
+T@1    : | | | | | | | | | | | | enter: name: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0
+T@1    : | | | | | | | | | | | <heap_find
+T@1    : | | | | | | | | | | | info: Initializing new table
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 304
+T@1    : | | | | | | | | | | | | exit: ptr: 0xb0e8d8
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 43
+T@1    : | | | | | | | | | | | | exit: ptr: 0xb0ea50
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | >thr_lock_init
+T@1    : | | | | | | | | | | | | >list_add
+T@1    : | | | | | | | | | | | | | enter: root: 0x0  element: 0xb0e970
+T@1    : | | | | | | | | | | | | <list_add
+T@1    : | | | | | | | | | | | <thr_lock_init
+T@1    : | | | | | | | | | | | >list_add
+T@1    : | | | | | | | | | | | | enter: root: 0x0  element: 0xb0e9e8
+T@1    : | | | | | | | | | | | <list_add
+T@1    : | | | | | | | | | | <heap_create
+T@1    : | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | enter: ptr: 0xb0e890
+T@1    : | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | >heap_open
+T@1    : | | | | | | | | | | | >heap_find
+T@1    : | | | | | | | | | | | | enter: name: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0
+T@1    : | | | | | | | | | | | | exit: Old heap_database: 0xb0e8d8
+T@1    : | | | | | | | | | | | <heap_find
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 368
+T@1    : | | | | | | | | | | | | exit: ptr: 0xb09cb8
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | >list_add
+T@1    : | | | | | | | | | | | | enter: root: 0x0  element: 0xb09e1c
+T@1    : | | | | | | | | | | | <list_add
+T@1    : | | | | | | | | | | | exit: heap: 0xb09cb8  reclength: 3656  records_in_block: 36
+T@1    : | | | | | | | | | | <heap_open
+T@1    : | | | | | | | | | | >heap_extra
+T@1    : | | | | | | | | | | <heap_extra
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0xb0e420
+T@1    : | | | | | | | | | | | exit: ptr: 0xb09ba8
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | <handler::ha_open
+T@1    : | | | | | | | | | >heap_extra
+T@1    : | | | | | | | | | <heap_extra
+T@1    : | | | | | | | | <create_tmp_table
+T@1    : | | | | | | | <create_schema_table
+T@1    : | | | | | | | >alloc_root
+T@1    : | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | exit: ptr: 0x2cbfdd8
+T@1    : | | | | | | | <alloc_root
+T@1    : | | | | | | | >find_field_in_table_ref
+T@1    : | | | | | | | | enter: table: 'SCHEMATA'  field name: 'SCHEMA_NAME'  item name: 'Database'  ref 0x2cbfdd8
+T@1    : | | | | | | | | >find_field_in_table
+T@1    : | | | | | | | | | enter: table: 'SCHEMATA', field name: 'SCHEMA_NAME'
+T@1    : | | | | | | | | <find_field_in_table
+T@1    : | | | | | | | <find_field_in_table_ref
+T@1    : | | | | | | <mysql_schema_table
+T@1    : | | | | | | >free_root
+T@1    : | | | | | | | enter: root: 0x12e7a8  flags: 0
+T@1    : | | | | | | | >_myfree
+T@1    : | | | | | | | | enter: ptr: 0x2ce4ec8
+T@1    : | | | | | | | <_myfree
+T@1    : | | | | | | <free_root
+T@1    : | | | | | <open_tables
+T@1    : | | | | | >lock_tables
+T@1    : | | | | | | >alloc_root
+T@1    : | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | exit: ptr: 0x2cbfde0
+T@1    : | | | | | | <alloc_root
+T@1    : | | | | | | >mysql_lock_tables
+T@1    : | | | | | | | >get_lock_data
+T@1    : | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | enter: Size: 16
+T@1    : | | | | | | | | | exit: ptr: 0xb0eac8
+T@1    : | | | | | | | | <_mymalloc
+T@1    : | | | | | | | <get_lock_data
+T@1    : | | | | | | | >lock_external
+T@1    : | | | | | | | <lock_external
+T@1    : | | | | | | | >thr_multi_lock
+T@1    : | | | | | | | | lock: data: 0xb0ead8  count: 0
+T@1    : | | | | | | | <thr_multi_lock
+T@1    : | | | | | | <mysql_lock_tables
+T@1    : | | | | | <lock_tables
+T@1    : | | | | <open_and_lock_tables
+T@1    : | | | | >alloc_root
+T@1    : | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | exit: ptr: 0x2cbfde0
+T@1    : | | | | <alloc_root
+T@1    : | | | | >Query_cache::store_query
+T@1    : | | | | <Query_cache::store_query
+T@1    : | | | | >handle_select
+T@1    : | | | | | >mysql_select
+T@1    : | | | | | | >alloc_root
+T@1    : | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | exit: ptr: 0x2cbfdf0
+T@1    : | | | | | | <alloc_root
+T@1    : | | | | | | >TMP_TABLE_PARAM::init
+T@1    : | | | | | | | enter: this: 0x2cc0a74
+T@1    : | | | | | | <TMP_TABLE_PARAM::init
+T@1    : | | | | | | >JOIN::prepare
+T@1    : | | | | | | | >setup_tables
+T@1    : | | | | | | | <setup_tables
+T@1    : | | | | | | | >alloc_root
+T@1    : | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | exit: ptr: 0x2cc0bf8
+T@1    : | | | | | | | <alloc_root
+T@1    : | | | | | | | >setup_fields
+T@1    : | | | | | | | <setup_fields
+T@1    : | | | | | | | >setup_without_group
+T@1    : | | | | | | | | >setup_conds
+T@1    : | | | | | | | | <setup_conds
+T@1    : | | | | | | | <setup_without_group
+T@1    : | | | | | | | >setup_procedure
+T@1    : | | | | | | | <setup_procedure
+T@1    : | | | | | | | >alloc_func_list
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cc0c98
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | <alloc_func_list
+T@1    : | | | | | | <JOIN::prepare
+T@1    : | | | | | | >JOIN::optimize
+T@1    : | | | | | | | >simplify_joins
+T@1    : | | | | | | | <simplify_joins
+T@1    : | | | | | | | >build_bitmap_for_nested_joins
+T@1    : | | | | | | | <build_bitmap_for_nested_joins
+T@1    : | | | | | | | >optimize_cond
+T@1    : | | | | | | | <optimize_cond
+T@1    : | | | | | | | >optimize_cond
+T@1    : | | | | | | | <optimize_cond
+T@1    : | | | | | | | >get_sort_by_table
+T@1    : | | | | | | | <get_sort_by_table
+T@1    : | | | | | | | >make_join_statistics
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cc0ca0
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cc0e28
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cc0f20
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >heap_info
+T@1    : | | | | | | | | <heap_info
+T@1    : | | | | | | | | >choose_plan
+T@1    : | | | | | | | | | >reset_nj_counters
+T@1    : | | | | | | | | | <reset_nj_counters
+T@1    : | | | | | | | | | >greedy_search
+T@1    : | | | | | | | | | | >best_extension_by_limited_search
+part_plan; idx:0, best: DBL_MAX, current:0
+     POSITIONS: 
+BEST_POSITIONS: 
+      BEST_REF: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0(2,2,10) 
+T@1    : | | | | | | | | | | | >best_access_path
+T@1    : | | | | | | | | | | | <best_access_path
+full_plan; idx: 0, best: 10.499, current: 10.5
+     POSITIONS: 
+BEST_POSITIONS: 
+      BEST_REF: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0(2,2,10) 
+T@1    : | | | | | | | | | | <best_extension_by_limited_search
+optimal; idx: 1, best: 10.499, current: 0
+     POSITIONS: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0 
+BEST_POSITIONS: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0 
+      BEST_REF: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0(2,2,10) 
+T@1    : | | | | | | | | | <greedy_search
+T@1    : | | | | | | | | <choose_plan
+T@1    : | | | | | | | <make_join_statistics
+T@1    : | | | | | | | >get_best_combination
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cc0f28
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | info: type: 0
+T@1    : | | | | | | | <get_best_combination
+T@1    : | | | | | | | >make_select
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cc10b0
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | <make_select
+T@1    : | | | | | | | >reset_nj_counters
+T@1    : | | | | | | | <reset_nj_counters
+T@1    : | | | | | | | >make_outerjoin_info
+T@1    : | | | | | | | <make_outerjoin_info
+T@1    : | | | | | | | >make_join_select
+T@1    : | | | | | | | | >add_not_null_conds
+T@1    : | | | | | | | | <add_not_null_conds
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | exit: ptr: 0x2cc1198
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | <make_join_select
+T@1    : | | | | | | | >remove_const
+T@1    : | | | | | | | | exit: simple_order: 1
+T@1    : | | | | | | | <remove_const
+T@1    : | | | | | | | >remove_const
+T@1    : | | | | | | | | exit: simple_order: 1
+T@1    : | | | | | | | <remove_const
+T@1    : | | | | | | | >make_join_readinfo
+T@1    : | | | | | | | <make_join_readinfo
+T@1    : | | | | | | | >TEST_join
+
+Info about JOIN
+SCHEMATA          type: ALL      q_keys: 0  refs: 0  key: -1  len: 0
+                  select used
+T@1    : | | | | | | | <TEST_join
+T@1    : | | | | | | <JOIN::optimize
+T@1    : | | | | | | >JOIN::exec
+T@1    : | | | | | | | >get_schema_tables_result
+T@1    : | | | | | | | | >fill_schema_shemata
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | exit: ptr: 0x2cc1280
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | exit: ptr: 0x2cc1298
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | >mysql_find_files
+T@1    : | | | | | | | | | | >my_dir
+T@1    : | | | | | | | | | | | my: path: 'c:\mysql_embedded\data\' stat: 1024  MyFlags: 1238504
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 64
+T@1    : | | | | | | | | | | | | exit: ptr: 0xb0eb20
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | >init_dynamic_array
+T@1    : | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | enter: Size: 8192
+T@1    : | | | | | | | | | | | | | exit: ptr: 0x2ce99c0
+T@1    : | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | <init_dynamic_array
+T@1    : | | | | | | | | | | | >init_alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | enter: Size: 32784
+T@1    : | | | | | | | | | | | | | exit: ptr: 0x2cc2818
+T@1    : | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | <init_alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2828
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2830
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2860
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2868
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2898
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc28a0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc28d0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc28e0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2910
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2918
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2948
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2958
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2988
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2998
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc29c8
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc29d0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2a00
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2a08
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2a38
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2a40
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | U‹ìj: found 10 files
+T@1    : | | | | | | | | | | <my_dir
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: '.'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: '.'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: '..'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: '..'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'cluster'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'cluster'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cc12a0
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cc12a8
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'dragon.err'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'dragon.err'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'ib_logfile0'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'ib_logfile0'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'ib_logfile1'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'ib_logfile1'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'ibdata1'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'ibdata1'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'mysql'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'mysql'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cc12b0
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cc12b8
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'test'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'test'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cc12c0
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cc12c8
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | mfunkt: name: 'testdb1'
+T@1    : | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | enter: 'testdb1'
+T@1    : | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cc12d0
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | | | | | | exit: ptr: 0x2cc12d8
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | info: found: 5 files
+T@1    : | | | | | | | | | | >my_dirend
+T@1    : | | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | | enter: ptr: 0x2ce99c0
+T@1    : | | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | | >free_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb0eb40  flags: 0
+T@1    : | | | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | | | enter: ptr: 0x2cc2818
+T@1    : | | | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | | <free_root
+T@1    : | | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | | enter: ptr: 0xb0eb20
+T@1    : | | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | <my_dirend
+T@1    : | | | | | | | | | | >ha_find_files
+T@1    : | | | | | | | | | | | enter: db: (null), path: c:\mysql_embedded\data\, wild: (null), dir: 1
+T@1    : | | | | | | | | | | <ha_find_files
+T@1    : | | | | | | | | | <mysql_find_files
+T@1    : | | | | | | | | | >heap_write
+T@1    : | | | | | | | | | | >next_free_record_pos
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 131760
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2ce99c0
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | exit: Used new position: 2ce99c0
+T@1    : | | | | | | | | | | <next_free_record_pos
+T@1    : | | | | | | | | | <heap_write
+T@1    : | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | enter: 'c:\mysql_embedded\data\/cluster'
+T@1    : | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | enter: from: 'c:\mysql_embedded\data\\cluster\'
+T@1    : | | | | | | | | | | | exit: to: 'c:\mysql_embedded\data\cluster\'
+T@1    : | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | >load_db_opt
+T@1    : | | | | | | | | | | >hash_first
+T@1    : | | | | | | | | | | | exit: found key at 1
+T@1    : | | | | | | | | | | <hash_first
+T@1    : | | | | | | | | | | rw_unlock: state: 1 waiters: 0
+T@1    : | | | | | | | | | <load_db_opt
+T@1    : | | | | | | | | | >heap_write
+T@1    : | | | | | | | | | | >next_free_record_pos
+T@1    : | | | | | | | | | | | exit: Used new position: 2cea80c
+T@1    : | | | | | | | | | | <next_free_record_pos
+T@1    : | | | | | | | | | <heap_write
+T@1    : | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | enter: 'c:\mysql_embedded\data\/mysql'
+T@1    : | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | enter: from: 'c:\mysql_embedded\data\\mysql\'
+T@1    : | | | | | | | | | | | exit: to: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | >load_db_opt
+T@1    : | | | | | | | | | | >hash_first
+T@1    : | | | | | | | | | | <hash_first
+T@1    : | | | | | | | | | | rw_unlock: state: 1 waiters: 0
+T@1    : | | | | | | | | | | >my_open
+T@1    : | | | | | | | | | | | my: Name: 'c:\mysql_embedded\data\mysql\db.opt'  Flags: 4096  MyFlags: 0
+T@1    : | | | | | | | | | | | >check_if_legal_filename
+T@1    : | | | | | | | | | | | <check_if_legal_filename
+T@1    : | | | | | | | | | | <my_open
+T@1    : | | | | | | | | | | error: Got error 2 on open
+T@1    : | | | | | | | | | <load_db_opt
+T@1    : | | | | | | | | | >heap_write
+T@1    : | | | | | | | | | | >next_free_record_pos
+T@1    : | | | | | | | | | | | exit: Used new position: 2ceb658
+T@1    : | | | | | | | | | | <next_free_record_pos
+T@1    : | | | | | | | | | <heap_write
+T@1    : | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | enter: 'c:\mysql_embedded\data\/test'
+T@1    : | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | enter: from: 'c:\mysql_embedded\data\\test\'
+T@1    : | | | | | | | | | | | exit: to: 'c:\mysql_embedded\data\test\'
+T@1    : | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | >load_db_opt
+T@1    : | | | | | | | | | | >hash_first
+T@1    : | | | | | | | | | | <hash_first
+T@1    : | | | | | | | | | | rw_unlock: state: 1 waiters: 0
+T@1    : | | | | | | | | | | >my_open
+T@1    : | | | | | | | | | | | my: Name: 'c:\mysql_embedded\data\test\db.opt'  Flags: 4096  MyFlags: 0
+T@1    : | | | | | | | | | | | >check_if_legal_filename
+T@1    : | | | | | | | | | | | <check_if_legal_filename
+T@1    : | | | | | | | | | | <my_open
+T@1    : | | | | | | | | | | error: Got error 2 on open
+T@1    : | | | | | | | | | <load_db_opt
+T@1    : | | | | | | | | | >heap_write
+T@1    : | | | | | | | | | | >next_free_record_pos
+T@1    : | | | | | | | | | | | exit: Used new position: 2cec4a4
+T@1    : | | | | | | | | | | <next_free_record_pos
+T@1    : | | | | | | | | | <heap_write
+T@1    : | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | enter: 'c:\mysql_embedded\data\/testdb1'
+T@1    : | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | enter: from: 'c:\mysql_embedded\data\\testdb1\'
+T@1    : | | | | | | | | | | | exit: to: 'c:\mysql_embedded\data\testdb1\'
+T@1    : | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | >load_db_opt
+T@1    : | | | | | | | | | | >hash_first
+T@1    : | | | | | | | | | | | exit: found key at 0
+T@1    : | | | | | | | | | | <hash_first
+T@1    : | | | | | | | | | | rw_unlock: state: 1 waiters: 0
+T@1    : | | | | | | | | | <load_db_opt
+T@1    : | | | | | | | | | >heap_write
+T@1    : | | | | | | | | | | >next_free_record_pos
+T@1    : | | | | | | | | | | | exit: Used new position: 2ced2f0
+T@1    : | | | | | | | | | | <next_free_record_pos
+T@1    : | | | | | | | | | <heap_write
+T@1    : | | | | | | | | <fill_schema_shemata
+T@1    : | | | | | | | <get_schema_tables_result
+T@1    : | | | | | | | info: Sending data
+T@1    : | | | | | | | >send_fields
+T@1    : | | | | | | | | >my_multi_malloc
+T@1    : | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | enter: Size: 616
+T@1    : | | | | | | | | | | exit: ptr: 0x2cb51e8
+T@1    : | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | <my_multi_malloc
+T@1    : | | | | | | | | >init_alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | <init_alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | enter: Size: 8136
+T@1    : | | | | | | | | | | exit: ptr: 0x2d09cb8
+T@1    : | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | exit: ptr: 0x2d09cc8
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | exit: ptr: 0x2d09d18
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | exit: ptr: 0x2d09d20
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | exit: ptr: 0x2d09d30
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | exit: ptr: 0x2d09d40
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | exit: ptr: 0x2d09d48
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | exit: ptr: 0x2d09d58
+T@1    : | | | | | | | | <alloc_root
+T@1    : | | | | | | | <send_fields
+T@1    : | | | | | | | >do_select
+T@1    : | | | | | | | | >init_read_record
+T@1    : | | | | | | | | | info: using rr_sequential
+T@1    : | | | | | | | | | >ha_rnd_init
+T@1    : | | | | | | | | | <ha_rnd_init
+T@1    : | | | | | | | | | >heap_scan_init
+T@1    : | | | | | | | | | <heap_scan_init
+T@1    : | | | | | | | | | >heap_extra
+T@1    : | | | | | | | | | <heap_extra
+T@1    : | | | | | | | | <init_read_record
+T@1    : | | | | | | | | >heap_scan
+T@1    : | | | | | | | | <heap_scan
+T@1    : | | | | | | | | info: select cond 0x0
+T@1    : | | | | | | | | >end_send
+T@1    : | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2d09d60
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | <send_data
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | | | exit: ptr: 0x2d09d78
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | <send_data
+T@1    : | | | | | | | | <end_send
+T@1    : | | | | | | | | >heap_scan
+T@1    : | | | | | | | | <heap_scan
+T@1    : | | | | | | | | info: select cond 0x0
+T@1    : | | | | | | | | >end_send
+T@1    : | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2d09d90
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | <send_data
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | | | exit: ptr: 0x2d09da8
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | <send_data
+T@1    : | | | | | | | | <end_send
+T@1    : | | | | | | | | >heap_scan
+T@1    : | | | | | | | | <heap_scan
+T@1    : | | | | | | | | info: select cond 0x0
+T@1    : | | | | | | | | >end_send
+T@1    : | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2d09db8
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | <send_data
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | | | exit: ptr: 0x2d09dd0
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | <send_data
+T@1    : | | | | | | | | <end_send
+T@1    : | | | | | | | | >heap_scan
+T@1    : | | | | | | | | <heap_scan
+T@1    : | | | | | | | | info: select cond 0x0
+T@1    : | | | | | | | | >end_send
+T@1    : | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2d09de0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | <send_data
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | | | exit: ptr: 0x2d09df8
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | <send_data
+T@1    : | | | | | | | | <end_send
+T@1    : | | | | | | | | >heap_scan
+T@1    : | | | | | | | | <heap_scan
+T@1    : | | | | | | | | info: select cond 0x0
+T@1    : | | | | | | | | >end_send
+T@1    : | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | >send_data
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2d09e08
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | <send_data
+T@1    : | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | enter: root: 0x2cb51f8
+T@1    : | | | | | | | | | | | exit: ptr: 0x2d09e20
+T@1    : | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | <send_data
+T@1    : | | | | | | | | <end_send
+T@1    : | | | | | | | | >heap_scan
+T@1    : | | | | | | | | <heap_scan
+T@1    : | | | | | | | | >end_send
+T@1    : | | | | | | | | <end_send
+T@1    : | | | | | | | | >JOIN::join_free
+T@1    : | | | | | | | | | >JOIN::cleanup
+T@1    : | | | | | | | | | | >free_io_cache
+T@1    : | | | | | | | | | | <free_io_cache
+T@1    : | | | | | | | | | | >close_cached_file
+T@1    : | | | | | | | | | | <close_cached_file
+T@1    : | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | enter: ptr: 0x0
+T@1    : | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | >ha_rnd_end
+T@1    : | | | | | | | | | | <ha_rnd_end
+T@1    : | | | | | | | | | | >heap_extra
+T@1    : | | | | | | | | | | <heap_extra
+T@1    : | | | | | | | | | <JOIN::cleanup
+T@1    : | | | | | | | | | >mysql_unlock_read_tables
+T@1    : | | | | | | | | | <mysql_unlock_read_tables
+T@1    : | | | | | | | | <JOIN::join_free
+T@1    : | | | | | | | | >mysql_unlock_tables
+T@1    : | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | enter: ptr: 0xb0eac8
+T@1    : | | | | | | | | | <_myfree
+T@1    : | | | | | | | | <mysql_unlock_tables
+T@1    : | | | | | | | | info: 5 records output
+T@1    : | | | | | | | <do_select
+T@1    : | | | | | | <JOIN::exec
+T@1    : | | | | | | >st_select_lex::cleanup()
+T@1    : | | | | | | | >JOIN::destroy
+T@1    : | | | | | | | | >JOIN::cleanup
+T@1    : | | | | | | | | <JOIN::cleanup
+T@1    : | | | | | | | | >close_cached_file
+T@1    : | | | | | | | | <close_cached_file
+T@1    : | | | | | | | <JOIN::destroy
+T@1    : | | | | | | <st_select_lex::cleanup()
+T@1    : | | | | | <mysql_select
+T@1    : | | | | | info: res: 0  report_error: 0
+T@1    : | | | | <handle_select
+T@1    : | | | <mysql_execute_command
+T@1    : | | | >query_cache_end_of_result
+T@1    : | | | <query_cache_end_of_result
+T@1    : | | | >st_select_lex_unit::cleanup
+T@1    : | | | | >st_select_lex::cleanup()
+T@1    : | | | | <st_select_lex::cleanup()
+T@1    : | | | <st_select_lex_unit::cleanup
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | | >Query_arena::free_items
+T@1    : | | | | >Item_field::cleanup
+T@1    : | | | | | >Item_ident::cleanup
+T@1    : | | | | | | >Item::cleanup
+T@1    : | | | | | | <Item::cleanup
+T@1    : | | | | | <Item_ident::cleanup
+T@1    : | | | | <Item_field::cleanup
+T@1    : | | | <Query_arena::free_items
+T@1    : | | <mysql_parse
+T@1    : | | info: query ready
+T@1    : | | >close_thread_tables
+T@1    : | | | >free_tmp_table
+T@1    : | | | | enter: table: SCHEMATA
+T@1    : | | | | >heap_close
+T@1    : | | | | | >hp_close
+T@1    : | | | | | | >heap_check_heap
+T@1    : | | | | | | <heap_check_heap
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0xb09cb8
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | <hp_close
+T@1    : | | | | <heap_close
+T@1    : | | | | >fn_format
+T@1    : | | | | | enter: name: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0  dir:   extension:   flag: 6
+T@1    : | | | | | >dirname_part
+T@1    : | | | | | | enter: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0'
+T@1    : | | | | | <dirname_part
+T@1    : | | | | | >unpack_dirname
+T@1    : | | | | | | >dirname_part
+T@1    : | | | | | | | enter: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | <dirname_part
+T@1    : | | | | | | >cleanup_dirname
+T@1    : | | | | | | | enter: from: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | | exit: to: 'C:\DOCUME~1\Chuck\LOCALS~1\Temp\'
+T@1    : | | | | | | <cleanup_dirname
+T@1    : | | | | | <unpack_dirname
+T@1    : | | | | | >strlength
+T@1    : | | | | | <strlength
+T@1    : | | | | <fn_format
+T@1    : | | | | >heap_delete_table
+T@1    : | | | | | >heap_find
+T@1    : | | | | | | enter: name: C:\DOCUME~1\Chuck\LOCALS~1\Temp\#sql_a44_0
+T@1    : | | | | | | exit: Old heap_database: 0xb0e8d8
+T@1    : | | | | | <heap_find
+T@1    : | | | | | >hp_clear
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0x2ce99c0
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | | >hp_clear_keys
+T@1    : | | | | | | <hp_clear_keys
+T@1    : | | | | | <hp_clear
+T@1    : | | | | | >thr_lock_delete
+T@1    : | | | | | <thr_lock_delete
+T@1    : | | | | | >_myfree
+T@1    : | | | | | | enter: ptr: 0xb0ea50
+T@1    : | | | | | <_myfree
+T@1    : | | | | | >_myfree
+T@1    : | | | | | | enter: ptr: 0xb0e8d8
+T@1    : | | | | | <_myfree
+T@1    : | | | | <heap_delete_table
+T@1    : | | | | >free_io_cache
+T@1    : | | | | <free_io_cache
+T@1    : | | | | >free_root
+T@1    : | | | | | enter: root: 0x12f9bc  flags: 0
+T@1    : | | | | | >_myfree
+T@1    : | | | | | | enter: ptr: 0x2ce6e78
+T@1    : | | | | | <_myfree
+T@1    : | | | | | >_myfree
+T@1    : | | | | | | enter: ptr: 0xb0e040
+T@1    : | | | | | <_myfree
+T@1    : | | | | | >_myfree
+T@1    : | | | | | | enter: ptr: 0xb098a8
+T@1    : | | | | | <_myfree
+T@1    : | | | | <free_root
+T@1    : | | | <free_tmp_table
+T@1    : | | | info: thd->open_tables: 00000000
+T@1    : | | <close_thread_tables
+T@1    : | | >free_root
+T@1    : | | | enter: root: 0x2cb3980  flags: 1
+T@1    : | | <free_root
+T@1    : | <dispatch_command
+T@1    : <mysql_real_query
+T@1    : >mysql_store_result
+T@1    : | >_mymalloc
+T@1    : | | enter: Size: 92
+T@1    : | | exit: ptr: 0x2cb5498
+T@1    : | <_mymalloc
+T@1    : <mysql_store_result
+T@1    : >mysql_fetch_row
+T@1    : <mysql_fetch_row
+T@1    : >mysql_fetch_row
+T@1    : <mysql_fetch_row
+T@1    : >mysql_fetch_row
+T@1    : <mysql_fetch_row
+T@1    : >mysql_fetch_row
+T@1    : <mysql_fetch_row
+T@1    : >mysql_fetch_row
+T@1    : <mysql_fetch_row
+T@1    : >mysql_fetch_row
+T@1    : | info: end of data
+T@1    : <mysql_fetch_row
+T@1    : >mysql_free_result
+T@1    : | enter: mysql_res: 2cb5498
+T@1    : | >free_root
+T@1    : | | enter: root: 0x2cb51f8  flags: 0
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x2d09cb8
+T@1    : | | <_myfree
+T@1    : | <free_root
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x2cb51e8
+T@1    : | <_myfree
+T@1    : | >free_root
+T@1    : | | enter: root: 0x2cb54b4  flags: 0
+T@1    : | <free_root
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x2cb5498
+T@1    : | <_myfree
+T@1    : <mysql_free_result
+T@1    : Dropping database testdb1.: Embedded application.
+T@1    : >mysql_real_query
+T@1    : | enter: handle: 2cb2090
+T@1    : | query: Query = 'DROP DATABASE testdb1;'
+T@1    : | >mysql_send_query
+T@1    : | | enter: rpl_parse: 0  rpl_pivot: 1
+T@1    : | <mysql_send_query
+T@1    : | >free_old_query
+T@1    : | | >init_alloc_root
+T@1    : | | | enter: root: 0x2cb2328
+T@1    : | | <init_alloc_root
+T@1    : | <free_old_query
+T@1    : | >dispatch_command
+T@1    : | | >alloc_root
+T@1    : | | | enter: root: 0x2cb3980
+T@1    : | | | exit: ptr: 0x2cbf6d8
+T@1    : | | <alloc_root
+T@1    : | | query: DROP DATABASE testdb1
+T@1    : | | >mysql_parse
+T@1    : | | | >mysql_init_query
+T@1    : | | | | >lex_start
+T@1    : | | | | | >alloc_root
+T@1    : | | | | | | enter: root: 0x2cb3980
+T@1    : | | | | | | exit: ptr: 0x2cbf720
+T@1    : | | | | | <alloc_root
+T@1    : | | | | <lex_start
+T@1    : | | | | >mysql_reset_thd_for_next_command
+T@1    : | | | | <mysql_reset_thd_for_next_command
+T@1    : | | | <mysql_init_query
+T@1    : | | | >Query_cache::send_result_to_client
+T@1    : | | | <Query_cache::send_result_to_client
+T@1    : | | | >alloc_root
+T@1    : | | | | enter: root: 0x2cb3980
+T@1    : | | | | exit: ptr: 0x2cbf728
+T@1    : | | | <alloc_root
+T@1    : | | | >mysql_execute_command
+T@1    : | | | | >end_active_trans
+T@1    : | | | | <end_active_trans
+T@1    : | | | | >check_access
+T@1    : | | | | | enter: db: testdb1  want_access: 32  master_access: 67108863
+T@1    : | | | | <check_access
+T@1    : | | | | >mysql_rm_db
+T@1    : | | | | | >wait_if_global_read_lock
+T@1    : | | | | | <wait_if_global_read_lock
+T@1    : | | | | | >unpack_dirname
+T@1    : | | | | | | >dirname_part
+T@1    : | | | | | | | enter: 'c:\mysql_embedded\data\/testdb1'
+T@1    : | | | | | | <dirname_part
+T@1    : | | | | | | >cleanup_dirname
+T@1    : | | | | | | | enter: from: 'c:\mysql_embedded\data\\testdb1\'
+T@1    : | | | | | | | exit: to: 'c:\mysql_embedded\data\testdb1\'
+T@1    : | | | | | | <cleanup_dirname
+T@1    : | | | | | <unpack_dirname
+T@1    : | | | | | >hash_first
+T@1    : | | | | | | exit: found key at 0
+T@1    : | | | | | <hash_first
+T@1    : | | | | | >hash_delete
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0x2cb5168
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | <hash_delete
+T@1    : | | | | | rw_unlock: state: -1 waiters: 0
+T@1    : | | | | | >my_dir
+T@1    : | | | | | | my: path: 'c:\mysql_embedded\data\testdb1\' stat: 512  MyFlags: 1238272
+T@1    : | | | | | | >_mymalloc
+T@1    : | | | | | | | enter: Size: 64
+T@1    : | | | | | | | exit: ptr: 0x2ce4ec8
+T@1    : | | | | | | <_mymalloc
+T@1    : | | | | | | >init_dynamic_array
+T@1    : | | | | | | | >_mymalloc
+T@1    : | | | | | | | | enter: Size: 8192
+T@1    : | | | | | | | | exit: ptr: 0x2d09040
+T@1    : | | | | | | | <_mymalloc
+T@1    : | | | | | | <init_dynamic_array
+T@1    : | | | | | | >init_alloc_root
+T@1    : | | | | | | | enter: root: 0x2ce4ee8
+T@1    : | | | | | | | >_mymalloc
+T@1    : | | | | | | | | enter: Size: 32784
+T@1    : | | | | | | | | exit: ptr: 0x2cc2818
+T@1    : | | | | | | | <_mymalloc
+T@1    : | | | | | | <init_alloc_root
+T@1    : | | | | | | >alloc_root
+T@1    : | | | | | | | enter: root: 0x2ce4ee8
+T@1    : | | | | | | | exit: ptr: 0x2cc2828
+T@1    : | | | | | | <alloc_root
+T@1    : | | | | | | >alloc_root
+T@1    : | | | | | | | enter: root: 0x2ce4ee8
+T@1    : | | | | | | | exit: ptr: 0x2cc2830
+T@1    : | | | | | | <alloc_root
+T@1    : | | | | | | >alloc_root
+T@1    : | | | | | | | enter: root: 0x2ce4ee8
+T@1    : | | | | | | | exit: ptr: 0x2cc2838
+T@1    : | | | | | | <alloc_root
+T@1    : | | | | | | U‹ìj: found 3 files
+T@1    : | | | | | <my_dir
+T@1    : | | | | | >mysql_rm_known_files
+T@1    : | | | | | | enter: path: c:\mysql_embedded\data\testdb1\
+T@1    : | | | | | | info: Examining: .
+T@1    : | | | | | | info: Examining: ..
+T@1    : | | | | | | info: Examining: db.opt
+T@1    : | | | | | | >fn_ext
+T@1    : | | | | | | | mfunkt: name: 'db.opt'
+T@1    : | | | | | | | >dirname_part
+T@1    : | | | | | | | | enter: 'db.opt'
+T@1    : | | | | | | | <dirname_part
+T@1    : | | | | | | <fn_ext
+T@1    : | | | | | | >find_type
+T@1    : | | | | | | | enter: x: '.opt'  lib: 0x105cbb50
+T@1    : | | | | | | <find_type
+T@1    : | | | | | | >my_delete_with_symlink
+T@1    : | | | | | | | >my_delete
+T@1    : | | | | | | | | my: name c:\mysql_embedded\data\testdb1\/db.opt MyFlags 16
+T@1    : | | | | | | | <my_delete
+T@1    : | | | | | | <my_delete_with_symlink
+T@1    : | | | | | | >my_dirend
+T@1    : | | | | | | | >_myfree
+T@1    : | | | | | | | | enter: ptr: 0x2d09040
+T@1    : | | | | | | | <_myfree
+T@1    : | | | | | | | >free_root
+T@1    : | | | | | | | | enter: root: 0x2ce4ee8  flags: 0
+T@1    : | | | | | | | | >_myfree
+T@1    : | | | | | | | | | enter: ptr: 0x2cc2818
+T@1    : | | | | | | | | <_myfree
+T@1    : | | | | | | | <free_root
+T@1    : | | | | | | | >_myfree
+T@1    : | | | | | | | | enter: ptr: 0x2ce4ec8
+T@1    : | | | | | | | <_myfree
+T@1    : | | | | | | <my_dirend
+T@1    : | | | | | | >rm_dir_w_symlink
+T@1    : | | | | | | | >unpack_filename
+T@1    : | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | enter: 'c:\mysql_embedded\data\testdb1\'
+T@1    : | | | | | | | | <dirname_part
+T@1    : | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | enter: 'c:\mysql_embedded\data\testdb1\'
+T@1    : | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | enter: from: 'c:\mysql_embedded\data\testdb1\'
+T@1    : | | | | | | | | | | exit: to: 'c:\mysql_embedded\data\testdb1\'
+T@1    : | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | <unpack_filename
+T@1    : | | | | | | <rm_dir_w_symlink
+T@1    : | | | | | <mysql_rm_known_files
+T@1    : | | | | | >_mymalloc
+T@1    : | | | | | | enter: Size: 9
+T@1    : | | | | | | exit: ptr: 0x2ce4ec8
+T@1    : | | | | | <_mymalloc
+T@1    : | | | | | >_myfree
+T@1    : | | | | | | enter: ptr: 0x2ce4ec8
+T@1    : | | | | | <_myfree
+T@1    : | | | | | >Query_cache::invalidate (db)
+T@1    : | | | | | <Query_cache::invalidate (db)
+T@1    : | | | | | >send_ok
+T@1    : | | | | | | >my_multi_malloc
+T@1    : | | | | | | | >_mymalloc
+T@1    : | | | | | | | | enter: Size: 616
+T@1    : | | | | | | | | exit: ptr: 0x2cb5168
+T@1    : | | | | | | | <_mymalloc
+T@1    : | | | | | | <my_multi_malloc
+T@1    : | | | | | <send_ok
+T@1    : | | | | | >sp_drop_db_routines
+T@1    : | | | | | | enter: db: testdb1
+T@1    : | | | | | | >open_proc_table
+T@1    : | | | | | | | >open_ltable
+T@1    : | | | | | | | | >open_table
+T@1    : | | | | | | | | | >hash_first
+T@1    : | | | | | | | | | <hash_first
+T@1    : | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | enter: Size: 1392
+T@1    : | | | | | | | | | | exit: ptr: 0xb098a8
+T@1    : | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | >open_unireg_entry
+T@1    : | | | | | | | | | | >openfrm
+T@1    : | | | | | | | | | | | enter: name: 'c:\mysql_embedded\data\/mysql/proc'  form: 0xb098a8
+T@1    : | | | | | | | | | | | >fn_format
+T@1    : | | | | | | | | | | | | enter: name: c:\mysql_embedded\data\/mysql/proc  dir:   extension: .frm  flag: 4
+T@1    : | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | enter: 'c:\mysql_embedded\data\/mysql/proc'
+T@1    : | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | | enter: 'c:\mysql_embedded\data\\mysql\'
+T@1    : | | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | | | | enter: from: 'c:\mysql_embedded\data\\mysql\'
+T@1    : | | | | | | | | | | | | | | exit: to: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | | | | >strlength
+T@1    : | | | | | | | | | | | | <strlength
+T@1    : | | | | | | | | | | | <fn_format
+T@1    : | | | | | | | | | | | >my_open
+T@1    : | | | | | | | | | | | | my: Name: 'c:\mysql_embedded\data\mysql\proc.frm'  Flags: 4096  MyFlags: 0
+T@1    : | | | | | | | | | | | | >check_if_legal_filename
+T@1    : | | | | | | | | | | | | <check_if_legal_filename
+T@1    : | | | | | | | | | | | <my_open
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 38
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2ce4ec8
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | exit: fd: 9
+T@1    : | | | | | | | | | | | >my_read
+T@1    : | | | | | | | | | | | | my: Fd: 9  Buffer: 0x12d0a0  Count: 64  MyFlags: 4
+T@1    : | | | | | | | | | | | <my_read
+T@1    : | | | | | | | | | | | >init_alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | <init_alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | enter: Size: 968
+T@1    : | | | | | | | | | | | | | exit: ptr: 0x2cc2818
+T@1    : | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2828
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2830
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 5
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2ce4f38
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | | mfunkt: name: 'proc'
+T@1    : | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | enter: 'proc'
+T@1    : | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | | mfunkt: name: 'c:\mysql_embedded\data\/mysql/proc'
+T@1    : | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | enter: 'c:\mysql_embedded\data\/mysql/proc'
+T@1    : | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | | >get_form_pos
+T@1    : | | | | | | | | | | | | >my_seek
+T@1    : | | | | | | | | | | | | | my: Fd: 9  Hpos: 0  Pos: 64  Whence: 0  MyFlags: 0
+T@1    : | | | | | | | | | | | | <my_seek
+T@1    : | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | enter: Size: 7
+T@1    : | | | | | | | | | | | | | exit: ptr: 0x2ce4f88
+T@1    : | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | | >my_read
+T@1    : | | | | | | | | | | | | | my: Fd: 9  Buffer: 0x2ce4f88  Count: 7  MyFlags: 4
+T@1    : | | | | | | | | | | | | <my_read
+T@1    : | | | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | | | enter: ptr: 0x2ce4f88
+T@1    : | | | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | | <get_form_pos
+T@1    : | | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | | mfunkt: name: 'c:\mysql_embedded\data\mysql\proc.frm'
+T@1    : | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | enter: 'c:\mysql_embedded\data\mysql\proc.frm'
+T@1    : | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | | >my_seek
+T@1    : | | | | | | | | | | | | my: Fd: 9  Hpos: 0  Pos: 4096  Whence: 0  MyFlags: 0
+T@1    : | | | | | | | | | | | <my_seek
+T@1    : | | | | | | | | | | | >read_string
+T@1    : | | | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | | | enter: ptr: 0x0
+T@1    : | | | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | enter: Size: 52
+T@1    : | | | | | | | | | | | | | exit: ptr: 0x2ce4f88
+T@1    : | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | | >my_read
+T@1    : | | | | | | | | | | | | | my: Fd: 9  Buffer: 0x2ce4f88  Count: 51  MyFlags: 4
+T@1    : | | | | | | | | | | | | <my_read
+T@1    : | | | | | | | | | | | <read_string
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2858
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc28d8
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | enter: Size: 19
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cb5418
+T@1    : | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | >my_pread
+T@1    : | | | | | | | | | | | | my: Fd: 9  Seek: 5557  Buffer: 0x2cb5418  Count: 19  MyFlags: 4
+T@1    : | | | | | | | | | | | <my_pread
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc28e8
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | enter: Setting dbtype to: 9 - 6 - 'MyISAM'
+
+T@1    : | | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | | enter: ptr: 0x2cb5418
+T@1    : | | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc28f0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | enter: Size: 3712
+T@1    : | | | | | | | | | | | | | exit: ptr: 0x2d09040
+T@1    : | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2d09050
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >my_pread
+T@1    : | | | | | | | | | | | | my: Fd: 9  Seek: 4327  Buffer: 0x2d09050  Count: 1230  MyFlags: 4
+T@1    : | | | | | | | | | | | <my_pread
+T@1    : | | | | | | | | | | | >my_seek
+T@1    : | | | | | | | | | | | | my: Fd: 9  Hpos: 0  Pos: 8192  Whence: 0  MyFlags: 0
+T@1    : | | | | | | | | | | | <my_seek
+T@1    : | | | | | | | | | | | >my_read
+T@1    : | | | | | | | | | | | | my: Fd: 9  Buffer: 0x12d0a0  Count: 288  MyFlags: 4
+T@1    : | | | | | | | | | | | <my_read
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc29d8
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | info: i_count: 6  i_parts: 47  index: 1  n_length: 151  int_length: 543  com_length: 0
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | enter: Size: 1144
+T@1    : | | | | | | | | | | | | | exit: ptr: 0xb0e040
+T@1    : | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | | exit: ptr: 0xb0e050
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >read_string
+T@1    : | | | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | | | enter: ptr: 0x2ce4f88
+T@1    : | | | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | enter: Size: 1212
+T@1    : | | | | | | | | | | | | | exit: ptr: 0xb0e500
+T@1    : | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | | >my_read
+T@1    : | | | | | | | | | | | | | my: Fd: 9  Buffer: 0xb0e500  Count: 1211  MyFlags: 4
+T@1    : | | | | | | | | | | | | <my_read
+T@1    : | | | | | | | | | | | <read_string
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc29f0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2a00
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2a08
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2a20
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2a30
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2a40
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >my_close
+T@1    : | | | | | | | | | | | | my: fd: 9  MyFlags: 16
+T@1    : | | | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | | | enter: ptr: 0x2ce4ec8
+T@1    : | | | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | | <my_close
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2ac0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2b28
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | enter: Size: 968
+T@1    : | | | | | | | | | | | | | exit: ptr: 0x2cc2c28
+T@1    : | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2c38
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2ca0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2d08
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2d70
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2dd8
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2e40
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2ea8
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2f20
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | enter: Size: 1936
+T@1    : | | | | | | | | | | | | | exit: ptr: 0x2ce2040
+T@1    : | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2ce2050
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2f88
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2ce20c8
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2ce2128
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2ce2188
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2ce21f0
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >find_type
+T@1    : | | | | | | | | | | | | enter: x: 'PRIMARY'  lib: 0xb09d1c
+T@1    : | | | | | | | | | | | <find_type
+T@1    : | | | | | | | | | | | >_myfree
+T@1    : | | | | | | | | | | | | enter: ptr: 0xb0e500
+T@1    : | | | | | | | | | | | <_myfree
+T@1    : | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | exit: ptr: 0x2cc2b90
+T@1    : | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | >unpack_filename
+T@1    : | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | enter: 'c:\mysql_embedded\data\mysql\proc'
+T@1    : | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | | enter: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | | | | enter: from: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | | | | | | | | | | | exit: to: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | | | <unpack_filename
+T@1    : | | | | | | | | | | | >handler::ha_open
+T@1    : | | | | | | | | | | | | enter: name: c:\mysql_embedded\data\mysql\proc  db_type: 9  db_stat: 8231  mode: 2  lock_test: 2
+T@1    : | | | | | | | | | | | | >mi_open
+T@1    : | | | | | | | | | | | | | >fn_format
+T@1    : | | | | | | | | | | | | | | enter: name: c:\mysql_embedded\data\mysql\proc  dir:   extension: .MYI  flag: 4
+T@1    : | | | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | | | enter: 'c:\mysql_embedded\data\mysql\proc'
+T@1    : | | | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | | | | enter: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | | | | | | enter: from: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | | | | | | | | | | | | | exit: to: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | | | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | | | | | | >strlength
+T@1    : | | | | | | | | | | | | | | <strlength
+T@1    : | | | | | | | | | | | | | <fn_format
+T@1    : | | | | | | | | | | | | | >my_load_path
+T@1    : | | | | | | | | | | | | | | enter: path: c:\mysql_embedded\data\mysql\proc.MYI  prefix: 
+T@1    : | | | | | | | | | | | | | | exit: to: c:\mysql_embedded\data\mysql\proc.MYI
+T@1    : | | | | | | | | | | | | | <my_load_path
+T@1    : | | | | | | | | | | | | | >my_open
+T@1    : | | | | | | | | | | | | | | my: Name: 'c:\mysql_embedded\data\mysql\proc.MYI'  Flags: 4098  MyFlags: 0
+T@1    : | | | | | | | | | | | | | | >check_if_legal_filename
+T@1    : | | | | | | | | | | | | | | <check_if_legal_filename
+T@1    : | | | | | | | | | | | | | <my_open
+T@1    : | | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | | enter: Size: 38
+T@1    : | | | | | | | | | | | | | | exit: ptr: 0x2ce4ec8
+T@1    : | | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | | | exit: fd: 9
+T@1    : | | | | | | | | | | | | | >my_read
+T@1    : | | | | | | | | | | | | | | my: Fd: 9  Buffer: 0x12bf30  Count: 24  MyFlags: 4
+T@1    : | | | | | | | | | | | | | <my_read
+T@1    : | | | | | | | | | | | | | >fn_format
+T@1    : | | | | | | | | | | | | | | enter: name: c:\mysql_embedded\data\mysql\proc.MYI  dir:   extension: .MYD  flag: 22
+T@1    : | | | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | | | enter: 'c:\mysql_embedded\data\mysql\proc.MYI'
+T@1    : | | | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | | | | enter: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | | | | | | enter: from: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | | | | | | | | | | | | | exit: to: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | | | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | | | | | <fn_format
+T@1    : | | | | | | | | | | | | | >my_seek
+T@1    : | | | | | | | | | | | | | | my: Fd: 9  Hpos: 0  Pos: 0  Whence: 0  MyFlags: 0
+T@1    : | | | | | | | | | | | | | <my_seek
+T@1    : | | | | | | | | | | | | | >my_lock
+T@1    : | | | | | | | | | | | | | | my: Fd: 9  Op: 2  start: 0  Length: 1073741823  MyFlags: 64
+T@1    : | | | | | | | | | | | | | <my_lock
+T@1    : | | | | | | | | | | | | | >my_read
+T@1    : | | | | | | | | | | | | | | my: Fd: 9  Buffer: 0x127670  Count: 490  MyFlags: 4
+T@1    : | | | | | | | | | | | | | <my_read
+T@1    : | | | | | | | | | | | | | >my_multi_malloc
+T@1    : | | | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | | | enter: Size: 1640
+T@1    : | | | | | | | | | | | | | | | exit: ptr: 0xb0e500
+T@1    : | | | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | | | <my_multi_malloc
+T@1    : | | | | | | | | | | | | | >my_lock
+T@1    : | | | | | | | | | | | | | | my: Fd: 9  Op: 0  start: 0  Length: 1073741823  MyFlags: 32
+T@1    : | | | | | | | | | | | | | <my_lock
+T@1    : | | | | | | | | | | | | | >my_open
+T@1    : | | | | | | | | | | | | | | my: Name: 'c:\mysql_embedded\data\mysql\proc.MYD'  Flags: 4098  MyFlags: 16
+T@1    : | | | | | | | | | | | | | | >check_if_legal_filename
+T@1    : | | | | | | | | | | | | | | <check_if_legal_filename
+T@1    : | | | | | | | | | | | | | <my_open
+T@1    : | | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | | enter: Size: 38
+T@1    : | | | | | | | | | | | | | | exit: ptr: 0x2ce4f88
+T@1    : | | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | | | exit: fd: 10
+T@1    : | | | | | | | | | | | | | >thr_lock_init
+T@1    : | | | | | | | | | | | | | | >list_add
+T@1    : | | | | | | | | | | | | | | | enter: root: 0x0  element: 0xb0e748
+T@1    : | | | | | | | | | | | | | | <list_add
+T@1    : | | | | | | | | | | | | | <thr_lock_init
+T@1    : | | | | | | | | | | | | | >my_multi_malloc
+T@1    : | | | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | | | enter: Size: 6688
+T@1    : | | | | | | | | | | | | | | | exit: ptr: 0x2d09f08
+T@1    : | | | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | | | <my_multi_malloc
+T@1    : | | | | | | | | | | | | | >_myrealloc
+T@1    : | | | | | | | | | | | | | <_myrealloc
+T@1    : | | | | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | | | | enter: Size: 1336
+T@1    : | | | | | | | | | | | | | | exit: ptr: 0x2ce2818
+T@1    : | | | | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | | | | | >list_add
+T@1    : | | | | | | | | | | | | | | enter: root: 0x0  element: 0x2d0a028
+T@1    : | | | | | | | | | | | | | <list_add
+T@1    : | | | | | | | | | | | | <mi_open
+T@1    : | | | | | | | | | | | | >mi_extra
+T@1    : | | | | | | | | | | | | | enter: function: 13
+T@1    : | | | | | | | | | | | | <mi_extra
+T@1    : | | | | | | | | | | | | >mi_status
+T@1    : | | | | | | | | | | | | <mi_status
+T@1    : | | | | | | | | | | | | >fn_format
+T@1    : | | | | | | | | | | | | | enter: name: c:\mysql_embedded\data\mysql\proc  dir:   extension: .MYD  flag: 2
+T@1    : | | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | | enter: 'c:\mysql_embedded\data\mysql\proc'
+T@1    : | | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | | | >strlength
+T@1    : | | | | | | | | | | | | | <strlength
+T@1    : | | | | | | | | | | | | <fn_format
+T@1    : | | | | | | | | | | | | >fn_ext
+T@1    : | | | | | | | | | | | | | mfunkt: name: 'c:\mysql_embedded\data\mysql\proc.MYD'
+T@1    : | | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | | enter: 'c:\mysql_embedded\data\mysql\proc.MYD'
+T@1    : | | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | | <fn_ext
+T@1    : | | | | | | | | | | | | >mi_extra
+T@1    : | | | | | | | | | | | | | enter: function: 12
+T@1    : | | | | | | | | | | | | <mi_extra
+T@1    : | | | | | | | | | | | | >mi_extra
+T@1    : | | | | | | | | | | | | | enter: function: 5
+T@1    : | | | | | | | | | | | | <mi_extra
+T@1    : | | | | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | | | | exit: ptr: 0x2cc2b98
+T@1    : | | | | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | | | <handler::ha_open
+T@1    : | | | | | | | | | | <openfrm
+T@1    : | | | | | | | | | | >Table_triggers_list::check_n_load
+T@1    : | | | | | | | | | | | >unpack_filename
+T@1    : | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | enter: 'c:\mysql_embedded\data\/mysql/proc.TRG'
+T@1    : | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | | >unpack_dirname
+T@1    : | | | | | | | | | | | | | >dirname_part
+T@1    : | | | | | | | | | | | | | | enter: 'c:\mysql_embedded\data\\mysql\'
+T@1    : | | | | | | | | | | | | | <dirname_part
+T@1    : | | | | | | | | | | | | | >cleanup_dirname
+T@1    : | | | | | | | | | | | | | | enter: from: 'c:\mysql_embedded\data\\mysql\'
+T@1    : | | | | | | | | | | | | | | exit: to: 'c:\mysql_embedded\data\mysql\'
+T@1    : | | | | | | | | | | | | | <cleanup_dirname
+T@1    : | | | | | | | | | | | | <unpack_dirname
+T@1    : | | | | | | | | | | | <unpack_filename
+T@1    : | | | | | | | | | | <Table_triggers_list::check_n_load
+T@1    : | | | | | | | | | <open_unireg_entry
+T@1    : | | | | | | | | | >alloc_root
+T@1    : | | | | | | | | | | enter: root: 0xb09c78
+T@1    : | | | | | | | | | | exit: ptr: 0x2cc2ba8
+T@1    : | | | | | | | | | <alloc_root
+T@1    : | | | | | | | | | info: inserting table 00B098A8 into the cache
+T@1    : | | | | | | | | <open_table
+T@1    : | | | | | | | | >mysql_lock_tables
+T@1    : | | | | | | | | | >get_lock_data
+T@1    : | | | | | | | | | | >_mymalloc
+T@1    : | | | | | | | | | | | enter: Size: 28
+T@1    : | | | | | | | | | | | exit: ptr: 0x2ce2d98
+T@1    : | | | | | | | | | | <_mymalloc
+T@1    : | | | | | | | | | <get_lock_data
+T@1    : | | | | | | | | | >lock_external
+T@1    : | | | | | | | | | | >mi_lock_database
+T@1    : | | | | | | | | | | | enter: lock_type: 4  old lock 0  r_locks: 0  w_locks: 0 global_changed:  0  open_count: 0  name: 'c:\mysql_embedded\data\mysql\proc.MYI'
+T@1    : | | | | | | | | | | | >my_lock
+T@1    : | | | | | | | | | | | | my: Fd: 9  Op: 4  start: 0  Length: 1073741823  MyFlags: 32
+T@1    : | | | | | | | | | | | <my_lock
+T@1    : | | | | | | | | | | <mi_lock_database
+T@1    : | | | | | | | | | <lock_external
+T@1    : | | | | | | | | | >thr_multi_lock
+T@1    : | | | | | | | | | | lock: data: 0x2ce2dac  count: 1
+T@1    : | | | | | | | | | | >thr_lock
+T@1    : | | | | | | | | | | | lock: data: 0x2d0a0e8  thread: 1  lock: 0xb0e748  type: 10
+T@1    : | | | | | | | | | | | >check_locks
+T@1    : | | | | | | | | | | | <check_locks
+T@1    : | | | | | | | | | | | info: write_wait.data: 0x0
+T@1    : | | | | | | | | | | | >mi_get_status
+T@1    : | | | | | | | | | | | | info: key_file: 3072  data_file: 576  concurrent_insert: 0
+T@1    : | | | | | | | | | | | <mi_get_status
+T@1    : | | | | | | | | | | | >check_locks
+T@1    : | | | | | | | | | | | <check_locks
+T@1    : | | | | | | | | | | <thr_lock
+T@1    : | | | | | | | | | <thr_multi_lock
+T@1    : | | | | | | | | <mysql_lock_tables
+T@1    : | | | | | | | <open_ltable
+T@1    : | | | | | | <open_proc_table
+T@1    : | | | | | | >ha_index_init
+T@1    : | | | | | | <ha_index_init
+T@1    : | | | | | | >mi_rkey
+T@1    : | | | | | | | enter: base: 2d09f08  buf: 2d09520  inx: 0  search_flag: 0
+T@1    : | | | | | | | >_mi_pack_key
+T@1    : | | | | | | | <_mi_pack_key
+Key: "testdb1"
+T@1    : | | | | | | | >_mi_search
+T@1    : | | | | | | | | enter: pos: 4294967295  nextflag: 1  lastpos: 4294967295
+Key: "testdb1"
+T@1    : | | | | | | | <_mi_search
+T@1    : | | | | | | | rw_unlock: state: 1 waiters: 0
+T@1    : | | | | | | | >mi_read_dynamic_record
+T@1    : | | | | | | | <mi_read_dynamic_record
+T@1    : | | | | | | <mi_rkey
+T@1    : | | | | | | >ha_index_end
+T@1    : | | | | | | <ha_index_end
+T@1    : | | | | | | >close_thread_tables
+T@1    : | | | | | | | >mysql_unlock_tables
+T@1    : | | | | | | | | >thr_multi_unlock
+T@1    : | | | | | | | | | lock: data: 0x2ce2da8  count: 1
+T@1    : | | | | | | | | | >thr_unlock
+T@1    : | | | | | | | | | | lock: data: 0x2d0a0e8  thread: 1  lock: 0xb0e748
+T@1    : | | | | | | | | | | >check_locks
+T@1    : | | | | | | | | | | <check_locks
+T@1    : | | | | | | | | | | info: updating status:  key_file: 3072  data_file: 576
+T@1    : | | | | | | | | | | >check_locks
+T@1    : | | | | | | | | | | <check_locks
+T@1    : | | | | | | | | | | lock: No waiting read locks to free
+T@1    : | | | | | | | | | | >check_locks
+T@1    : | | | | | | | | | | <check_locks
+T@1    : | | | | | | | | | <thr_unlock
+T@1    : | | | | | | | | <thr_multi_unlock
+T@1    : | | | | | | | | >unlock_external
+T@1    : | | | | | | | | | >mi_lock_database
+T@1    : | | | | | | | | | | enter: lock_type: 0  old lock 4  r_locks: 0  w_locks: 1 global_changed:  0  open_count: 0  name: 'c:\mysql_embedded\data\mysql\proc.MYI'
+T@1    : | | | | | | | | | | >flush_key_blocks
+T@1    : | | | | | | | | | | | enter: keycache: 0x385140
+T@1    : | | | | | | | | | | | >flush_key_blocks_int
+T@1    : | | | | | | | | | | | | enter: file: 9  blocks_used: 0  blocks_changed: 0
+T@1    : | | | | | | | | | | | <flush_key_blocks_int
+T@1    : | | | | | | | | | | <flush_key_blocks
+T@1    : | | | | | | | | | | info: changed: 0  w_locks: 0
+T@1    : | | | | | | | | | | >my_lock
+T@1    : | | | | | | | | | | | my: Fd: 9  Op: 0  start: 0  Length: 1073741823  MyFlags: 48
+T@1    : | | | | | | | | | | <my_lock
+T@1    : | | | | | | | | | <mi_lock_database
+T@1    : | | | | | | | | <unlock_external
+T@1    : | | | | | | | | >_myfree
+T@1    : | | | | | | | | | enter: ptr: 0x2ce2d98
+T@1    : | | | | | | | | <_myfree
+T@1    : | | | | | | | <mysql_unlock_tables
+T@1    : | | | | | | | info: thd->open_tables: 00B098A8
+T@1    : | | | | | | | >close_thread_table
+T@1    : | | | | | | | | >mi_extra
+T@1    : | | | | | | | | | enter: function: 2
+T@1    : | | | | | | | | <mi_extra
+T@1    : | | | | | | | <close_thread_table
+T@1    : | | | | | | <close_thread_tables
+T@1    : | | | | | <sp_drop_db_routines
+T@1    : | | | | | >start_waiting_global_read_lock
+T@1    : | | | | | <start_waiting_global_read_lock
+T@1    : | | | | <mysql_rm_db
+T@1    : | | | <mysql_execute_command
+T@1    : | | | >query_cache_end_of_result
+T@1    : | | | <query_cache_end_of_result
+T@1    : | | | >st_select_lex_unit::cleanup
+T@1    : | | | | >st_select_lex::cleanup()
+T@1    : | | | | <st_select_lex::cleanup()
+T@1    : | | | <st_select_lex_unit::cleanup
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | | >Query_arena::free_items
+T@1    : | | | <Query_arena::free_items
+T@1    : | | <mysql_parse
+T@1    : | | info: query ready
+T@1    : | | >free_root
+T@1    : | | | enter: root: 0x2cb3980  flags: 1
+T@1    : | | <free_root
+T@1    : | <dispatch_command
+T@1    : <mysql_real_query
+T@1    : >_myfree
+T@1    : | enter: ptr: 0x2cb5168
+T@1    : <_myfree
+T@1    : >mysql_close
+T@1    : | >mysql_close_free_options
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x0
+T@1    : | | <_myfree
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x0
+T@1    : | | <_myfree
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x0
+T@1    : | | <_myfree
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x0
+T@1    : | | <_myfree
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x0
+T@1    : | | <_myfree
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x0
+T@1    : | | <_myfree
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x0
+T@1    : | | <_myfree
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x0
+T@1    : | | <_myfree
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x0
+T@1    : | | <_myfree
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x0
+T@1    : | | <_myfree
+T@1    : | | >mysql_ssl_free
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x0
+T@1    : | | | <_myfree
+T@1    : | | <mysql_ssl_free
+T@1    : | <mysql_close_free_options
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x0
+T@1    : | <_myfree
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0xb09208
+T@1    : | <_myfree
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x0
+T@1    : | <_myfree
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x0
+T@1    : | <_myfree
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0xb092a8
+T@1    : | <_myfree
+T@1    : | >~THD()
+T@1    : | | >my_hash_reset
+T@1    : | | | enter: hash: 0x2cb49b0d
+T@1    : | | <my_hash_reset
+T@1    : | | >my_hash_reset
+T@1    : | | | enter: hash: 0x2cb497cd
+T@1    : | | <my_hash_reset
+T@1    : | | >THD::cleanup
+T@1    : | | | >ha_rollback_trans
+T@1    : | | | <ha_rollback_trans
+T@1    : | | | >hash_delete
+T@1    : | | | <hash_delete
+T@1    : | | | >mysql_ha_flush
+T@1    : | | | | enter: tables: 00000000  mode_flags: 0x02
+T@1    : | | | <mysql_ha_flush
+T@1    : | | | >hash_free
+T@1    : | | | | enter: hash: 0x2cb4a74d
+T@1    : | | | <hash_free
+T@1    : | | | >hash_free
+T@1    : | | | | enter: hash: 0x2cb452cd
+T@1    : | | | | >_myfree
+T@1    : | | | | | enter: ptr: 0x2cbf600
+T@1    : | | | | <_myfree
+T@1    : | | | <hash_free
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x2cb5010
+T@1    : | | | <_myfree
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x2cb5080
+T@1    : | | | <_myfree
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x2cb50f0
+T@1    : | | | <_myfree
+T@1    : | | <THD::cleanup
+T@1    : | | >innobase_rollback_trx
+T@1    : | | | trans: aborting transaction
+T@1    : | | <innobase_rollback_trx
+T@1    : | | info: freeing security context
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x2cc2778
+T@1    : | | <_myfree
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x2cc27c8
+T@1    : | | <_myfree
+T@1    : | | >free_root
+T@1    : | | | enter: root: 0x2cb44b4  flags: 0
+T@1    : | | <free_root
+T@1    : | | >free_root
+T@1    : | | | enter: root: 0x2cb4c54  flags: 0
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x2cc1720
+T@1    : | | | <_myfree
+T@1    : | | <free_root
+T@1    : | <~THD()
+T@1    : | >hash_free
+T@1    : | | enter: hash: 0x2cb49b0d
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x2cb4f48
+T@1    : | | <_myfree
+T@1    : | <hash_free
+T@1    : | >hash_free
+T@1    : | | enter: hash: 0x2cb497cd
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x2cb4e80
+T@1    : | | <_myfree
+T@1    : | <hash_free
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0xb0ebf0
+T@1    : | <_myfree
+T@1    : | >free_root
+T@1    : | | enter: root: 0x2cb3980  flags: 0
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x2cbf6c8
+T@1    : | | <_myfree
+T@1    : | <free_root
+T@1    : | >hash_free
+T@1    : | | enter: hash: 0x2cb4150d
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x2cbd5e0
+T@1    : | | <_myfree
+T@1    : | <hash_free
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x2cb3960
+T@1    : | <_myfree
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x2cb2090
+T@1    : | <_myfree
+T@1    : <mysql_close
+T@1    : >_myfree
+T@1    : | enter: ptr: 0x0
+T@1    : <_myfree
+T@1    : exit: clean_up
+T@1    : >cleanup
+T@1    : | >MYSQL_LOG::close
+T@1    : | | enter: exiting: 5
+T@1    : | <MYSQL_LOG::close
+T@1    : <cleanup
+T@1    : >cleanup
+T@1    : | >MYSQL_LOG::close
+T@1    : | | enter: exiting: 5
+T@1    : | <MYSQL_LOG::close
+T@1    : <cleanup
+T@1    : >cleanup
+T@1    : | >MYSQL_LOG::close
+T@1    : | | enter: exiting: 5
+T@1    : | <MYSQL_LOG::close
+T@1    : <cleanup
+T@1    : >hash_free
+T@1    : | enter: hash: 0x1070de84d
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0xb09790
+T@1    : | <_myfree
+T@1    : <hash_free
+T@1    : >hash_free
+T@1    : | enter: hash: 0x1070de50d
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0xb096a8
+T@1    : | <_myfree
+T@1    : <hash_free
+T@1    : >free_root
+T@1    : | enter: root: 0x1070de18  flags: 0
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x2cb55d0
+T@1    : | <_myfree
+T@1    : <free_root
+T@1    : >hash_free
+T@1    : | enter: hash: 0x1070dbe8d
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0xb0ec60
+T@1    : | <_myfree
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x38fe98
+T@1    : | <_myfree
+T@1    : <hash_free
+T@1    : >Query_cache::destroy
+T@1    : | >Query_cache::free_cache
+T@1    : | <Query_cache::free_cache
+T@1    : <Query_cache::destroy
+T@1    : >table_cache_free
+T@1    : | >close_cached_tables
+T@1    : | | >hash_delete
+T@1    : | | | >free_cache_entry
+T@1    : | | | | >free_io_cache
+T@1    : | | | | <free_io_cache
+T@1    : | | | | >closefrm
+T@1    : | | | | | >mi_close
+T@1    : | | | | | | enter: base: 2d09f08  reopen: 1  locks: 0
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0x2ce2818
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | | >flush_key_blocks
+T@1    : | | | | | | | enter: keycache: 0x385140
+T@1    : | | | | | | | >flush_key_blocks_int
+T@1    : | | | | | | | | enter: file: 9  blocks_used: 0  blocks_changed: 0
+T@1    : | | | | | | | <flush_key_blocks_int
+T@1    : | | | | | | <flush_key_blocks
+T@1    : | | | | | | >my_close
+T@1    : | | | | | | | my: fd: 9  MyFlags: 0
+T@1    : | | | | | | | >_myfree
+T@1    : | | | | | | | | enter: ptr: 0x2ce4ec8
+T@1    : | | | | | | | <_myfree
+T@1    : | | | | | | <my_close
+T@1    : | | | | | | >thr_lock_delete
+T@1    : | | | | | | <thr_lock_delete
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0xb0e500
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | | >my_close
+T@1    : | | | | | | | my: fd: 10  MyFlags: 0
+T@1    : | | | | | | | >_myfree
+T@1    : | | | | | | | | enter: ptr: 0x2ce4f88
+T@1    : | | | | | | | <_myfree
+T@1    : | | | | | | <my_close
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0x2d09f08
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | <mi_close
+T@1    : | | | | | >_myfree
+T@1    : | | | | | | enter: ptr: 0x2ce4f38
+T@1    : | | | | | <_myfree
+T@1    : | | | | | >hash_free
+T@1    : | | | | | | enter: hash: 0xb09cc8d
+T@1    : | | | | | <hash_free
+T@1    : | | | | | >free_root
+T@1    : | | | | | | enter: root: 0xb09c78  flags: 0
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0x2cc2c28
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0xb0e040
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0x2d09040
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0x2cc2818
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | | >_myfree
+T@1    : | | | | | | | enter: ptr: 0x2ce2040
+T@1    : | | | | | | <_myfree
+T@1    : | | | | | <free_root
+T@1    : | | | | <closefrm
+T@1    : | | | | >_myfree
+T@1    : | | | | | enter: ptr: 0xb098a8
+T@1    : | | | | <_myfree
+T@1    : | | | <free_cache_entry
+T@1    : | | <hash_delete
+T@1    : | <close_cached_tables
+T@1    : | >hash_free
+T@1    : | | enter: hash: 0x1070db2cd
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0xa1aa48
+T@1    : | | <_myfree
+T@1    : | <hash_free
+T@1    : <table_cache_free
+T@1    : >hash_free
+T@1    : | enter: hash: 0xa1ad34d
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0xa1adb0
+T@1    : | <_myfree
+T@1    : <hash_free
+T@1    : >hash_free
+T@1    : | enter: hash: 0x10708ca0d
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0xa17e38
+T@1    : | <_myfree
+T@1    : <hash_free
+T@1    : >lex_free
+T@1    : <lex_free
+T@1    : >hash_free
+T@1    : | enter: hash: 0x1070be98d
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0xa17f00
+T@1    : | <_myfree
+T@1    : <hash_free
+T@1    : >heap_panic
+T@1    : <heap_panic
+T@1    : >mi_panic
+T@1    : | >mi_log
+T@1    : | <mi_log
+T@1    : | >free_tree
+T@1    : | | enter: tree: 0xb06988
+T@1    : | | >free_root
+T@1    : | | | enter: root: 0xb06ab4  flags: 0
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0xb06b28
+T@1    : | | | <_myfree
+T@1    : | | | >_myfree
+T@1    : | | | | enter: ptr: 0x2cb0080
+T@1    : | | | <_myfree
+T@1    : | | <free_root
+T@1    : | <free_tree
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0xb06988
+T@1    : | <_myfree
+T@1    : <mi_panic
+T@1    : >myrg_panic
+T@1    : <myrg_panic
+T@1    : >berkeley_end
+T@1    : | >berkeley_cleanup_log_files
+T@1    : | <berkeley_cleanup_log_files
+T@1    : | >hash_free
+T@1    : | | enter: hash: 0x10708a70d
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0xb06840
+T@1    : | | <_myfree
+T@1    : | <hash_free
+T@1    : <berkeley_end
+T@1    : >innobase_end
+T@1    : | >hash_free
+T@1    : | | enter: hash: 0x10708b08d
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0xae7680
+T@1    : | | <_myfree
+T@1    : | <hash_free
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0xa1b650
+T@1    : | <_myfree
+T@1    : <innobase_end
+T@1    : >_myfree
+T@1    : | enter: ptr: 0x38ffe0
+T@1    : <_myfree
+T@1    : >_myfree
+T@1    : | enter: ptr: 0xa1b560
+T@1    : <_myfree
+T@1    : >hash_free
+T@1    : | enter: hash: 0x1070db78d
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0xa1b1f8
+T@1    : | <_myfree
+T@1    : <hash_free
+T@1    : >delete_elements
+T@1    : | >end_key_cache
+T@1    : | | enter: key_cache: 0x385140
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x2eb0058
+T@1    : | | <_myfree
+T@1    : | | >_myfree
+T@1    : | | | enter: ptr: 0x35c0058
+T@1    : | | <_myfree
+T@1    : | | status: used: 0  changed: 0  w_requests: 0  writes: 0  r_requests: 0  reads: 0
+T@1    : | <end_key_cache
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x385140
+T@1    : | <_myfree
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x3856b8
+T@1    : | <_myfree
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x385658
+T@1    : | <_myfree
+T@1    : <delete_elements
+T@1    : >hash_free
+T@1    : | enter: hash: 0x1070ee10d
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x385708
+T@1    : | <_myfree
+T@1    : <hash_free
+T@1    : >my_free_file_info
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x385ce0
+T@1    : | <_myfree
+T@1    : <my_free_file_info
+T@1    : >_myfree
+T@1    : | enter: ptr: 0x385b88
+T@1    : <_myfree
+T@1    : >_myfree
+T@1    : | enter: ptr: 0x385bf8
+T@1    : <_myfree
+T@1    : >_myfree
+T@1    : | enter: ptr: 0x385c68
+T@1    : <_myfree
+T@1    : >free_root
+T@1    : | enter: root: 0x12ff14  flags: 0
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x385908
+T@1    : | <_myfree
+T@1    : <free_root
+T@1    : >_myfree
+T@1    : | enter: ptr: 0x38fd18
+T@1    : <_myfree
+T@1    : >_myfree
+T@1    : | enter: ptr: 0x38fd68
+T@1    : <_myfree
+T@1    : >_myfree
+T@1    : | enter: ptr: 0x385b18
+T@1    : <_myfree
+T@1    : >_myfree
+T@1    : | enter: ptr: 0x385820
+T@1    : <_myfree
+T@1    : >_myfree
+T@1    : | enter: ptr: 0x0
+T@1    : <_myfree
+T@1    : >_myfree
+T@1    : | enter: ptr: 0x0
+T@1    : <_myfree
+T@1    : >bitmap_free
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0x38fdb8
+T@1    : | <_myfree
+T@1    : <bitmap_free
+T@1    : >hash_free
+T@1    : | enter: hash: 0x1070dcbcd
+T@1    : | >_myfree
+T@1    : | | enter: ptr: 0xb08ea0
+T@1    : | <_myfree
+T@1    : <hash_free
+T@1    : >_myfree
+T@1    : | enter: ptr: 0x3850e8
+T@1    : <_myfree
+T@1    : >_myfree
+T@1    : | enter: ptr: 0xa17de0
+T@1    : <_myfree
+T@1    : >_myfree
+T@1    : | enter: ptr: 0xa10080
+T@1    : <_myfree
+T@1    : quit: Error messages freed
+T@1    : quit: got thread count lock
+T@1    : quit: done with cleanup
+T@1    : >my_end
+T@1    : | info: Shutting down: print_info: 1
+T@1    : | >my_once_free
+T@1    : | <my_once_free
+T@1    : | >TERMINATE
+T@1    : | | safe: sf_malloc_count: 5
+T@1    : | | safe: Memory that was not free'ed (9650 bytes):
+T@1    : | | safe:     92 bytes at 0x000b0ef90, allocated at line 2564 in '..\sql-common\client.c'
+T@1    : | | safe:   8136 bytes at 0x002ce2eb8, allocated at line  197 in '..\mysys\my_alloc.c'
+T@1    : | | safe:    616 bytes at 0x000b0ece0, allocated at line   51 in '.\mulalloc.c'
+T@1    : | | safe:      6 bytes at 0x000b09258, allocated at line  219 in '.\libmysqld.c'
+T@1    : | | safe:    800 bytes at 0x000b08b38, allocated at line  505 in '..\sql\sql_parse.cpp'
+T@1    : | | safe: Maximum memory usage: 8686617 bytes (8484k)
+T@1    : | <TERMINATE

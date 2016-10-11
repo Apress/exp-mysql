@@ -1,0 +1,3588 @@
+T@10768438: >mysql_real_connect
+T@10768438: | enter: host: (Null)  db: mysql  user: (Null)
+T@10768438: | >mysql_read_default_options
+T@10768438: | | enter: file: my  group: libmysqld_client
+T@10768438: | | >load_defaults
+T@10768438: | | | >init_alloc_root
+T@10768438: | | | | enter: root: 0xbfefd174
+T@10768438: | | | <init_alloc_root
+T@10768438: | | | >init_dynamic_array
+T@10768438: | | | | >my_malloc
+T@10768438: | | | | | my: size: 4  my_flags: 16
+T@10768438: | | | | | exit: ptr: 0x8a32648
+T@10768438: | | | | <my_malloc
+T@10768438: | | | <init_dynamic_array
+T@10768438: | | | >my_search_option_files
+T@10768438: | | | | >fn_ext
+T@10768438: | | | | | mfunkt: name: 'my'
+T@10768438: | | | | | >dirname_part
+T@10768438: | | | | | | enter: 'my'
+T@10768438: | | | | | <dirname_part
+T@10768438: | | | | <fn_ext
+T@10768438: | | | | >fn_format
+T@10768438: | | | | | enter: name: /etc/my.cnf  dir:   extension:   flag: 4
+T@10768438: | | | | | >dirname_part
+T@10768438: | | | | | | enter: '/etc/my.cnf'
+T@10768438: | | | | | <dirname_part
+T@10768438: | | | | | >unpack_dirname
+T@10768438: | | | | | | >dirname_part
+T@10768438: | | | | | | | enter: '/etc/'
+T@10768438: | | | | | | <dirname_part
+T@10768438: | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | enter: from: '/etc/'
+T@10768438: | | | | | | | exit: to: '/etc/'
+T@10768438: | | | | | | <cleanup_dirname
+T@10768438: | | | | | <unpack_dirname
+T@10768438: | | | | | >strlength
+T@10768438: | | | | | <strlength
+T@10768438: | | | | <fn_format
+T@10768438: | | | | >my_stat
+T@10768438: | | | | | my: path: '/etc/my.cnf', stat_area: 0xbfef9be0, MyFlags: 0
+T@10768438: | | | | | error: Got errno: 2 from stat
+T@10768438: | | | | <my_stat
+T@10768438: | | | | >fn_ext
+T@10768438: | | | | | mfunkt: name: 'my'
+T@10768438: | | | | | >dirname_part
+T@10768438: | | | | | | enter: 'my'
+T@10768438: | | | | | <dirname_part
+T@10768438: | | | | <fn_ext
+T@10768438: | | | | >fn_format
+T@10768438: | | | | | enter: name: ~/.my.cnf  dir:   extension:   flag: 4
+T@10768438: | | | | | >dirname_part
+T@10768438: | | | | | | enter: '~/.my.cnf'
+T@10768438: | | | | | <dirname_part
+T@10768438: | | | | | >unpack_dirname
+T@10768438: | | | | | | >dirname_part
+T@10768438: | | | | | | | enter: '~/'
+T@10768438: | | | | | | <dirname_part
+T@10768438: | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | enter: from: '~/'
+T@10768438: | | | | | | | exit: to: '~/'
+T@10768438: | | | | | | <cleanup_dirname
+T@10768438: | | | | | <unpack_dirname
+T@10768438: | | | | | >strlength
+T@10768438: | | | | | <strlength
+T@10768438: | | | | <fn_format
+T@10768438: | | | | >my_stat
+T@10768438: | | | | | my: path: '/root/.my.cnf', stat_area: 0xbfef9be0, MyFlags: 0
+T@10768438: | | | | | error: Got errno: 2 from stat
+T@10768438: | | | | <my_stat
+T@10768438: | | | | >fn_ext
+T@10768438: | | | | | mfunkt: name: 'my'
+T@10768438: | | | | | >dirname_part
+T@10768438: | | | | | | enter: 'my'
+T@10768438: | | | | | <dirname_part
+T@10768438: | | | | <fn_ext
+T@10768438: | | | | >fn_format
+T@10768438: | | | | | enter: name: /usr/local/etc/my.cnf  dir:   extension:   flag: 4
+T@10768438: | | | | | >dirname_part
+T@10768438: | | | | | | enter: '/usr/local/etc/my.cnf'
+T@10768438: | | | | | <dirname_part
+T@10768438: | | | | | >unpack_dirname
+T@10768438: | | | | | | >dirname_part
+T@10768438: | | | | | | | enter: '/usr/local/etc/'
+T@10768438: | | | | | | <dirname_part
+T@10768438: | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | enter: from: '/usr/local/etc/'
+T@10768438: | | | | | | | exit: to: '/usr/local/etc/'
+T@10768438: | | | | | | <cleanup_dirname
+T@10768438: | | | | | <unpack_dirname
+T@10768438: | | | | | >strlength
+T@10768438: | | | | | <strlength
+T@10768438: | | | | <fn_format
+T@10768438: | | | | >my_stat
+T@10768438: | | | | | my: path: '/usr/local/etc/my.cnf', stat_area: 0xbfef9be0, MyFlags: 0
+T@10768438: | | | | | error: Got errno: 2 from stat
+T@10768438: | | | | <my_stat
+T@10768438: | | | <my_search_option_files
+T@10768438: | | | >alloc_root
+T@10768438: | | | | enter: root: 0xbfefd174
+T@10768438: | | | | >my_malloc
+T@10768438: | | | | | my: size: 484  my_flags: 16
+T@10768438: | | | | | exit: ptr: 0x8a327e0
+T@10768438: | | | | <my_malloc
+T@10768438: | | | | exit: ptr: 0x8a327f0
+T@10768438: | | | <alloc_root
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x8a32648
+T@10768438: | | | <my_free
+T@10768438: | | <load_defaults
+T@10768438: | | >free_root
+T@10768438: | | | enter: root: 0xbfefd1a0  flags: 0
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x8a327e0
+T@10768438: | | | <my_free
+T@10768438: | | <free_root
+T@10768438: | <mysql_read_default_options
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x0
+T@10768438: | <my_free
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x89fdde8
+T@10768438: | <my_free
+T@10768438: | >read_user_name
+T@10768438: | <read_user_name
+T@10768438: | >my_malloc
+T@10768438: | | my: size: 5  my_flags: 0
+T@10768438: | | exit: ptr: 0x8a32648
+T@10768438: | <my_malloc
+T@10768438: | >my_malloc
+T@10768438: | | my: size: 6  my_flags: 16
+T@10768438: | | exit: ptr: 0x8a327e0
+T@10768438: | <my_malloc
+T@10768438: | >my_malloc
+T@10768438: | | my: size: 512  my_flags: 0
+T@10768438: | | exit: ptr: 0x8a327f0
+T@10768438: | <my_malloc
+T@10768438: | >my_malloc
+T@10768438: | | my: size: 5284  my_flags: 24
+T@10768438: | | exit: ptr: 0x8a329f8
+T@10768438: | <my_malloc
+T@10768438: | >hash_init
+T@10768438: | | enter: hash: 0x8a33128  size: 0
+T@10768438: | | >init_dynamic_array
+T@10768438: | | | >my_malloc
+T@10768438: | | | | my: size: 8184  my_flags: 16
+T@10768438: | | | | exit: ptr: 0x8a3d948
+T@10768438: | | | <my_malloc
+T@10768438: | | <init_dynamic_array
+T@10768438: | <hash_init
+T@10768438: | >init_alloc_root
+T@10768438: | | enter: root: 0x8a32a18
+T@10768438: | <init_alloc_root
+T@10768438: | >hash_init
+T@10768438: | | enter: hash: 0x8a3396c  size: 16
+T@10768438: | | >init_dynamic_array
+T@10768438: | | | >my_malloc
+T@10768438: | | | | my: size: 128  my_flags: 16
+T@10768438: | | | | exit: ptr: 0x8a33ea0
+T@10768438: | | | <my_malloc
+T@10768438: | | <init_dynamic_array
+T@10768438: | <hash_init
+T@10768438: | >hash_init
+T@10768438: | | enter: hash: 0x8a339a0  size: 16
+T@10768438: | | >init_dynamic_array
+T@10768438: | | | >my_malloc
+T@10768438: | | | | my: size: 128  my_flags: 16
+T@10768438: | | | | exit: ptr: 0x8a33f28
+T@10768438: | | | <my_malloc
+T@10768438: | | <init_dynamic_array
+T@10768438: | <hash_init
+T@10768438: | >init_alloc_root
+T@10768438: | | enter: root: 0x8a33c2c
+T@10768438: | <init_alloc_root
+T@10768438: | >my_malloc
+T@10768438: | | my: size: 33  my_flags: 16
+T@10768438: | | exit: ptr: 0x8a323f0
+T@10768438: | <my_malloc
+T@10768438: | >my_malloc
+T@10768438: | | my: size: 33  my_flags: 16
+T@10768438: | | exit: ptr: 0x8a33fb0
+T@10768438: | <my_malloc
+T@10768438: | >my_malloc
+T@10768438: | | my: size: 42  my_flags: 16
+T@10768438: | | exit: ptr: 0x8a33fd8
+T@10768438: | <my_malloc
+T@10768438: | >init_alloc_root
+T@10768438: | | enter: root: 0x8a33484
+T@10768438: | | >my_malloc
+T@10768438: | | | my: size: 1040  my_flags: 0
+T@10768438: | | | exit: ptr: 0x8a34008
+T@10768438: | | <my_malloc
+T@10768438: | <init_alloc_root
+T@10768438: | >hash_init
+T@10768438: | | enter: hash: 0x8a334fc  size: 16
+T@10768438: | | >init_dynamic_array
+T@10768438: | | | >my_malloc
+T@10768438: | | | | my: size: 128  my_flags: 16
+T@10768438: | | | | exit: ptr: 0x8a34420
+T@10768438: | | | <my_malloc
+T@10768438: | | <init_dynamic_array
+T@10768438: | <hash_init
+T@10768438: | >ha_enable_transaction
+T@10768438: | | >ha_commit_trans
+T@10768438: | | <ha_commit_trans
+T@10768438: | | >end_trans
+T@10768438: | | | >ha_commit_trans
+T@10768438: | | | <ha_commit_trans
+T@10768438: | | <end_trans
+T@10768438: | <ha_enable_transaction
+T@10768438: | >my_malloc
+T@10768438: | | my: size: 8208  my_flags: 0
+T@10768438: | | exit: ptr: 0x8a3f948
+T@10768438: | <my_malloc
+T@10768438: | >my_malloc
+T@10768438: | | my: size: 4112  my_flags: 0
+T@10768438: | | exit: ptr: 0x8a344a8
+T@10768438: | <my_malloc
+T@10768438: | >init_alloc_root
+T@10768438: | | enter: root: 0x8a322c8
+T@10768438: | <init_alloc_root
+T@10768438: | >my_malloc
+T@10768438: | | my: size: 5  my_flags: 0
+T@10768438: | | exit: ptr: 0x89fdde8
+T@10768438: | <my_malloc
+T@10768438: | >check_user
+T@10768438: | | >my_malloc
+T@10768438: | | | my: size: 6  my_flags: 16
+T@10768438: | | | exit: ptr: 0x8a32658
+T@10768438: | | <my_malloc
+T@10768438: | | >mysql_change_db
+T@10768438: | | | enter: name: 'mysql'
+T@10768438: | | | info: Use database: mysql
+T@10768438: | | | >unpack_dirname
+T@10768438: | | | | >dirname_part
+T@10768438: | | | | | enter: '/var/lib/mysql_embedded//mysql'
+T@10768438: | | | | <dirname_part
+T@10768438: | | | | >cleanup_dirname
+T@10768438: | | | | | enter: from: '/var/lib/mysql_embedded//mysql/'
+T@10768438: | | | | | exit: to: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | <cleanup_dirname
+T@10768438: | | | <unpack_dirname
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x0
+T@10768438: | | | <my_free
+T@10768438: | | | >unpack_dirname
+T@10768438: | | | | >dirname_part
+T@10768438: | | | | | enter: '/var/lib/mysql_embedded/mysql'
+T@10768438: | | | | <dirname_part
+T@10768438: | | | | >cleanup_dirname
+T@10768438: | | | | | enter: from: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | | exit: to: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | <cleanup_dirname
+T@10768438: | | | <unpack_dirname
+T@10768438: | | | >load_db_opt
+T@10768438: | | | | >hash_first
+T@10768438: | | | | <hash_first
+T@10768438: | | | | >my_open
+T@10768438: | | | | | my: Name: '/var/lib/mysql_embedded/mysql/db.opt'  Flags: 0  MyFlags: 0
+T@10768438: | | | | <my_open
+T@10768438: | | | | error: Got error 2 on open
+T@10768438: | | | <load_db_opt
+T@10768438: | | <mysql_change_db
+T@10768438: | | >send_ok
+T@10768438: | | | >my_multi_malloc
+T@10768438: | | | | >my_malloc
+T@10768438: | | | | | my: size: 616  my_flags: 48
+T@10768438: | | | | | exit: ptr: 0x8a354c0
+T@10768438: | | | | <my_malloc
+T@10768438: | | | <my_multi_malloc
+T@10768438: | | <send_ok
+T@10768438: | <check_user
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8a354c0
+T@10768438: | <my_free
+T@10768438: | exit: Mysql handler: 8a32030
+T@10768438: <mysql_real_connect
+T@10768438: Showing databases.: : Embedded Application.
+T@10768438: >mysql_real_query
+T@10768438: | enter: handle: 8a32030
+T@10768438: | query: Query = 'SHOW DATABASES;'
+T@10768438: | >mysql_send_query
+T@10768438: | | enter: rpl_parse: 0  rpl_pivot: 1
+T@10768438: | <mysql_send_query
+T@10768438: | >free_old_query
+T@10768438: | | >init_alloc_root
+T@10768438: | | | enter: root: 0x8a322c8
+T@10768438: | | <init_alloc_root
+T@10768438: | <free_old_query
+T@10768438: | >dispatch_command
+T@10768438: | | >alloc_root
+T@10768438: | | | enter: root: 0x8a32a18
+T@10768438: | | | exit: ptr: 0x8a3f958
+T@10768438: | | <alloc_root
+T@10768438: | | query: SHOW DATABASES
+T@10768438: | | >mysql_parse
+T@10768438: | | | >mysql_init_query
+T@10768438: | | | | >lex_start
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3f998
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | <lex_start
+T@10768438: | | | | >mysql_reset_thd_for_next_command
+T@10768438: | | | | <mysql_reset_thd_for_next_command
+T@10768438: | | | <mysql_init_query
+T@10768438: | | | >Query_cache::send_result_to_client
+T@10768438: | | | <Query_cache::send_result_to_client
+T@10768438: | | | >prepare_schema_table
+T@10768438: | | | | >mysql_schema_select
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3f9a0
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3f9b8
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3f9c8
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | | >st_select_lex::add_item_to_list
+T@10768438: | | | | | | info: Item: 0x8a3f9c8
+T@10768438: | | | | | <st_select_lex::add_item_to_list
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3fa50
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3fa58
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3fa68
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | | >add_table_to_list
+T@10768438: | | | | | | >alloc_root
+T@10768438: | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | exit: ptr: 0x8a3fa80
+T@10768438: | | | | | | <alloc_root
+T@10768438: | | | | | | >alloc_root
+T@10768438: | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | exit: ptr: 0x8a3fa90
+T@10768438: | | | | | | <alloc_root
+T@10768438: | | | | | <add_table_to_list
+T@10768438: | | | | <mysql_schema_select
+T@10768438: | | | <prepare_schema_table
+T@10768438: | | | >mysql_execute_command
+T@10768438: | | | | >mysql_reset_errors
+T@10768438: | | | | | >free_root
+T@10768438: | | | | | | enter: root: 0x8a33484  flags: 0
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x8a34008
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | <free_root
+T@10768438: | | | | <mysql_reset_errors
+T@10768438: | | | | >alloc_root
+T@10768438: | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | exit: ptr: 0x8a3fc28
+T@10768438: | | | | <alloc_root
+T@10768438: | | | | >open_and_lock_tables
+T@10768438: | | | | | >open_tables
+T@10768438: | | | | | | >init_alloc_root
+T@10768438: | | | | | | | enter: root: 0xbfefc858
+T@10768438: | | | | | | | >my_malloc
+T@10768438: | | | | | | | | my: size: 8040  my_flags: 0
+T@10768438: | | | | | | | | exit: ptr: 0x8a41960
+T@10768438: | | | | | | | <my_malloc
+T@10768438: | | | | | | <init_alloc_root
+T@10768438: | | | | | | >mysql_schema_table
+T@10768438: | | | | | | | >create_schema_table
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fc70
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fcb0
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fcc0
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fcc8
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fd08
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fd18
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fd20
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fd60
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fd80
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fd88
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fdc8
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fde0
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fde8
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fe28
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fe38
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fe40
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >TMP_TABLE_PARAM::init
+T@10768438: | | | | | | | | | enter: this: 0x8a3fe40
+T@10768438: | | | | | | | | <TMP_TABLE_PARAM::init
+T@10768438: | | | | | | | | >create_tmp_table
+T@10768438: | | | | | | | | | enter: distinct: 0  save_sum_fields: 0  rows_limit: 4294967295  group: 0
+T@10768438: | | | | | | | | | >fn_format
+T@10768438: | | | | | | | | | | enter: name: #sql_27f3_0  dir: /tmp/  extension:   flag: 6
+T@10768438: | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | enter: '#sql_27f3_0'
+T@10768438: | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | enter: '/tmp/'
+T@10768438: | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | | | enter: from: '/tmp/'
+T@10768438: | | | | | | | | | | | | exit: to: '/tmp/'
+T@10768438: | | | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | | | | >strlength
+T@10768438: | | | | | | | | | | <strlength
+T@10768438: | | | | | | | | | <fn_format
+T@10768438: | | | | | | | | | >init_alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0xbfefc708
+T@10768438: | | | | | | | | | <init_alloc_root
+T@10768438: | | | | | | | | | >multi_alloc_root
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0xbfefc708
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 2024  my_flags: 16
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a438d0
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a438e0
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | <multi_alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a3feb8
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a43ca4
+T@10768438: | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | my: size: 996  my_flags: 16
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a34008
+T@10768438: | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a34018
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a43ca4
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a34078
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a43ca4
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a340d8
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a43ca4
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a34138
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a43ca4
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a34198
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a43ca4
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a341f8
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a43ca4
+T@10768438: | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | my: size: 11008  my_flags: 16
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a440c0
+T@10768438: | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a440d0
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >handler::ha_open
+T@10768438: | | | | | | | | | | enter: name: /tmp/#sql_27f3_0  db_type: 6  db_stat: 3  mode: 2  lock_test: 4
+T@10768438: | | | | | | | | | | >heap_open
+T@10768438: | | | | | | | | | | | >heap_find
+T@10768438: | | | | | | | | | | | | enter: name: /tmp/#sql_27f3_0
+T@10768438: | | | | | | | | | | | <heap_find
+T@10768438: | | | | | | | | | | <heap_open
+T@10768438: | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | my: size: 0  my_flags: 16
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a32668
+T@10768438: | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | >fn_format
+T@10768438: | | | | | | | | | | | enter: name: /tmp/#sql_27f3_0  dir:   extension:   flag: 6
+T@10768438: | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | enter: '/tmp/#sql_27f3_0'
+T@10768438: | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | enter: '/tmp/'
+T@10768438: | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | | | | enter: from: '/tmp/'
+T@10768438: | | | | | | | | | | | | | exit: to: '/tmp/'
+T@10768438: | | | | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | | | | | >strlength
+T@10768438: | | | | | | | | | | | <strlength
+T@10768438: | | | | | | | | | | <fn_format
+T@10768438: | | | | | | | | | | >heap_create
+T@10768438: | | | | | | | | | | | >heap_find
+T@10768438: | | | | | | | | | | | | enter: name: /tmp/#sql_27f3_0
+T@10768438: | | | | | | | | | | | <heap_find
+T@10768438: | | | | | | | | | | | info: Initializing new table
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 380  my_flags: 32
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a354c0
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 17  my_flags: 0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a35640
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | >thr_lock_init
+T@10768438: | | | | | | | | | | | | >list_add
+T@10768438: | | | | | | | | | | | | | enter: root: 0x0  element: 0x8a35558
+T@10768438: | | | | | | | | | | | | <list_add
+T@10768438: | | | | | | | | | | | <thr_lock_init
+T@10768438: | | | | | | | | | | | >list_add
+T@10768438: | | | | | | | | | | | | enter: root: 0x0  element: 0x8a35620
+T@10768438: | | | | | | | | | | | <list_add
+T@10768438: | | | | | | | | | | <heap_create
+T@10768438: | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | my: ptr: 0x8a32668
+T@10768438: | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | >heap_open
+T@10768438: | | | | | | | | | | | >heap_find
+T@10768438: | | | | | | | | | | | | enter: name: /tmp/#sql_27f3_0
+T@10768438: | | | | | | | | | | | | exit: Old heap_database: 0x8a354c0
+T@10768438: | | | | | | | | | | | <heap_find
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 368  my_flags: 32
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a35658
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | >list_add
+T@10768438: | | | | | | | | | | | | enter: root: 0x0  element: 0x8a357bc
+T@10768438: | | | | | | | | | | | <list_add
+T@10768438: | | | | | | | | | | | exit: heap: 0x8a35658  reclength: 3656  records_in_block: 36
+T@10768438: | | | | | | | | | | <heap_open
+T@10768438: | | | | | | | | | | >heap_extra
+T@10768438: | | | | | | | | | | <heap_extra
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a43ca4
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a342c8
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | <handler::ha_open
+T@10768438: | | | | | | | | | >heap_extra
+T@10768438: | | | | | | | | | <heap_extra
+T@10768438: | | | | | | | | <create_tmp_table
+T@10768438: | | | | | | | <create_schema_table
+T@10768438: | | | | | | | >alloc_root
+T@10768438: | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | exit: ptr: 0x8a40028
+T@10768438: | | | | | | | <alloc_root
+T@10768438: | | | | | | | >find_field_in_table_ref
+T@10768438: | | | | | | | | enter: table: 'SCHEMATA'  field name: 'SCHEMA_NAME'  item name: 'Database'  ref 0x8a40028
+T@10768438: | | | | | | | | >find_field_in_table
+T@10768438: | | | | | | | | | enter: table: 'SCHEMATA', field name: 'SCHEMA_NAME'
+T@10768438: | | | | | | | | <find_field_in_table
+T@10768438: | | | | | | | <find_field_in_table_ref
+T@10768438: | | | | | | <mysql_schema_table
+T@10768438: | | | | | | >free_root
+T@10768438: | | | | | | | enter: root: 0xbfefc858  flags: 0
+T@10768438: | | | | | | | >my_free
+T@10768438: | | | | | | | | my: ptr: 0x8a41960
+T@10768438: | | | | | | | <my_free
+T@10768438: | | | | | | <free_root
+T@10768438: | | | | | <open_tables
+T@10768438: | | | | | >lock_tables
+T@10768438: | | | | | | >alloc_root
+T@10768438: | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | exit: ptr: 0x8a40030
+T@10768438: | | | | | | <alloc_root
+T@10768438: | | | | | | >mysql_lock_tables
+T@10768438: | | | | | | | >get_lock_data
+T@10768438: | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | my: size: 16  my_flags: 0
+T@10768438: | | | | | | | | | exit: ptr: 0x8a343f0
+T@10768438: | | | | | | | | <my_malloc
+T@10768438: | | | | | | | <get_lock_data
+T@10768438: | | | | | | | >lock_external
+T@10768438: | | | | | | | <lock_external
+T@10768438: | | | | | | | >thr_multi_lock
+T@10768438: | | | | | | | | lock: data: 0x8a34400  count: 0
+T@10768438: | | | | | | | <thr_multi_lock
+T@10768438: | | | | | | <mysql_lock_tables
+T@10768438: | | | | | <lock_tables
+T@10768438: | | | | <open_and_lock_tables
+T@10768438: | | | | >alloc_root
+T@10768438: | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | exit: ptr: 0x8a40030
+T@10768438: | | | | <alloc_root
+T@10768438: | | | | >Query_cache::store_query
+T@10768438: | | | | <Query_cache::store_query
+T@10768438: | | | | >handle_select
+T@10768438: | | | | | >mysql_select
+T@10768438: | | | | | | >alloc_root
+T@10768438: | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | exit: ptr: 0x8a40040
+T@10768438: | | | | | | <alloc_root
+T@10768438: | | | | | | >TMP_TABLE_PARAM::init
+T@10768438: | | | | | | | enter: this: 0x8a40ca8
+T@10768438: | | | | | | <TMP_TABLE_PARAM::init
+T@10768438: | | | | | | >JOIN::prepare
+T@10768438: | | | | | | | >setup_tables
+T@10768438: | | | | | | | <setup_tables
+T@10768438: | | | | | | | >alloc_root
+T@10768438: | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | exit: ptr: 0x8a40e10
+T@10768438: | | | | | | | <alloc_root
+T@10768438: | | | | | | | >setup_fields
+T@10768438: | | | | | | | <setup_fields
+T@10768438: | | | | | | | >setup_without_group
+T@10768438: | | | | | | | | >setup_conds
+T@10768438: | | | | | | | | <setup_conds
+T@10768438: | | | | | | | <setup_without_group
+T@10768438: | | | | | | | >setup_procedure
+T@10768438: | | | | | | | <setup_procedure
+T@10768438: | | | | | | | >alloc_func_list
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a40eb0
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | <alloc_func_list
+T@10768438: | | | | | | <JOIN::prepare
+T@10768438: | | | | | | >JOIN::optimize
+T@10768438: | | | | | | | >simplify_joins
+T@10768438: | | | | | | | <simplify_joins
+T@10768438: | | | | | | | >build_bitmap_for_nested_joins
+T@10768438: | | | | | | | <build_bitmap_for_nested_joins
+T@10768438: | | | | | | | >optimize_cond
+T@10768438: | | | | | | | <optimize_cond
+T@10768438: | | | | | | | >optimize_cond
+T@10768438: | | | | | | | <optimize_cond
+T@10768438: | | | | | | | >get_sort_by_table
+T@10768438: | | | | | | | <get_sort_by_table
+T@10768438: | | | | | | | >make_join_statistics
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a40eb8
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a41020
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a41118
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >heap_info
+T@10768438: | | | | | | | | <heap_info
+T@10768438: | | | | | | | | >choose_plan
+T@10768438: | | | | | | | | | >reset_nj_counters
+T@10768438: | | | | | | | | | <reset_nj_counters
+T@10768438: | | | | | | | | | >greedy_search
+T@10768438: | | | | | | | | | | >best_extension_by_limited_search
+part_plan; idx:0, best: DBL_MAX, current:0
+     POSITIONS: 
+BEST_POSITIONS: 
+      BEST_REF: /tmp/#sql_27f3_0(2,2,10) 
+T@10768438: | | | | | | | | | | | >best_access_path
+T@10768438: | | | | | | | | | | | <best_access_path
+full_plan; idx: 0, best: 10.499, current: 10.5
+     POSITIONS: 
+BEST_POSITIONS: 
+      BEST_REF: /tmp/#sql_27f3_0(2,2,10) 
+T@10768438: | | | | | | | | | | <best_extension_by_limited_search
+optimal; idx: 1, best: 10.499, current: 0
+     POSITIONS: /tmp/#sql_27f3_0 
+BEST_POSITIONS: /tmp/#sql_27f3_0 
+      BEST_REF: /tmp/#sql_27f3_0(2,2,10) 
+T@10768438: | | | | | | | | | <greedy_search
+T@10768438: | | | | | | | | <choose_plan
+T@10768438: | | | | | | | <make_join_statistics
+T@10768438: | | | | | | | >get_best_combination
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a41120
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | info: type: 0
+T@10768438: | | | | | | | <get_best_combination
+T@10768438: | | | | | | | >make_select
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a41288
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | <make_select
+T@10768438: | | | | | | | >reset_nj_counters
+T@10768438: | | | | | | | <reset_nj_counters
+T@10768438: | | | | | | | >make_outerjoin_info
+T@10768438: | | | | | | | <make_outerjoin_info
+T@10768438: | | | | | | | >make_join_select
+T@10768438: | | | | | | | | >add_not_null_conds
+T@10768438: | | | | | | | | <add_not_null_conds
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a41388
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | <make_join_select
+T@10768438: | | | | | | | >remove_const
+T@10768438: | | | | | | | | exit: simple_order: 1
+T@10768438: | | | | | | | <remove_const
+T@10768438: | | | | | | | >remove_const
+T@10768438: | | | | | | | | exit: simple_order: 1
+T@10768438: | | | | | | | <remove_const
+T@10768438: | | | | | | | >make_join_readinfo
+T@10768438: | | | | | | | <make_join_readinfo
+T@10768438: | | | | | | | >TEST_join
+
+Info about JOIN
+SCHEMATA          type: ALL      q_keys: 0  refs: 0  key: -1  len: 0
+                  select used
+T@10768438: | | | | | | | <TEST_join
+T@10768438: | | | | | | <JOIN::optimize
+T@10768438: | | | | | | >JOIN::exec
+T@10768438: | | | | | | | >get_schema_tables_result
+T@10768438: | | | | | | | | >fill_schema_shemata
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a41488
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a414a0
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >mysql_find_files
+T@10768438: | | | | | | | | | | >my_dir
+T@10768438: | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/' MyFlags: 1024
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 64  my_flags: 1024
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a42980
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | >init_dynamic_array
+T@10768438: | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | my: size: 8192  my_flags: 16
+T@10768438: | | | | | | | | | | | | | exit: ptr: 0x8a46bc8
+T@10768438: | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | <init_dynamic_array
+T@10768438: | | | | | | | | | | | >init_alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | my: size: 32784  my_flags: 0
+T@10768438: | | | | | | | | | | | | | exit: ptr: 0x8a48bd0
+T@10768438: | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | <init_alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48be0
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48be8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/.', stat_area: 0x8a48be8, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48c48
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48c50
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/..', stat_area: 0x8a48c50, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48cb0
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48cb8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/test', stat_area: 0x8a48cb8, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48d18
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48d20
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/mysql', stat_area: 0x8a48d20, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48d80
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48d88
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/my.cnf~', stat_area: 0x8a48d88, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48de8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48df0
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/my.cnf', stat_area: 0x8a48df0, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48e50
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48e58
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/my.ini', stat_area: 0x8a48e58, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48eb8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48ec8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/ib_logfile0', stat_area: 0x8a48ec8, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48f28
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48f38
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/ib_logfile1', stat_area: 0x8a48f38, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48f98
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48fa0
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/ibdata1', stat_area: 0x8a48fa0, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49000
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49010
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/linux.err', stat_area: 0x8a49010, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | <my_dir
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a414a8
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a414b0
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a414b8
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a414c0
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | info: found: 3 files
+T@10768438: | | | | | | | | | | >my_dirend
+T@10768438: | | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | | my: ptr: 0x8a46bc8
+T@10768438: | | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | | >free_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a429a0  flags: 0
+T@10768438: | | | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | | | my: ptr: 0x8a48bd0
+T@10768438: | | | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | | <free_root
+T@10768438: | | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | | my: ptr: 0x8a42980
+T@10768438: | | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | <my_dirend
+T@10768438: | | | | | | | | | | >ha_find_files
+T@10768438: | | | | | | | | | | | enter: db: (null), path: /var/lib/mysql_embedded/, wild: (null), dir: 1
+T@10768438: | | | | | | | | | | <ha_find_files
+T@10768438: | | | | | | | | | <mysql_find_files
+T@10768438: | | | | | | | | | >heap_write
+T@10768438: | | | | | | | | | | >next_free_record_pos
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 131760  my_flags: 0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a46bc8
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | exit: Used new position: 8a46bc8
+T@10768438: | | | | | | | | | | <next_free_record_pos
+T@10768438: | | | | | | | | | <heap_write
+T@10768438: | | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | enter: '/var/lib/mysql_embedded//mysql'
+T@10768438: | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | | enter: from: '/var/lib/mysql_embedded//mysql/'
+T@10768438: | | | | | | | | | | | exit: to: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | | | >load_db_opt
+T@10768438: | | | | | | | | | | >hash_first
+T@10768438: | | | | | | | | | | <hash_first
+T@10768438: | | | | | | | | | | >my_open
+T@10768438: | | | | | | | | | | | my: Name: '/var/lib/mysql_embedded/mysql/db.opt'  Flags: 0  MyFlags: 0
+T@10768438: | | | | | | | | | | <my_open
+T@10768438: | | | | | | | | | | error: Got error 2 on open
+T@10768438: | | | | | | | | | <load_db_opt
+T@10768438: | | | | | | | | | >heap_write
+T@10768438: | | | | | | | | | | >next_free_record_pos
+T@10768438: | | | | | | | | | | | exit: Used new position: 8a47a14
+T@10768438: | | | | | | | | | | <next_free_record_pos
+T@10768438: | | | | | | | | | <heap_write
+T@10768438: | | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | enter: '/var/lib/mysql_embedded//test'
+T@10768438: | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | | enter: from: '/var/lib/mysql_embedded//test/'
+T@10768438: | | | | | | | | | | | exit: to: '/var/lib/mysql_embedded/test/'
+T@10768438: | | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | | | >load_db_opt
+T@10768438: | | | | | | | | | | >hash_first
+T@10768438: | | | | | | | | | | <hash_first
+T@10768438: | | | | | | | | | | >my_open
+T@10768438: | | | | | | | | | | | my: Name: '/var/lib/mysql_embedded/test/db.opt'  Flags: 0  MyFlags: 0
+T@10768438: | | | | | | | | | | <my_open
+T@10768438: | | | | | | | | | | error: Got error 2 on open
+T@10768438: | | | | | | | | | <load_db_opt
+T@10768438: | | | | | | | | | >heap_write
+T@10768438: | | | | | | | | | | >next_free_record_pos
+T@10768438: | | | | | | | | | | | exit: Used new position: 8a48860
+T@10768438: | | | | | | | | | | <next_free_record_pos
+T@10768438: | | | | | | | | | <heap_write
+T@10768438: | | | | | | | | <fill_schema_shemata
+T@10768438: | | | | | | | <get_schema_tables_result
+T@10768438: | | | | | | | info: Sending data
+T@10768438: | | | | | | | >send_fields
+T@10768438: | | | | | | | | >my_multi_malloc
+T@10768438: | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | my: size: 616  my_flags: 48
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a41960
+T@10768438: | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | <my_multi_malloc
+T@10768438: | | | | | | | | >init_alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41970
+T@10768438: | | | | | | | | <init_alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41970
+T@10768438: | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | my: size: 8164  my_flags: 16
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a66e80
+T@10768438: | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | exit: ptr: 0x8a66e90
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41970
+T@10768438: | | | | | | | | | exit: ptr: 0x8a66ee0
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41970
+T@10768438: | | | | | | | | | exit: ptr: 0x8a66ee8
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41970
+T@10768438: | | | | | | | | | exit: ptr: 0x8a66ef8
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41970
+T@10768438: | | | | | | | | | exit: ptr: 0x8a66f08
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41970
+T@10768438: | | | | | | | | | exit: ptr: 0x8a66f10
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41970
+T@10768438: | | | | | | | | | exit: ptr: 0x8a66f20
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | <send_fields
+T@10768438: | | | | | | | >do_select
+T@10768438: | | | | | | | | >init_read_record
+T@10768438: | | | | | | | | | info: using rr_sequential
+T@10768438: | | | | | | | | | >ha_rnd_init
+T@10768438: | | | | | | | | | <ha_rnd_init
+T@10768438: | | | | | | | | | >heap_scan_init
+T@10768438: | | | | | | | | | <heap_scan_init
+T@10768438: | | | | | | | | | >heap_extra
+T@10768438: | | | | | | | | | <heap_extra
+T@10768438: | | | | | | | | <init_read_record
+T@10768438: | | | | | | | | >heap_scan
+T@10768438: | | | | | | | | <heap_scan
+T@10768438: | | | | | | | | info: select cond 0x0
+T@10768438: | | | | | | | | >end_send
+T@10768438: | | | | | | | | | >send_data
+T@10768438: | | | | | | | | | | >send_data
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41970
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a66f28
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | <send_data
+T@10768438: | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | my: size: 24  my_flags: 16
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a41bd0
+T@10768438: | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a41970
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a66f40
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | <send_data
+T@10768438: | | | | | | | | <end_send
+T@10768438: | | | | | | | | >heap_scan
+T@10768438: | | | | | | | | <heap_scan
+T@10768438: | | | | | | | | info: select cond 0x0
+T@10768438: | | | | | | | | >end_send
+T@10768438: | | | | | | | | | >send_data
+T@10768438: | | | | | | | | | | >send_data
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41970
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a66f58
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | <send_data
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a41970
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a66f70
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | <send_data
+T@10768438: | | | | | | | | <end_send
+T@10768438: | | | | | | | | >heap_scan
+T@10768438: | | | | | | | | <heap_scan
+T@10768438: | | | | | | | | info: select cond 0x0
+T@10768438: | | | | | | | | >end_send
+T@10768438: | | | | | | | | | >send_data
+T@10768438: | | | | | | | | | | >send_data
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41970
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a66f80
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | <send_data
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a41970
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a66f98
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | <send_data
+T@10768438: | | | | | | | | <end_send
+T@10768438: | | | | | | | | >heap_scan
+T@10768438: | | | | | | | | <heap_scan
+T@10768438: | | | | | | | | >end_send
+T@10768438: | | | | | | | | <end_send
+T@10768438: | | | | | | | | >JOIN::join_free
+T@10768438: | | | | | | | | | >JOIN::cleanup
+T@10768438: | | | | | | | | | | >free_io_cache
+T@10768438: | | | | | | | | | | <free_io_cache
+T@10768438: | | | | | | | | | | >close_cached_file
+T@10768438: | | | | | | | | | | <close_cached_file
+T@10768438: | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | my: ptr: 0x0
+T@10768438: | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | >ha_rnd_end
+T@10768438: | | | | | | | | | | <ha_rnd_end
+T@10768438: | | | | | | | | | | >heap_extra
+T@10768438: | | | | | | | | | | <heap_extra
+T@10768438: | | | | | | | | | <JOIN::cleanup
+T@10768438: | | | | | | | | | >mysql_unlock_read_tables
+T@10768438: | | | | | | | | | <mysql_unlock_read_tables
+T@10768438: | | | | | | | | <JOIN::join_free
+T@10768438: | | | | | | | | >mysql_unlock_tables
+T@10768438: | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | my: ptr: 0x8a343f0
+T@10768438: | | | | | | | | | <my_free
+T@10768438: | | | | | | | | <mysql_unlock_tables
+T@10768438: | | | | | | | | info: 3 records output
+T@10768438: | | | | | | | <do_select
+T@10768438: | | | | | | <JOIN::exec
+T@10768438: | | | | | | >st_select_lex::cleanup()
+T@10768438: | | | | | | | >JOIN::destroy
+T@10768438: | | | | | | | | >JOIN::cleanup
+T@10768438: | | | | | | | | <JOIN::cleanup
+T@10768438: | | | | | | | | >close_cached_file
+T@10768438: | | | | | | | | <close_cached_file
+T@10768438: | | | | | | | <JOIN::destroy
+T@10768438: | | | | | | <st_select_lex::cleanup()
+T@10768438: | | | | | <mysql_select
+T@10768438: | | | | | info: res: 0  report_error: 0
+T@10768438: | | | | <handle_select
+T@10768438: | | | <mysql_execute_command
+T@10768438: | | | >query_cache_end_of_result
+T@10768438: | | | <query_cache_end_of_result
+T@10768438: | | | >st_select_lex_unit::cleanup
+T@10768438: | | | | >st_select_lex::cleanup()
+T@10768438: | | | | <st_select_lex::cleanup()
+T@10768438: | | | <st_select_lex_unit::cleanup
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x0
+T@10768438: | | | <my_free
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x0
+T@10768438: | | | <my_free
+T@10768438: | | | >Query_arena::free_items
+T@10768438: | | | | >Item_field::cleanup
+T@10768438: | | | | | >Item_ident::cleanup
+T@10768438: | | | | | | >Item::cleanup
+T@10768438: | | | | | | <Item::cleanup
+T@10768438: | | | | | <Item_ident::cleanup
+T@10768438: | | | | <Item_field::cleanup
+T@10768438: | | | <Query_arena::free_items
+T@10768438: | | <mysql_parse
+T@10768438: | | info: query ready
+T@10768438: | | >close_thread_tables
+T@10768438: | | | >free_tmp_table
+T@10768438: | | | | enter: table: SCHEMATA
+T@10768438: | | | | >heap_close
+T@10768438: | | | | | >hp_close
+T@10768438: | | | | | | >heap_check_heap
+T@10768438: | | | | | | <heap_check_heap
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x8a35658
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | <hp_close
+T@10768438: | | | | <heap_close
+T@10768438: | | | | >fn_format
+T@10768438: | | | | | enter: name: /tmp/#sql_27f3_0  dir:   extension:   flag: 6
+T@10768438: | | | | | >dirname_part
+T@10768438: | | | | | | enter: '/tmp/#sql_27f3_0'
+T@10768438: | | | | | <dirname_part
+T@10768438: | | | | | >unpack_dirname
+T@10768438: | | | | | | >dirname_part
+T@10768438: | | | | | | | enter: '/tmp/'
+T@10768438: | | | | | | <dirname_part
+T@10768438: | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | enter: from: '/tmp/'
+T@10768438: | | | | | | | exit: to: '/tmp/'
+T@10768438: | | | | | | <cleanup_dirname
+T@10768438: | | | | | <unpack_dirname
+T@10768438: | | | | | >strlength
+T@10768438: | | | | | <strlength
+T@10768438: | | | | <fn_format
+T@10768438: | | | | >heap_delete_table
+T@10768438: | | | | | >heap_find
+T@10768438: | | | | | | enter: name: /tmp/#sql_27f3_0
+T@10768438: | | | | | | exit: Old heap_database: 0x8a354c0
+T@10768438: | | | | | <heap_find
+T@10768438: | | | | | >hp_clear
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x8a46bc8
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | | >hp_clear_keys
+T@10768438: | | | | | | <hp_clear_keys
+T@10768438: | | | | | <hp_clear
+T@10768438: | | | | | >thr_lock_delete
+T@10768438: | | | | | <thr_lock_delete
+T@10768438: | | | | | >my_free
+T@10768438: | | | | | | my: ptr: 0x8a35640
+T@10768438: | | | | | <my_free
+T@10768438: | | | | | >my_free
+T@10768438: | | | | | | my: ptr: 0x8a354c0
+T@10768438: | | | | | <my_free
+T@10768438: | | | | <heap_delete_table
+T@10768438: | | | | >free_io_cache
+T@10768438: | | | | <free_io_cache
+T@10768438: | | | | >free_root
+T@10768438: | | | | | enter: root: 0xbfefcedc  flags: 0
+T@10768438: | | | | | >my_free
+T@10768438: | | | | | | my: ptr: 0x8a440c0
+T@10768438: | | | | | <my_free
+T@10768438: | | | | | >my_free
+T@10768438: | | | | | | my: ptr: 0x8a438d0
+T@10768438: | | | | | <my_free
+T@10768438: | | | | | >my_free
+T@10768438: | | | | | | my: ptr: 0x8a34008
+T@10768438: | | | | | <my_free
+T@10768438: | | | | <free_root
+T@10768438: | | | <free_tmp_table
+T@10768438: | | | info: thd->open_tables: (nil)
+T@10768438: | | <close_thread_tables
+T@10768438: | | >free_root
+T@10768438: | | | enter: root: 0x8a32a18  flags: 1
+T@10768438: | | <free_root
+T@10768438: | <dispatch_command
+T@10768438: <mysql_real_query
+T@10768438: >mysql_store_result
+T@10768438: | >my_malloc
+T@10768438: | | my: size: 88  my_flags: 48
+T@10768438: | | exit: ptr: 0x8a354c0
+T@10768438: | <my_malloc
+T@10768438: <mysql_store_result
+T@10768438: >mysql_fetch_row
+T@10768438: <mysql_fetch_row
+T@10768438: >mysql_fetch_row
+T@10768438: <mysql_fetch_row
+T@10768438: >mysql_fetch_row
+T@10768438: <mysql_fetch_row
+T@10768438: >mysql_fetch_row
+T@10768438: | info: end of data
+T@10768438: <mysql_fetch_row
+T@10768438: >mysql_real_query
+T@10768438: | enter: handle: 8a32030
+T@10768438: | query: Query = 'CREATE DATABASE testdb1;'
+T@10768438: | >mysql_send_query
+T@10768438: | | enter: rpl_parse: 0  rpl_pivot: 1
+T@10768438: | <mysql_send_query
+T@10768438: | >free_old_query
+T@10768438: | | >init_alloc_root
+T@10768438: | | | enter: root: 0x8a322c8
+T@10768438: | | <init_alloc_root
+T@10768438: | <free_old_query
+T@10768438: | >dispatch_command
+T@10768438: | | >alloc_root
+T@10768438: | | | enter: root: 0x8a32a18
+T@10768438: | | | exit: ptr: 0x8a3f958
+T@10768438: | | <alloc_root
+T@10768438: | | query: CREATE DATABASE testdb1
+T@10768438: | | >mysql_parse
+T@10768438: | | | >mysql_init_query
+T@10768438: | | | | >lex_start
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3f9a0
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | <lex_start
+T@10768438: | | | | >mysql_reset_thd_for_next_command
+T@10768438: | | | | <mysql_reset_thd_for_next_command
+T@10768438: | | | <mysql_init_query
+T@10768438: | | | >Query_cache::send_result_to_client
+T@10768438: | | | <Query_cache::send_result_to_client
+T@10768438: | | | >alloc_root
+T@10768438: | | | | enter: root: 0x8a32a18
+T@10768438: | | | | exit: ptr: 0x8a3f9a8
+T@10768438: | | | <alloc_root
+T@10768438: | | | >mysql_execute_command
+T@10768438: | | | | >end_active_trans
+T@10768438: | | | | <end_active_trans
+T@10768438: | | | | >alloc_root
+T@10768438: | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | exit: ptr: 0x8a3f9b0
+T@10768438: | | | | <alloc_root
+T@10768438: | | | | >check_access
+T@10768438: | | | | | enter: db: testdb1  want_access: 16  master_access: 67108863
+T@10768438: | | | | <check_access
+T@10768438: | | | | >mysql_create_db
+T@10768438: | | | | | >wait_if_global_read_lock
+T@10768438: | | | | | <wait_if_global_read_lock
+T@10768438: | | | | | >unpack_dirname
+T@10768438: | | | | | | >dirname_part
+T@10768438: | | | | | | | enter: '/var/lib/mysql_embedded//testdb1'
+T@10768438: | | | | | | <dirname_part
+T@10768438: | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | enter: from: '/var/lib/mysql_embedded//testdb1/'
+T@10768438: | | | | | | | exit: to: '/var/lib/mysql_embedded/testdb1/'
+T@10768438: | | | | | | <cleanup_dirname
+T@10768438: | | | | | <unpack_dirname
+T@10768438: | | | | | >my_stat
+T@10768438: | | | | | | my: path: '/var/lib/mysql_embedded/testdb1', stat_area: 0xbfefc85c, MyFlags: 0
+T@10768438: | | | | | | error: Got errno: 2 from stat
+T@10768438: | | | | | <my_stat
+T@10768438: | | | | | >my_dir
+T@10768438: | | | | | | enter: dir: /var/lib/mysql_embedded/testdb1
+T@10768438: | | | | | <my_dir
+T@10768438: | | | | | >put_dbopt
+T@10768438: | | | | | | >hash_first
+T@10768438: | | | | | | <hash_first
+T@10768438: | | | | | | >my_multi_malloc
+T@10768438: | | | | | | | >my_malloc
+T@10768438: | | | | | | | | my: size: 56  my_flags: 48
+T@10768438: | | | | | | | | exit: ptr: 0x8a35520
+T@10768438: | | | | | | | <my_malloc
+T@10768438: | | | | | | <my_multi_malloc
+T@10768438: | | | | | <put_dbopt
+T@10768438: | | | | | >my_create
+T@10768438: | | | | | | my: Name: '/var/lib/mysql_embedded/testdb1/db.opt' CreateFlags: 0  AccessFlags: 514  MyFlags: 16
+T@10768438: | | | | | <my_create
+T@10768438: | | | | | >my_malloc
+T@10768438: | | | | | | my: size: 39  my_flags: 16
+T@10768438: | | | | | | exit: ptr: 0x8a35560
+T@10768438: | | | | | <my_malloc
+T@10768438: | | | | | exit: fd: 12
+T@10768438: | | | | | >my_write
+T@10768438: | | | | | | my: Fd: 12  Buffer: 0xbfefc49c  Count: 65  MyFlags: 20
+T@10768438: | | | | | <my_write
+T@10768438: | | | | | >my_close
+T@10768438: | | | | | | my: fd: 12  MyFlags: 0
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x8a35560
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | <my_close
+T@10768438: | | | | | >send_ok
+T@10768438: | | | | | | >my_multi_malloc
+T@10768438: | | | | | | | >my_malloc
+T@10768438: | | | | | | | | my: size: 616  my_flags: 48
+T@10768438: | | | | | | | | exit: ptr: 0x8a35560
+T@10768438: | | | | | | | <my_malloc
+T@10768438: | | | | | | <my_multi_malloc
+T@10768438: | | | | | <send_ok
+T@10768438: | | | | | >start_waiting_global_read_lock
+T@10768438: | | | | | <start_waiting_global_read_lock
+T@10768438: | | | | <mysql_create_db
+T@10768438: | | | <mysql_execute_command
+T@10768438: | | | >query_cache_end_of_result
+T@10768438: | | | <query_cache_end_of_result
+T@10768438: | | | >st_select_lex_unit::cleanup
+T@10768438: | | | | >st_select_lex::cleanup()
+T@10768438: | | | | <st_select_lex::cleanup()
+T@10768438: | | | <st_select_lex_unit::cleanup
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x0
+T@10768438: | | | <my_free
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x0
+T@10768438: | | | <my_free
+T@10768438: | | | >Query_arena::free_items
+T@10768438: | | | <Query_arena::free_items
+T@10768438: | | <mysql_parse
+T@10768438: | | info: query ready
+T@10768438: | | >free_root
+T@10768438: | | | enter: root: 0x8a32a18  flags: 1
+T@10768438: | | <free_root
+T@10768438: | <dispatch_command
+T@10768438: <mysql_real_query
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x8a35560
+T@10768438: <my_free
+T@10768438: >mysql_real_query
+T@10768438: | enter: handle: 8a32030
+T@10768438: | query: Query = 'SHOW DATABASES;'
+T@10768438: | >mysql_send_query
+T@10768438: | | enter: rpl_parse: 0  rpl_pivot: 1
+T@10768438: | <mysql_send_query
+T@10768438: | >free_old_query
+T@10768438: | | >init_alloc_root
+T@10768438: | | | enter: root: 0x8a322c8
+T@10768438: | | <init_alloc_root
+T@10768438: | <free_old_query
+T@10768438: | >dispatch_command
+T@10768438: | | >alloc_root
+T@10768438: | | | enter: root: 0x8a32a18
+T@10768438: | | | exit: ptr: 0x8a3f958
+T@10768438: | | <alloc_root
+T@10768438: | | query: SHOW DATABASES
+T@10768438: | | >mysql_parse
+T@10768438: | | | >mysql_init_query
+T@10768438: | | | | >lex_start
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3f998
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | <lex_start
+T@10768438: | | | | >mysql_reset_thd_for_next_command
+T@10768438: | | | | <mysql_reset_thd_for_next_command
+T@10768438: | | | <mysql_init_query
+T@10768438: | | | >Query_cache::send_result_to_client
+T@10768438: | | | <Query_cache::send_result_to_client
+T@10768438: | | | >prepare_schema_table
+T@10768438: | | | | >mysql_schema_select
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3f9a0
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3f9b8
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3f9c8
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | | >st_select_lex::add_item_to_list
+T@10768438: | | | | | | info: Item: 0x8a3f9c8
+T@10768438: | | | | | <st_select_lex::add_item_to_list
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3fa50
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3fa58
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3fa68
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | | >add_table_to_list
+T@10768438: | | | | | | >alloc_root
+T@10768438: | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | exit: ptr: 0x8a3fa80
+T@10768438: | | | | | | <alloc_root
+T@10768438: | | | | | | >alloc_root
+T@10768438: | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | exit: ptr: 0x8a3fa90
+T@10768438: | | | | | | <alloc_root
+T@10768438: | | | | | <add_table_to_list
+T@10768438: | | | | <mysql_schema_select
+T@10768438: | | | <prepare_schema_table
+T@10768438: | | | >mysql_execute_command
+T@10768438: | | | | >mysql_reset_errors
+T@10768438: | | | | | >free_root
+T@10768438: | | | | | | enter: root: 0x8a33484  flags: 0
+T@10768438: | | | | | <free_root
+T@10768438: | | | | <mysql_reset_errors
+T@10768438: | | | | >alloc_root
+T@10768438: | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | exit: ptr: 0x8a3fc28
+T@10768438: | | | | <alloc_root
+T@10768438: | | | | >open_and_lock_tables
+T@10768438: | | | | | >open_tables
+T@10768438: | | | | | | >init_alloc_root
+T@10768438: | | | | | | | enter: root: 0xbfefc858
+T@10768438: | | | | | | | >my_malloc
+T@10768438: | | | | | | | | my: size: 8040  my_flags: 0
+T@10768438: | | | | | | | | exit: ptr: 0x8a41bf0
+T@10768438: | | | | | | | <my_malloc
+T@10768438: | | | | | | <init_alloc_root
+T@10768438: | | | | | | >mysql_schema_table
+T@10768438: | | | | | | | >create_schema_table
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fc70
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fcb0
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fcc0
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fcc8
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fd08
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fd18
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fd20
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fd60
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fd80
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fd88
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fdc8
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fde0
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fde8
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fe28
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fe38
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a3fe40
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >TMP_TABLE_PARAM::init
+T@10768438: | | | | | | | | | enter: this: 0x8a3fe40
+T@10768438: | | | | | | | | <TMP_TABLE_PARAM::init
+T@10768438: | | | | | | | | >create_tmp_table
+T@10768438: | | | | | | | | | enter: distinct: 0  save_sum_fields: 0  rows_limit: 4294967295  group: 0
+T@10768438: | | | | | | | | | >fn_format
+T@10768438: | | | | | | | | | | enter: name: #sql_27f3_0  dir: /tmp/  extension:   flag: 6
+T@10768438: | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | enter: '#sql_27f3_0'
+T@10768438: | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | enter: '/tmp/'
+T@10768438: | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | | | enter: from: '/tmp/'
+T@10768438: | | | | | | | | | | | | exit: to: '/tmp/'
+T@10768438: | | | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | | | | >strlength
+T@10768438: | | | | | | | | | | <strlength
+T@10768438: | | | | | | | | | <fn_format
+T@10768438: | | | | | | | | | >init_alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0xbfefc708
+T@10768438: | | | | | | | | | <init_alloc_root
+T@10768438: | | | | | | | | | >multi_alloc_root
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0xbfefc708
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 2024  my_flags: 16
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43b60
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a43b70
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | <multi_alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a3feb8
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a43f34
+T@10768438: | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | my: size: 996  my_flags: 16
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a34008
+T@10768438: | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a34018
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a43f34
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a34078
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a43f34
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a340d8
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a43f34
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a34138
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a43f34
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a34198
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a43f34
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a341f8
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a43f34
+T@10768438: | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | my: size: 11008  my_flags: 16
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a44350
+T@10768438: | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a44360
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >handler::ha_open
+T@10768438: | | | | | | | | | | enter: name: /tmp/#sql_27f3_0  db_type: 6  db_stat: 3  mode: 2  lock_test: 4
+T@10768438: | | | | | | | | | | >heap_open
+T@10768438: | | | | | | | | | | | >heap_find
+T@10768438: | | | | | | | | | | | | enter: name: /tmp/#sql_27f3_0
+T@10768438: | | | | | | | | | | | <heap_find
+T@10768438: | | | | | | | | | | <heap_open
+T@10768438: | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | my: size: 0  my_flags: 16
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a32668
+T@10768438: | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | >fn_format
+T@10768438: | | | | | | | | | | | enter: name: /tmp/#sql_27f3_0  dir:   extension:   flag: 6
+T@10768438: | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | enter: '/tmp/#sql_27f3_0'
+T@10768438: | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | enter: '/tmp/'
+T@10768438: | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | | | | enter: from: '/tmp/'
+T@10768438: | | | | | | | | | | | | | exit: to: '/tmp/'
+T@10768438: | | | | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | | | | | >strlength
+T@10768438: | | | | | | | | | | | <strlength
+T@10768438: | | | | | | | | | | <fn_format
+T@10768438: | | | | | | | | | | >heap_create
+T@10768438: | | | | | | | | | | | >heap_find
+T@10768438: | | | | | | | | | | | | enter: name: /tmp/#sql_27f3_0
+T@10768438: | | | | | | | | | | | <heap_find
+T@10768438: | | | | | | | | | | | info: Initializing new table
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 380  my_flags: 32
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a35560
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 17  my_flags: 0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a356e0
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | >thr_lock_init
+T@10768438: | | | | | | | | | | | | >list_add
+T@10768438: | | | | | | | | | | | | | enter: root: 0x0  element: 0x8a355f8
+T@10768438: | | | | | | | | | | | | <list_add
+T@10768438: | | | | | | | | | | | <thr_lock_init
+T@10768438: | | | | | | | | | | | >list_add
+T@10768438: | | | | | | | | | | | | enter: root: 0x0  element: 0x8a356c0
+T@10768438: | | | | | | | | | | | <list_add
+T@10768438: | | | | | | | | | | <heap_create
+T@10768438: | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | my: ptr: 0x8a32668
+T@10768438: | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | >heap_open
+T@10768438: | | | | | | | | | | | >heap_find
+T@10768438: | | | | | | | | | | | | enter: name: /tmp/#sql_27f3_0
+T@10768438: | | | | | | | | | | | | exit: Old heap_database: 0x8a35560
+T@10768438: | | | | | | | | | | | <heap_find
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 368  my_flags: 32
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a46e58
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | >list_add
+T@10768438: | | | | | | | | | | | | enter: root: 0x0  element: 0x8a46fbc
+T@10768438: | | | | | | | | | | | <list_add
+T@10768438: | | | | | | | | | | | exit: heap: 0x8a46e58  reclength: 3656  records_in_block: 36
+T@10768438: | | | | | | | | | | <heap_open
+T@10768438: | | | | | | | | | | >heap_extra
+T@10768438: | | | | | | | | | | <heap_extra
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a43f34
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a342c8
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | <handler::ha_open
+T@10768438: | | | | | | | | | >heap_extra
+T@10768438: | | | | | | | | | <heap_extra
+T@10768438: | | | | | | | | <create_tmp_table
+T@10768438: | | | | | | | <create_schema_table
+T@10768438: | | | | | | | >alloc_root
+T@10768438: | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | exit: ptr: 0x8a40028
+T@10768438: | | | | | | | <alloc_root
+T@10768438: | | | | | | | >find_field_in_table_ref
+T@10768438: | | | | | | | | enter: table: 'SCHEMATA'  field name: 'SCHEMA_NAME'  item name: 'Database'  ref 0x8a40028
+T@10768438: | | | | | | | | >find_field_in_table
+T@10768438: | | | | | | | | | enter: table: 'SCHEMATA', field name: 'SCHEMA_NAME'
+T@10768438: | | | | | | | | <find_field_in_table
+T@10768438: | | | | | | | <find_field_in_table_ref
+T@10768438: | | | | | | <mysql_schema_table
+T@10768438: | | | | | | >free_root
+T@10768438: | | | | | | | enter: root: 0xbfefc858  flags: 0
+T@10768438: | | | | | | | >my_free
+T@10768438: | | | | | | | | my: ptr: 0x8a41bf0
+T@10768438: | | | | | | | <my_free
+T@10768438: | | | | | | <free_root
+T@10768438: | | | | | <open_tables
+T@10768438: | | | | | >lock_tables
+T@10768438: | | | | | | >alloc_root
+T@10768438: | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | exit: ptr: 0x8a40030
+T@10768438: | | | | | | <alloc_root
+T@10768438: | | | | | | >mysql_lock_tables
+T@10768438: | | | | | | | >get_lock_data
+T@10768438: | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | my: size: 16  my_flags: 0
+T@10768438: | | | | | | | | | exit: ptr: 0x8a343f0
+T@10768438: | | | | | | | | <my_malloc
+T@10768438: | | | | | | | <get_lock_data
+T@10768438: | | | | | | | >lock_external
+T@10768438: | | | | | | | <lock_external
+T@10768438: | | | | | | | >thr_multi_lock
+T@10768438: | | | | | | | | lock: data: 0x8a34400  count: 0
+T@10768438: | | | | | | | <thr_multi_lock
+T@10768438: | | | | | | <mysql_lock_tables
+T@10768438: | | | | | <lock_tables
+T@10768438: | | | | <open_and_lock_tables
+T@10768438: | | | | >alloc_root
+T@10768438: | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | exit: ptr: 0x8a40030
+T@10768438: | | | | <alloc_root
+T@10768438: | | | | >Query_cache::store_query
+T@10768438: | | | | <Query_cache::store_query
+T@10768438: | | | | >handle_select
+T@10768438: | | | | | >mysql_select
+T@10768438: | | | | | | >alloc_root
+T@10768438: | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | exit: ptr: 0x8a40040
+T@10768438: | | | | | | <alloc_root
+T@10768438: | | | | | | >TMP_TABLE_PARAM::init
+T@10768438: | | | | | | | enter: this: 0x8a40ca8
+T@10768438: | | | | | | <TMP_TABLE_PARAM::init
+T@10768438: | | | | | | >JOIN::prepare
+T@10768438: | | | | | | | >setup_tables
+T@10768438: | | | | | | | <setup_tables
+T@10768438: | | | | | | | >alloc_root
+T@10768438: | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | exit: ptr: 0x8a40e10
+T@10768438: | | | | | | | <alloc_root
+T@10768438: | | | | | | | >setup_fields
+T@10768438: | | | | | | | <setup_fields
+T@10768438: | | | | | | | >setup_without_group
+T@10768438: | | | | | | | | >setup_conds
+T@10768438: | | | | | | | | <setup_conds
+T@10768438: | | | | | | | <setup_without_group
+T@10768438: | | | | | | | >setup_procedure
+T@10768438: | | | | | | | <setup_procedure
+T@10768438: | | | | | | | >alloc_func_list
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a40eb0
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | <alloc_func_list
+T@10768438: | | | | | | <JOIN::prepare
+T@10768438: | | | | | | >JOIN::optimize
+T@10768438: | | | | | | | >simplify_joins
+T@10768438: | | | | | | | <simplify_joins
+T@10768438: | | | | | | | >build_bitmap_for_nested_joins
+T@10768438: | | | | | | | <build_bitmap_for_nested_joins
+T@10768438: | | | | | | | >optimize_cond
+T@10768438: | | | | | | | <optimize_cond
+T@10768438: | | | | | | | >optimize_cond
+T@10768438: | | | | | | | <optimize_cond
+T@10768438: | | | | | | | >get_sort_by_table
+T@10768438: | | | | | | | <get_sort_by_table
+T@10768438: | | | | | | | >make_join_statistics
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a40eb8
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a41020
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a41118
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >heap_info
+T@10768438: | | | | | | | | <heap_info
+T@10768438: | | | | | | | | >choose_plan
+T@10768438: | | | | | | | | | >reset_nj_counters
+T@10768438: | | | | | | | | | <reset_nj_counters
+T@10768438: | | | | | | | | | >greedy_search
+T@10768438: | | | | | | | | | | >best_extension_by_limited_search
+part_plan; idx:0, best: DBL_MAX, current:0
+     POSITIONS: 
+BEST_POSITIONS: 
+      BEST_REF: /tmp/#sql_27f3_0(2,2,10) 
+T@10768438: | | | | | | | | | | | >best_access_path
+T@10768438: | | | | | | | | | | | <best_access_path
+full_plan; idx: 0, best: 10.499, current: 10.5
+     POSITIONS: 
+BEST_POSITIONS: 
+      BEST_REF: /tmp/#sql_27f3_0(2,2,10) 
+T@10768438: | | | | | | | | | | <best_extension_by_limited_search
+optimal; idx: 1, best: 10.499, current: 0
+     POSITIONS: /tmp/#sql_27f3_0 
+BEST_POSITIONS: /tmp/#sql_27f3_0 
+      BEST_REF: /tmp/#sql_27f3_0(2,2,10) 
+T@10768438: | | | | | | | | | <greedy_search
+T@10768438: | | | | | | | | <choose_plan
+T@10768438: | | | | | | | <make_join_statistics
+T@10768438: | | | | | | | >get_best_combination
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a41120
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | info: type: 0
+T@10768438: | | | | | | | <get_best_combination
+T@10768438: | | | | | | | >make_select
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a41288
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | <make_select
+T@10768438: | | | | | | | >reset_nj_counters
+T@10768438: | | | | | | | <reset_nj_counters
+T@10768438: | | | | | | | >make_outerjoin_info
+T@10768438: | | | | | | | <make_outerjoin_info
+T@10768438: | | | | | | | >make_join_select
+T@10768438: | | | | | | | | >add_not_null_conds
+T@10768438: | | | | | | | | <add_not_null_conds
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | exit: ptr: 0x8a41388
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | <make_join_select
+T@10768438: | | | | | | | >remove_const
+T@10768438: | | | | | | | | exit: simple_order: 1
+T@10768438: | | | | | | | <remove_const
+T@10768438: | | | | | | | >remove_const
+T@10768438: | | | | | | | | exit: simple_order: 1
+T@10768438: | | | | | | | <remove_const
+T@10768438: | | | | | | | >make_join_readinfo
+T@10768438: | | | | | | | <make_join_readinfo
+T@10768438: | | | | | | | >TEST_join
+
+Info about JOIN
+SCHEMATA          type: ALL      q_keys: 0  refs: 0  key: -1  len: 0
+                  select used
+T@10768438: | | | | | | | <TEST_join
+T@10768438: | | | | | | <JOIN::optimize
+T@10768438: | | | | | | >JOIN::exec
+T@10768438: | | | | | | | >get_schema_tables_result
+T@10768438: | | | | | | | | >fill_schema_shemata
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a41488
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a414a0
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | >mysql_find_files
+T@10768438: | | | | | | | | | | >my_dir
+T@10768438: | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/' MyFlags: 1024
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 64  my_flags: 1024
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a356f8
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | >init_dynamic_array
+T@10768438: | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | my: size: 8192  my_flags: 16
+T@10768438: | | | | | | | | | | | | | exit: ptr: 0x8a46fd0
+T@10768438: | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | <init_dynamic_array
+T@10768438: | | | | | | | | | | | >init_alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | my: size: 32784  my_flags: 0
+T@10768438: | | | | | | | | | | | | | exit: ptr: 0x8a48fd8
+T@10768438: | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | <init_alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48fe8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a48ff0
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/.', stat_area: 0x8a48ff0, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49050
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49058
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/..', stat_area: 0x8a49058, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a490b8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a490c0
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/test', stat_area: 0x8a490c0, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49120
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49128
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/mysql', stat_area: 0x8a49128, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49188
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49190
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/testdb1', stat_area: 0x8a49190, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a491f0
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a491f8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/my.cnf~', stat_area: 0x8a491f8, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49258
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49260
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/my.cnf', stat_area: 0x8a49260, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a492c0
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a492c8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/my.ini', stat_area: 0x8a492c8, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49328
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49338
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/ib_logfile0', stat_area: 0x8a49338, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49398
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a493a8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/ib_logfile1', stat_area: 0x8a493a8, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49408
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49410
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/ibdata1', stat_area: 0x8a49410, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49470
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a49480
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_stat
+T@10768438: | | | | | | | | | | | | my: path: '/var/lib/mysql_embedded/linux.err', stat_area: 0x8a49480, MyFlags: 1024
+T@10768438: | | | | | | | | | | | <my_stat
+T@10768438: | | | | | | | | | | <my_dir
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a414a8
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a414b0
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a414b8
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a414c0
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a414c8
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a414d0
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | info: found: 4 files
+T@10768438: | | | | | | | | | | >my_dirend
+T@10768438: | | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | | my: ptr: 0x8a46fd0
+T@10768438: | | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | | >free_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a35718  flags: 0
+T@10768438: | | | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | | | my: ptr: 0x8a48fd8
+T@10768438: | | | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | | <free_root
+T@10768438: | | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | | my: ptr: 0x8a356f8
+T@10768438: | | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | <my_dirend
+T@10768438: | | | | | | | | | | >ha_find_files
+T@10768438: | | | | | | | | | | | enter: db: (null), path: /var/lib/mysql_embedded/, wild: (null), dir: 1
+T@10768438: | | | | | | | | | | <ha_find_files
+T@10768438: | | | | | | | | | <mysql_find_files
+T@10768438: | | | | | | | | | >heap_write
+T@10768438: | | | | | | | | | | >next_free_record_pos
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 131760  my_flags: 0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x41810008
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | exit: Used new position: 41810008
+T@10768438: | | | | | | | | | | <next_free_record_pos
+T@10768438: | | | | | | | | | <heap_write
+T@10768438: | | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | enter: '/var/lib/mysql_embedded//mysql'
+T@10768438: | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | | enter: from: '/var/lib/mysql_embedded//mysql/'
+T@10768438: | | | | | | | | | | | exit: to: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | | | >load_db_opt
+T@10768438: | | | | | | | | | | >hash_first
+T@10768438: | | | | | | | | | | <hash_first
+T@10768438: | | | | | | | | | | >my_open
+T@10768438: | | | | | | | | | | | my: Name: '/var/lib/mysql_embedded/mysql/db.opt'  Flags: 0  MyFlags: 0
+T@10768438: | | | | | | | | | | <my_open
+T@10768438: | | | | | | | | | | error: Got error 2 on open
+T@10768438: | | | | | | | | | <load_db_opt
+T@10768438: | | | | | | | | | >heap_write
+T@10768438: | | | | | | | | | | >next_free_record_pos
+T@10768438: | | | | | | | | | | | exit: Used new position: 41810e54
+T@10768438: | | | | | | | | | | <next_free_record_pos
+T@10768438: | | | | | | | | | <heap_write
+T@10768438: | | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | enter: '/var/lib/mysql_embedded//test'
+T@10768438: | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | | enter: from: '/var/lib/mysql_embedded//test/'
+T@10768438: | | | | | | | | | | | exit: to: '/var/lib/mysql_embedded/test/'
+T@10768438: | | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | | | >load_db_opt
+T@10768438: | | | | | | | | | | >hash_first
+T@10768438: | | | | | | | | | | <hash_first
+T@10768438: | | | | | | | | | | >my_open
+T@10768438: | | | | | | | | | | | my: Name: '/var/lib/mysql_embedded/test/db.opt'  Flags: 0  MyFlags: 0
+T@10768438: | | | | | | | | | | <my_open
+T@10768438: | | | | | | | | | | error: Got error 2 on open
+T@10768438: | | | | | | | | | <load_db_opt
+T@10768438: | | | | | | | | | >heap_write
+T@10768438: | | | | | | | | | | >next_free_record_pos
+T@10768438: | | | | | | | | | | | exit: Used new position: 41811ca0
+T@10768438: | | | | | | | | | | <next_free_record_pos
+T@10768438: | | | | | | | | | <heap_write
+T@10768438: | | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | enter: '/var/lib/mysql_embedded//testdb1'
+T@10768438: | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | | enter: from: '/var/lib/mysql_embedded//testdb1/'
+T@10768438: | | | | | | | | | | | exit: to: '/var/lib/mysql_embedded/testdb1/'
+T@10768438: | | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | | | >load_db_opt
+T@10768438: | | | | | | | | | | >hash_first
+T@10768438: | | | | | | | | | | | exit: found key at 0
+T@10768438: | | | | | | | | | | <hash_first
+T@10768438: | | | | | | | | | <load_db_opt
+T@10768438: | | | | | | | | | >heap_write
+T@10768438: | | | | | | | | | | >next_free_record_pos
+T@10768438: | | | | | | | | | | | exit: Used new position: 41812aec
+T@10768438: | | | | | | | | | | <next_free_record_pos
+T@10768438: | | | | | | | | | <heap_write
+T@10768438: | | | | | | | | <fill_schema_shemata
+T@10768438: | | | | | | | <get_schema_tables_result
+T@10768438: | | | | | | | info: Sending data
+T@10768438: | | | | | | | >send_fields
+T@10768438: | | | | | | | | >my_multi_malloc
+T@10768438: | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | my: size: 616  my_flags: 48
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a41bf0
+T@10768438: | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | <my_multi_malloc
+T@10768438: | | | | | | | | >init_alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | <init_alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | my: size: 8164  my_flags: 16
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a46fd0
+T@10768438: | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | exit: ptr: 0x8a46fe0
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | exit: ptr: 0x8a47030
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | exit: ptr: 0x8a47038
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | exit: ptr: 0x8a47048
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | exit: ptr: 0x8a47058
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | exit: ptr: 0x8a47060
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | exit: ptr: 0x8a47070
+T@10768438: | | | | | | | | <alloc_root
+T@10768438: | | | | | | | <send_fields
+T@10768438: | | | | | | | >do_select
+T@10768438: | | | | | | | | >init_read_record
+T@10768438: | | | | | | | | | info: using rr_sequential
+T@10768438: | | | | | | | | | >ha_rnd_init
+T@10768438: | | | | | | | | | <ha_rnd_init
+T@10768438: | | | | | | | | | >heap_scan_init
+T@10768438: | | | | | | | | | <heap_scan_init
+T@10768438: | | | | | | | | | >heap_extra
+T@10768438: | | | | | | | | | <heap_extra
+T@10768438: | | | | | | | | <init_read_record
+T@10768438: | | | | | | | | >heap_scan
+T@10768438: | | | | | | | | <heap_scan
+T@10768438: | | | | | | | | info: select cond 0x0
+T@10768438: | | | | | | | | >end_send
+T@10768438: | | | | | | | | | >send_data
+T@10768438: | | | | | | | | | | >send_data
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a47078
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | <send_data
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a47090
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | <send_data
+T@10768438: | | | | | | | | <end_send
+T@10768438: | | | | | | | | >heap_scan
+T@10768438: | | | | | | | | <heap_scan
+T@10768438: | | | | | | | | info: select cond 0x0
+T@10768438: | | | | | | | | >end_send
+T@10768438: | | | | | | | | | >send_data
+T@10768438: | | | | | | | | | | >send_data
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a470a8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | <send_data
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a470c0
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | <send_data
+T@10768438: | | | | | | | | <end_send
+T@10768438: | | | | | | | | >heap_scan
+T@10768438: | | | | | | | | <heap_scan
+T@10768438: | | | | | | | | info: select cond 0x0
+T@10768438: | | | | | | | | >end_send
+T@10768438: | | | | | | | | | >send_data
+T@10768438: | | | | | | | | | | >send_data
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a470d0
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | <send_data
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a470e8
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | <send_data
+T@10768438: | | | | | | | | <end_send
+T@10768438: | | | | | | | | >heap_scan
+T@10768438: | | | | | | | | <heap_scan
+T@10768438: | | | | | | | | info: select cond 0x0
+T@10768438: | | | | | | | | >end_send
+T@10768438: | | | | | | | | | >send_data
+T@10768438: | | | | | | | | | | >send_data
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a470f8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | <send_data
+T@10768438: | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | enter: root: 0x8a41c00
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a47110
+T@10768438: | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | <send_data
+T@10768438: | | | | | | | | <end_send
+T@10768438: | | | | | | | | >heap_scan
+T@10768438: | | | | | | | | <heap_scan
+T@10768438: | | | | | | | | >end_send
+T@10768438: | | | | | | | | <end_send
+T@10768438: | | | | | | | | >JOIN::join_free
+T@10768438: | | | | | | | | | >JOIN::cleanup
+T@10768438: | | | | | | | | | | >free_io_cache
+T@10768438: | | | | | | | | | | <free_io_cache
+T@10768438: | | | | | | | | | | >close_cached_file
+T@10768438: | | | | | | | | | | <close_cached_file
+T@10768438: | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | my: ptr: 0x0
+T@10768438: | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | >ha_rnd_end
+T@10768438: | | | | | | | | | | <ha_rnd_end
+T@10768438: | | | | | | | | | | >heap_extra
+T@10768438: | | | | | | | | | | <heap_extra
+T@10768438: | | | | | | | | | <JOIN::cleanup
+T@10768438: | | | | | | | | | >mysql_unlock_read_tables
+T@10768438: | | | | | | | | | <mysql_unlock_read_tables
+T@10768438: | | | | | | | | <JOIN::join_free
+T@10768438: | | | | | | | | >mysql_unlock_tables
+T@10768438: | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | my: ptr: 0x8a343f0
+T@10768438: | | | | | | | | | <my_free
+T@10768438: | | | | | | | | <mysql_unlock_tables
+T@10768438: | | | | | | | | info: 4 records output
+T@10768438: | | | | | | | <do_select
+T@10768438: | | | | | | <JOIN::exec
+T@10768438: | | | | | | >st_select_lex::cleanup()
+T@10768438: | | | | | | | >JOIN::destroy
+T@10768438: | | | | | | | | >JOIN::cleanup
+T@10768438: | | | | | | | | <JOIN::cleanup
+T@10768438: | | | | | | | | >close_cached_file
+T@10768438: | | | | | | | | <close_cached_file
+T@10768438: | | | | | | | <JOIN::destroy
+T@10768438: | | | | | | <st_select_lex::cleanup()
+T@10768438: | | | | | <mysql_select
+T@10768438: | | | | | info: res: 0  report_error: 0
+T@10768438: | | | | <handle_select
+T@10768438: | | | <mysql_execute_command
+T@10768438: | | | >query_cache_end_of_result
+T@10768438: | | | <query_cache_end_of_result
+T@10768438: | | | >st_select_lex_unit::cleanup
+T@10768438: | | | | >st_select_lex::cleanup()
+T@10768438: | | | | <st_select_lex::cleanup()
+T@10768438: | | | <st_select_lex_unit::cleanup
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x0
+T@10768438: | | | <my_free
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x0
+T@10768438: | | | <my_free
+T@10768438: | | | >Query_arena::free_items
+T@10768438: | | | | >Item_field::cleanup
+T@10768438: | | | | | >Item_ident::cleanup
+T@10768438: | | | | | | >Item::cleanup
+T@10768438: | | | | | | <Item::cleanup
+T@10768438: | | | | | <Item_ident::cleanup
+T@10768438: | | | | <Item_field::cleanup
+T@10768438: | | | <Query_arena::free_items
+T@10768438: | | <mysql_parse
+T@10768438: | | info: query ready
+T@10768438: | | >close_thread_tables
+T@10768438: | | | >free_tmp_table
+T@10768438: | | | | enter: table: SCHEMATA
+T@10768438: | | | | >heap_close
+T@10768438: | | | | | >hp_close
+T@10768438: | | | | | | >heap_check_heap
+T@10768438: | | | | | | <heap_check_heap
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x8a46e58
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | <hp_close
+T@10768438: | | | | <heap_close
+T@10768438: | | | | >fn_format
+T@10768438: | | | | | enter: name: /tmp/#sql_27f3_0  dir:   extension:   flag: 6
+T@10768438: | | | | | >dirname_part
+T@10768438: | | | | | | enter: '/tmp/#sql_27f3_0'
+T@10768438: | | | | | <dirname_part
+T@10768438: | | | | | >unpack_dirname
+T@10768438: | | | | | | >dirname_part
+T@10768438: | | | | | | | enter: '/tmp/'
+T@10768438: | | | | | | <dirname_part
+T@10768438: | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | enter: from: '/tmp/'
+T@10768438: | | | | | | | exit: to: '/tmp/'
+T@10768438: | | | | | | <cleanup_dirname
+T@10768438: | | | | | <unpack_dirname
+T@10768438: | | | | | >strlength
+T@10768438: | | | | | <strlength
+T@10768438: | | | | <fn_format
+T@10768438: | | | | >heap_delete_table
+T@10768438: | | | | | >heap_find
+T@10768438: | | | | | | enter: name: /tmp/#sql_27f3_0
+T@10768438: | | | | | | exit: Old heap_database: 0x8a35560
+T@10768438: | | | | | <heap_find
+T@10768438: | | | | | >hp_clear
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x41810008
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | | >hp_clear_keys
+T@10768438: | | | | | | <hp_clear_keys
+T@10768438: | | | | | <hp_clear
+T@10768438: | | | | | >thr_lock_delete
+T@10768438: | | | | | <thr_lock_delete
+T@10768438: | | | | | >my_free
+T@10768438: | | | | | | my: ptr: 0x8a356e0
+T@10768438: | | | | | <my_free
+T@10768438: | | | | | >my_free
+T@10768438: | | | | | | my: ptr: 0x8a35560
+T@10768438: | | | | | <my_free
+T@10768438: | | | | <heap_delete_table
+T@10768438: | | | | >free_io_cache
+T@10768438: | | | | <free_io_cache
+T@10768438: | | | | >free_root
+T@10768438: | | | | | enter: root: 0xbfefcedc  flags: 0
+T@10768438: | | | | | >my_free
+T@10768438: | | | | | | my: ptr: 0x8a44350
+T@10768438: | | | | | <my_free
+T@10768438: | | | | | >my_free
+T@10768438: | | | | | | my: ptr: 0x8a43b60
+T@10768438: | | | | | <my_free
+T@10768438: | | | | | >my_free
+T@10768438: | | | | | | my: ptr: 0x8a34008
+T@10768438: | | | | | <my_free
+T@10768438: | | | | <free_root
+T@10768438: | | | <free_tmp_table
+T@10768438: | | | info: thd->open_tables: (nil)
+T@10768438: | | <close_thread_tables
+T@10768438: | | >free_root
+T@10768438: | | | enter: root: 0x8a32a18  flags: 1
+T@10768438: | | <free_root
+T@10768438: | <dispatch_command
+T@10768438: <mysql_real_query
+T@10768438: >mysql_store_result
+T@10768438: | >my_malloc
+T@10768438: | | my: size: 88  my_flags: 48
+T@10768438: | | exit: ptr: 0x8a356f8
+T@10768438: | <my_malloc
+T@10768438: <mysql_store_result
+T@10768438: >mysql_fetch_row
+T@10768438: <mysql_fetch_row
+T@10768438: >mysql_fetch_row
+T@10768438: <mysql_fetch_row
+T@10768438: >mysql_fetch_row
+T@10768438: <mysql_fetch_row
+T@10768438: >mysql_fetch_row
+T@10768438: <mysql_fetch_row
+T@10768438: >mysql_fetch_row
+T@10768438: | info: end of data
+T@10768438: <mysql_fetch_row
+T@10768438: >mysql_free_result
+T@10768438: | enter: mysql_res: 8a356f8
+T@10768438: | >free_root
+T@10768438: | | enter: root: 0x8a41c00  flags: 0
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x8a46fd0
+T@10768438: | | <my_free
+T@10768438: | <free_root
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8a41bf0
+T@10768438: | <my_free
+T@10768438: | >free_root
+T@10768438: | | enter: root: 0x8a35714  flags: 0
+T@10768438: | <free_root
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8a356f8
+T@10768438: | <my_free
+T@10768438: <mysql_free_result
+T@10768438: >mysql_real_query
+T@10768438: | enter: handle: 8a32030
+T@10768438: | query: Query = 'DROP DATABASE testdb1;'
+T@10768438: | >mysql_send_query
+T@10768438: | | enter: rpl_parse: 0  rpl_pivot: 1
+T@10768438: | <mysql_send_query
+T@10768438: | >free_old_query
+T@10768438: | | >init_alloc_root
+T@10768438: | | | enter: root: 0x8a322c8
+T@10768438: | | <init_alloc_root
+T@10768438: | <free_old_query
+T@10768438: | >dispatch_command
+T@10768438: | | >alloc_root
+T@10768438: | | | enter: root: 0x8a32a18
+T@10768438: | | | exit: ptr: 0x8a3f958
+T@10768438: | | <alloc_root
+T@10768438: | | query: DROP DATABASE testdb1
+T@10768438: | | >mysql_parse
+T@10768438: | | | >mysql_init_query
+T@10768438: | | | | >lex_start
+T@10768438: | | | | | >alloc_root
+T@10768438: | | | | | | enter: root: 0x8a32a18
+T@10768438: | | | | | | exit: ptr: 0x8a3f9a0
+T@10768438: | | | | | <alloc_root
+T@10768438: | | | | <lex_start
+T@10768438: | | | | >mysql_reset_thd_for_next_command
+T@10768438: | | | | <mysql_reset_thd_for_next_command
+T@10768438: | | | <mysql_init_query
+T@10768438: | | | >Query_cache::send_result_to_client
+T@10768438: | | | <Query_cache::send_result_to_client
+T@10768438: | | | >alloc_root
+T@10768438: | | | | enter: root: 0x8a32a18
+T@10768438: | | | | exit: ptr: 0x8a3f9a8
+T@10768438: | | | <alloc_root
+T@10768438: | | | >mysql_execute_command
+T@10768438: | | | | >end_active_trans
+T@10768438: | | | | <end_active_trans
+T@10768438: | | | | >check_access
+T@10768438: | | | | | enter: db: testdb1  want_access: 32  master_access: 67108863
+T@10768438: | | | | <check_access
+T@10768438: | | | | >mysql_rm_db
+T@10768438: | | | | | >wait_if_global_read_lock
+T@10768438: | | | | | <wait_if_global_read_lock
+T@10768438: | | | | | >unpack_dirname
+T@10768438: | | | | | | >dirname_part
+T@10768438: | | | | | | | enter: '/var/lib/mysql_embedded//testdb1'
+T@10768438: | | | | | | <dirname_part
+T@10768438: | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | enter: from: '/var/lib/mysql_embedded//testdb1/'
+T@10768438: | | | | | | | exit: to: '/var/lib/mysql_embedded/testdb1/'
+T@10768438: | | | | | | <cleanup_dirname
+T@10768438: | | | | | <unpack_dirname
+T@10768438: | | | | | >hash_first
+T@10768438: | | | | | | exit: found key at 0
+T@10768438: | | | | | <hash_first
+T@10768438: | | | | | >hash_delete
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x8a35520
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | <hash_delete
+T@10768438: | | | | | >my_dir
+T@10768438: | | | | | | my: path: '/var/lib/mysql_embedded/testdb1/' MyFlags: 512
+T@10768438: | | | | | | >my_malloc
+T@10768438: | | | | | | | my: size: 64  my_flags: 512
+T@10768438: | | | | | | | exit: ptr: 0x8a35520
+T@10768438: | | | | | | <my_malloc
+T@10768438: | | | | | | >init_dynamic_array
+T@10768438: | | | | | | | >my_malloc
+T@10768438: | | | | | | | | my: size: 8192  my_flags: 16
+T@10768438: | | | | | | | | exit: ptr: 0x8a42c10
+T@10768438: | | | | | | | <my_malloc
+T@10768438: | | | | | | <init_dynamic_array
+T@10768438: | | | | | | >init_alloc_root
+T@10768438: | | | | | | | enter: root: 0x8a35540
+T@10768438: | | | | | | | >my_malloc
+T@10768438: | | | | | | | | my: size: 32784  my_flags: 0
+T@10768438: | | | | | | | | exit: ptr: 0x8a44c18
+T@10768438: | | | | | | | <my_malloc
+T@10768438: | | | | | | <init_alloc_root
+T@10768438: | | | | | | >alloc_root
+T@10768438: | | | | | | | enter: root: 0x8a35540
+T@10768438: | | | | | | | exit: ptr: 0x8a44c28
+T@10768438: | | | | | | <alloc_root
+T@10768438: | | | | | | >alloc_root
+T@10768438: | | | | | | | enter: root: 0x8a35540
+T@10768438: | | | | | | | exit: ptr: 0x8a44c30
+T@10768438: | | | | | | <alloc_root
+T@10768438: | | | | | | >alloc_root
+T@10768438: | | | | | | | enter: root: 0x8a35540
+T@10768438: | | | | | | | exit: ptr: 0x8a44c38
+T@10768438: | | | | | | <alloc_root
+T@10768438: | | | | | <my_dir
+T@10768438: | | | | | >mysql_rm_known_files
+T@10768438: | | | | | | enter: path: /var/lib/mysql_embedded/testdb1/
+T@10768438: | | | | | | info: Examining: .
+T@10768438: | | | | | | info: Examining: ..
+T@10768438: | | | | | | info: Examining: db.opt
+T@10768438: | | | | | | >fn_ext
+T@10768438: | | | | | | | mfunkt: name: 'db.opt'
+T@10768438: | | | | | | | >dirname_part
+T@10768438: | | | | | | | | enter: 'db.opt'
+T@10768438: | | | | | | | <dirname_part
+T@10768438: | | | | | | <fn_ext
+T@10768438: | | | | | | >find_type
+T@10768438: | | | | | | | enter: x: '.opt'  lib: 0x83c1d7c
+T@10768438: | | | | | | <find_type
+T@10768438: | | | | | | >my_readlink
+T@10768438: | | | | | | | exit: result: 1
+T@10768438: | | | | | | <my_readlink
+T@10768438: | | | | | | >my_delete_with_symlink
+T@10768438: | | | | | | | >my_delete
+T@10768438: | | | | | | | | my: name /var/lib/mysql_embedded/testdb1//db.opt MyFlags 16
+T@10768438: | | | | | | | <my_delete
+T@10768438: | | | | | | <my_delete_with_symlink
+T@10768438: | | | | | | >my_dirend
+T@10768438: | | | | | | | >my_free
+T@10768438: | | | | | | | | my: ptr: 0x8a42c10
+T@10768438: | | | | | | | <my_free
+T@10768438: | | | | | | | >free_root
+T@10768438: | | | | | | | | enter: root: 0x8a35540  flags: 0
+T@10768438: | | | | | | | | >my_free
+T@10768438: | | | | | | | | | my: ptr: 0x8a44c18
+T@10768438: | | | | | | | | <my_free
+T@10768438: | | | | | | | <free_root
+T@10768438: | | | | | | | >my_free
+T@10768438: | | | | | | | | my: ptr: 0x8a35520
+T@10768438: | | | | | | | <my_free
+T@10768438: | | | | | | <my_dirend
+T@10768438: | | | | | | >rm_dir_w_symlink
+T@10768438: | | | | | | | >unpack_filename
+T@10768438: | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | enter: '/var/lib/mysql_embedded/testdb1/'
+T@10768438: | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | enter: '/var/lib/mysql_embedded/testdb1/'
+T@10768438: | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | enter: from: '/var/lib/mysql_embedded/testdb1/'
+T@10768438: | | | | | | | | | | exit: to: '/var/lib/mysql_embedded/testdb1/'
+T@10768438: | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | <unpack_filename
+T@10768438: | | | | | | | >my_readlink
+T@10768438: | | | | | | | | exit: result: 1
+T@10768438: | | | | | | | <my_readlink
+T@10768438: | | | | | | <rm_dir_w_symlink
+T@10768438: | | | | | <mysql_rm_known_files
+T@10768438: | | | | | >my_malloc
+T@10768438: | | | | | | my: size: 9  my_flags: 0
+T@10768438: | | | | | | exit: ptr: 0x8a32668
+T@10768438: | | | | | <my_malloc
+T@10768438: | | | | | >my_free
+T@10768438: | | | | | | my: ptr: 0x8a32668
+T@10768438: | | | | | <my_free
+T@10768438: | | | | | >Query_cache::invalidate (db)
+T@10768438: | | | | | <Query_cache::invalidate (db)
+T@10768438: | | | | | >send_ok
+T@10768438: | | | | | | >my_multi_malloc
+T@10768438: | | | | | | | >my_malloc
+T@10768438: | | | | | | | | my: size: 616  my_flags: 48
+T@10768438: | | | | | | | | exit: ptr: 0x8a35520
+T@10768438: | | | | | | | <my_malloc
+T@10768438: | | | | | | <my_multi_malloc
+T@10768438: | | | | | <send_ok
+T@10768438: | | | | | >sp_drop_db_routines
+T@10768438: | | | | | | enter: db: testdb1
+T@10768438: | | | | | | >open_proc_table
+T@10768438: | | | | | | | >open_ltable
+T@10768438: | | | | | | | | >open_table
+T@10768438: | | | | | | | | | >hash_first
+T@10768438: | | | | | | | | | <hash_first
+T@10768438: | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | my: size: 1380  my_flags: 16
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a41bf0
+T@10768438: | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | >open_unireg_entry
+T@10768438: | | | | | | | | | | >openfrm
+T@10768438: | | | | | | | | | | | enter: name: '/var/lib/mysql_embedded//mysql/proc'  form: 0x8a41bf0
+T@10768438: | | | | | | | | | | | >fn_format
+T@10768438: | | | | | | | | | | | | enter: name: /var/lib/mysql_embedded//mysql/proc  dir:   extension: .frm  flag: 4
+T@10768438: | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | enter: '/var/lib/mysql_embedded//mysql/proc'
+T@10768438: | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | | enter: '/var/lib/mysql_embedded//mysql/'
+T@10768438: | | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | | | | | enter: from: '/var/lib/mysql_embedded//mysql/'
+T@10768438: | | | | | | | | | | | | | | exit: to: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | | | | | | >strlength
+T@10768438: | | | | | | | | | | | | <strlength
+T@10768438: | | | | | | | | | | | <fn_format
+T@10768438: | | | | | | | | | | | >my_open
+T@10768438: | | | | | | | | | | | | my: Name: '/var/lib/mysql_embedded/mysql/proc.frm'  Flags: 0  MyFlags: 0
+T@10768438: | | | | | | | | | | | <my_open
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 39  my_flags: 0
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a35790
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | exit: fd: 12
+T@10768438: | | | | | | | | | | | >my_read
+T@10768438: | | | | | | | | | | | | my: Fd: 12  Buffer: 0xbfefb59c  Count: 64  MyFlags: 4
+T@10768438: | | | | | | | | | | | <my_read
+T@10768438: | | | | | | | | | | | >init_alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | <init_alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | my: size: 996  my_flags: 16
+T@10768438: | | | | | | | | | | | | | exit: ptr: 0x8a34008
+T@10768438: | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a34018
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a34020
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 5  my_flags: 16
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a32668
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | >fn_ext
+T@10768438: | | | | | | | | | | | | mfunkt: name: 'proc'
+T@10768438: | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | enter: 'proc'
+T@10768438: | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | <fn_ext
+T@10768438: | | | | | | | | | | | >fn_ext
+T@10768438: | | | | | | | | | | | | mfunkt: name: '/var/lib/mysql_embedded//mysql/proc'
+T@10768438: | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | enter: '/var/lib/mysql_embedded//mysql/proc'
+T@10768438: | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | <fn_ext
+T@10768438: | | | | | | | | | | | >get_form_pos
+T@10768438: | | | | | | | | | | | | >my_seek
+T@10768438: | | | | | | | | | | | | | my: Fd: 12  Hpos: 0  Pos: 64  Whence: 0  MyFlags: 0
+T@10768438: | | | | | | | | | | | | <my_seek
+T@10768438: | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | my: size: 7  my_flags: 16
+T@10768438: | | | | | | | | | | | | | exit: ptr: 0x8a357c0
+T@10768438: | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | | >my_read
+T@10768438: | | | | | | | | | | | | | my: Fd: 12  Buffer: 0x8a357c0  Count: 7  MyFlags: 4
+T@10768438: | | | | | | | | | | | | <my_read
+T@10768438: | | | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | | | my: ptr: 0x8a357c0
+T@10768438: | | | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | | <get_form_pos
+T@10768438: | | | | | | | | | | | >fn_ext
+T@10768438: | | | | | | | | | | | | mfunkt: name: '/var/lib/mysql_embedded/mysql/proc.frm'
+T@10768438: | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | enter: '/var/lib/mysql_embedded/mysql/proc.frm'
+T@10768438: | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | <fn_ext
+T@10768438: | | | | | | | | | | | >my_seek
+T@10768438: | | | | | | | | | | | | my: Fd: 12  Hpos: 0  Pos: 4096  Whence: 0  MyFlags: 0
+T@10768438: | | | | | | | | | | | <my_seek
+T@10768438: | | | | | | | | | | | >read_string
+T@10768438: | | | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | | | my: ptr: 0x0
+T@10768438: | | | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | my: size: 52  my_flags: 16
+T@10768438: | | | | | | | | | | | | | exit: ptr: 0x8a42158
+T@10768438: | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | | >my_read
+T@10768438: | | | | | | | | | | | | | my: Fd: 12  Buffer: 0x8a42158  Count: 51  MyFlags: 4
+T@10768438: | | | | | | | | | | | | <my_read
+T@10768438: | | | | | | | | | | | <read_string
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a34048
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a340c8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | my: size: 10  my_flags: 16
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a357c0
+T@10768438: | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | >my_pread
+T@10768438: | | | | | | | | | | | | my: Fd: 12  Seek: 5557  Buffer: 0x8a357c0  Count: 10  MyFlags: 4
+T@10768438: | | | | | | | | | | | <my_pread
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a340d8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | enter: Setting dbtype to: 9 - 6 - 'MyISAM'
+
+T@10768438: | | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | | my: ptr: 0x8a357c0
+T@10768438: | | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a340e0
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | my: size: 3712  my_flags: 16
+T@10768438: | | | | | | | | | | | | | exit: ptr: 0x8a42190
+T@10768438: | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a421a0
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_pread
+T@10768438: | | | | | | | | | | | | my: Fd: 12  Seek: 4327  Buffer: 0x8a421a0  Count: 1230  MyFlags: 4
+T@10768438: | | | | | | | | | | | <my_pread
+T@10768438: | | | | | | | | | | | >my_seek
+T@10768438: | | | | | | | | | | | | my: Fd: 12  Hpos: 0  Pos: 8192  Whence: 0  MyFlags: 0
+T@10768438: | | | | | | | | | | | <my_seek
+T@10768438: | | | | | | | | | | | >my_read
+T@10768438: | | | | | | | | | | | | my: Fd: 12  Buffer: 0xbfefb59c  Count: 288  MyFlags: 4
+T@10768438: | | | | | | | | | | | <my_read
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a341b0
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | info: i_count: 6  i_parts: 47  index: 1  n_length: 151  int_length: 543  com_length: 0
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | my: size: 1144  my_flags: 16
+T@10768438: | | | | | | | | | | | | | exit: ptr: 0x8a43018
+T@10768438: | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43028
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >read_string
+T@10768438: | | | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | | | my: ptr: 0x8a42158
+T@10768438: | | | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | my: size: 1212  my_flags: 16
+T@10768438: | | | | | | | | | | | | | exit: ptr: 0x8a43498
+T@10768438: | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | | >my_read
+T@10768438: | | | | | | | | | | | | | my: Fd: 12  Buffer: 0x8a43498  Count: 1211  MyFlags: 4
+T@10768438: | | | | | | | | | | | | <my_read
+T@10768438: | | | | | | | | | | | <read_string
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a341c8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a341d8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a341e0
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a341f8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a34208
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a34218
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >my_close
+T@10768438: | | | | | | | | | | | | my: fd: 12  MyFlags: 16
+T@10768438: | | | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | | | my: ptr: 0x8a35790
+T@10768438: | | | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | | <my_close
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a34298
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a342f8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a34358
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | my: size: 996  my_flags: 16
+T@10768438: | | | | | | | | | | | | | exit: ptr: 0x8a43958
+T@10768438: | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43968
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a439c8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43a28
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43a88
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43ae8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43b48
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43bb8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43c18
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43c88
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | my: size: 1992  my_flags: 16
+T@10768438: | | | | | | | | | | | | | exit: ptr: 0x8a43d40
+T@10768438: | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43d50
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43da8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43e00
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43e60
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >find_type
+T@10768438: | | | | | | | | | | | | enter: x: 'PRIMARY'  lib: 0x8a42058
+T@10768438: | | | | | | | | | | | <find_type
+T@10768438: | | | | | | | | | | | >my_free
+T@10768438: | | | | | | | | | | | | my: ptr: 0x8a43498
+T@10768438: | | | | | | | | | | | <my_free
+T@10768438: | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | exit: ptr: 0x8a43ce8
+T@10768438: | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | >unpack_filename
+T@10768438: | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | enter: '/var/lib/mysql_embedded/mysql/proc'
+T@10768438: | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | | enter: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | | | | | enter: from: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | | | | | | | | | | | exit: to: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | | | | | <unpack_filename
+T@10768438: | | | | | | | | | | | >handler::ha_open
+T@10768438: | | | | | | | | | | | | enter: name: /var/lib/mysql_embedded/mysql/proc  db_type: 9  db_stat: 8231  mode: 2  lock_test: 2
+T@10768438: | | | | | | | | | | | | >mi_open
+T@10768438: | | | | | | | | | | | | | >fn_format
+T@10768438: | | | | | | | | | | | | | | enter: name: /var/lib/mysql_embedded/mysql/proc  dir:   extension: .MYI  flag: 4
+T@10768438: | | | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | | | enter: '/var/lib/mysql_embedded/mysql/proc'
+T@10768438: | | | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | | | | enter: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | | | | | | | enter: from: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | | | | | | | | | | | | | exit: to: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | | | | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | | | | | | | | >strlength
+T@10768438: | | | | | | | | | | | | | | <strlength
+T@10768438: | | | | | | | | | | | | | <fn_format
+T@10768438: | | | | | | | | | | | | | >my_realpath
+T@10768438: | | | | | | | | | | | | | | info: executing realpath
+T@10768438: | | | | | | | | | | | | | <my_realpath
+T@10768438: | | | | | | | | | | | | | >my_open
+T@10768438: | | | | | | | | | | | | | | my: Name: '/var/lib/mysql_embedded/mysql/proc.MYI'  Flags: 2  MyFlags: 0
+T@10768438: | | | | | | | | | | | | | <my_open
+T@10768438: | | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | | my: size: 39  my_flags: 0
+T@10768438: | | | | | | | | | | | | | | exit: ptr: 0x8a343f0
+T@10768438: | | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | | | exit: fd: 12
+T@10768438: | | | | | | | | | | | | | >my_read
+T@10768438: | | | | | | | | | | | | | | my: Fd: 12  Buffer: 0xbfefa290  Count: 24  MyFlags: 4
+T@10768438: | | | | | | | | | | | | | <my_read
+T@10768438: | | | | | | | | | | | | | >fn_format
+T@10768438: | | | | | | | | | | | | | | enter: name: /var/lib/mysql_embedded/mysql/proc.MYI  dir:   extension: .MYD  flag: 22
+T@10768438: | | | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | | | enter: '/var/lib/mysql_embedded/mysql/proc.MYI'
+T@10768438: | | | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | | | | enter: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | | | | | | | enter: from: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | | | | | | | | | | | | | exit: to: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | | | | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | | | | | | | | >my_readlink
+T@10768438: | | | | | | | | | | | | | | | exit: result: 1
+T@10768438: | | | | | | | | | | | | | | <my_readlink
+T@10768438: | | | | | | | | | | | | | <fn_format
+T@10768438: | | | | | | | | | | | | | >my_seek
+T@10768438: | | | | | | | | | | | | | | my: Fd: 12  Hpos: 0  Pos: 0  Whence: 0  MyFlags: 0
+T@10768438: | | | | | | | | | | | | | <my_seek
+T@10768438: | | | | | | | | | | | | | >my_lock
+T@10768438: | | | | | | | | | | | | | | my: Fd: 12  Op: 0  start: 0  Length: 0  MyFlags: 64
+T@10768438: | | | | | | | | | | | | | <my_lock
+T@10768438: | | | | | | | | | | | | | >my_read
+T@10768438: | | | | | | | | | | | | | | my: Fd: 12  Buffer: 0xbfef5750  Count: 490  MyFlags: 4
+T@10768438: | | | | | | | | | | | | | <my_read
+T@10768438: | | | | | | | | | | | | | >my_multi_malloc
+T@10768438: | | | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | | | my: size: 1672  my_flags: 16
+T@10768438: | | | | | | | | | | | | | | | exit: ptr: 0x8a44510
+T@10768438: | | | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | | | <my_multi_malloc
+T@10768438: | | | | | | | | | | | | | >my_lock
+T@10768438: | | | | | | | | | | | | | | my: Fd: 12  Op: 2  start: 0  Length: 0  MyFlags: 32
+T@10768438: | | | | | | | | | | | | | <my_lock
+T@10768438: | | | | | | | | | | | | | >my_open
+T@10768438: | | | | | | | | | | | | | | my: Name: '/var/lib/mysql_embedded/mysql/proc.MYD'  Flags: 2  MyFlags: 16
+T@10768438: | | | | | | | | | | | | | <my_open
+T@10768438: | | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | | my: size: 39  my_flags: 16
+T@10768438: | | | | | | | | | | | | | | exit: ptr: 0x8a42158
+T@10768438: | | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | | | exit: fd: 13
+T@10768438: | | | | | | | | | | | | | >thr_lock_init
+T@10768438: | | | | | | | | | | | | | | >list_add
+T@10768438: | | | | | | | | | | | | | | | enter: root: 0x0  element: 0x8a44738
+T@10768438: | | | | | | | | | | | | | | <list_add
+T@10768438: | | | | | | | | | | | | | <thr_lock_init
+T@10768438: | | | | | | | | | | | | | >my_multi_malloc
+T@10768438: | | | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | | | my: size: 6720  my_flags: 16
+T@10768438: | | | | | | | | | | | | | | | exit: ptr: 0x8a44ba0
+T@10768438: | | | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | | | <my_multi_malloc
+T@10768438: | | | | | | | | | | | | | >my_realloc
+T@10768438: | | | | | | | | | | | | | | my: ptr: 0x0  size: 1336  my_flags: 64
+T@10768438: | | | | | | | | | | | | | <my_realloc
+T@10768438: | | | | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | | | | my: size: 1336  my_flags: 64
+T@10768438: | | | | | | | | | | | | | | exit: ptr: 0x8a465e8
+T@10768438: | | | | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | | | | | >list_add
+T@10768438: | | | | | | | | | | | | | | enter: root: 0x0  element: 0x8a44cbc
+T@10768438: | | | | | | | | | | | | | <list_add
+T@10768438: | | | | | | | | | | | | <mi_open
+T@10768438: | | | | | | | | | | | | >mi_extra
+T@10768438: | | | | | | | | | | | | | enter: function: 13
+T@10768438: | | | | | | | | | | | | <mi_extra
+T@10768438: | | | | | | | | | | | | >mi_status
+T@10768438: | | | | | | | | | | | | <mi_status
+T@10768438: | | | | | | | | | | | | >fn_format
+T@10768438: | | | | | | | | | | | | | enter: name: /var/lib/mysql_embedded/mysql/proc  dir:   extension: .MYD  flag: 2
+T@10768438: | | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | | enter: '/var/lib/mysql_embedded/mysql/proc'
+T@10768438: | | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | | | >strlength
+T@10768438: | | | | | | | | | | | | | <strlength
+T@10768438: | | | | | | | | | | | | <fn_format
+T@10768438: | | | | | | | | | | | | >fn_ext
+T@10768438: | | | | | | | | | | | | | mfunkt: name: '/var/lib/mysql_embedded/mysql/proc.MYD'
+T@10768438: | | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | | enter: '/var/lib/mysql_embedded/mysql/proc.MYD'
+T@10768438: | | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | | <fn_ext
+T@10768438: | | | | | | | | | | | | >mi_extra
+T@10768438: | | | | | | | | | | | | | enter: function: 12
+T@10768438: | | | | | | | | | | | | <mi_extra
+T@10768438: | | | | | | | | | | | | >mi_extra
+T@10768438: | | | | | | | | | | | | | enter: function: 5
+T@10768438: | | | | | | | | | | | | <mi_extra
+T@10768438: | | | | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | | | | exit: ptr: 0x8a43cf0
+T@10768438: | | | | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | | | <handler::ha_open
+T@10768438: | | | | | | | | | | <openfrm
+T@10768438: | | | | | | | | | | >Table_triggers_list::check_n_load
+T@10768438: | | | | | | | | | | | >unpack_filename
+T@10768438: | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | enter: '/var/lib/mysql_embedded//mysql/proc.TRG'
+T@10768438: | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | | >unpack_dirname
+T@10768438: | | | | | | | | | | | | | >dirname_part
+T@10768438: | | | | | | | | | | | | | | enter: '/var/lib/mysql_embedded//mysql/'
+T@10768438: | | | | | | | | | | | | | <dirname_part
+T@10768438: | | | | | | | | | | | | | >cleanup_dirname
+T@10768438: | | | | | | | | | | | | | | enter: from: '/var/lib/mysql_embedded//mysql/'
+T@10768438: | | | | | | | | | | | | | | exit: to: '/var/lib/mysql_embedded/mysql/'
+T@10768438: | | | | | | | | | | | | | <cleanup_dirname
+T@10768438: | | | | | | | | | | | | <unpack_dirname
+T@10768438: | | | | | | | | | | | <unpack_filename
+T@10768438: | | | | | | | | | | <Table_triggers_list::check_n_load
+T@10768438: | | | | | | | | | <open_unireg_entry
+T@10768438: | | | | | | | | | >alloc_root
+T@10768438: | | | | | | | | | | enter: root: 0x8a41fb4
+T@10768438: | | | | | | | | | | exit: ptr: 0x8a43d00
+T@10768438: | | | | | | | | | <alloc_root
+T@10768438: | | | | | | | | | info: inserting table 0x8a41bf0 into the cache
+T@10768438: | | | | | | | | <open_table
+T@10768438: | | | | | | | | >mysql_lock_tables
+T@10768438: | | | | | | | | | >get_lock_data
+T@10768438: | | | | | | | | | | >my_malloc
+T@10768438: | | | | | | | | | | | my: size: 28  my_flags: 0
+T@10768438: | | | | | | | | | | | exit: ptr: 0x8a35790
+T@10768438: | | | | | | | | | | <my_malloc
+T@10768438: | | | | | | | | | <get_lock_data
+T@10768438: | | | | | | | | | >lock_external
+T@10768438: | | | | | | | | | | >mi_lock_database
+T@10768438: | | | | | | | | | | | enter: lock_type: 1  old lock 2  r_locks: 0  w_locks: 0 global_changed:  0  open_count: 0  name: '/var/lib/mysql_embedded/mysql/proc.MYI'
+T@10768438: | | | | | | | | | | | >my_lock
+T@10768438: | | | | | | | | | | | | my: Fd: 12  Op: 1  start: 0  Length: 0  MyFlags: 32
+T@10768438: | | | | | | | | | | | <my_lock
+T@10768438: | | | | | | | | | | <mi_lock_database
+T@10768438: | | | | | | | | | <lock_external
+T@10768438: | | | | | | | | | >thr_multi_lock
+T@10768438: | | | | | | | | | | lock: data: 0x8a357a4  count: 1
+T@10768438: | | | | | | | | | | >thr_lock
+T@10768438: | | | | | | | | | | | lock: data: 0x8a44d9c  thread: 1076843872  lock: 0x8a44738  type: 10
+T@10768438: | | | | | | | | | | | info: write_wait.data: 0x0
+T@10768438: | | | | | | | | | | | >mi_get_status
+T@10768438: | | | | | | | | | | | | info: key_file: 1024  data_file: 0  concurrent_insert: 0
+T@10768438: | | | | | | | | | | | <mi_get_status
+T@10768438: | | | | | | | | | | <thr_lock
+T@10768438: | | | | | | | | | <thr_multi_lock
+T@10768438: | | | | | | | | <mysql_lock_tables
+T@10768438: | | | | | | | <open_ltable
+T@10768438: | | | | | | <open_proc_table
+T@10768438: | | | | | | >ha_index_init
+T@10768438: | | | | | | <ha_index_init
+T@10768438: | | | | | | >mi_rkey
+T@10768438: | | | | | | | enter: base: 8a44ba0  buf: 8a42670  inx: 0  search_flag: 0
+T@10768438: | | | | | | | >_mi_pack_key
+T@10768438: | | | | | | | <_mi_pack_key
+Key: "testdb1"
+T@10768438: | | | | | | | >_mi_search
+T@10768438: | | | | | | | | enter: pos: 4294967295  nextflag: 1  lastpos: 4294967295
+Key: "testdb1"
+T@10768438: | | | | | | | <_mi_search
+T@10768438: | | | | | | | >mi_read_dynamic_record
+T@10768438: | | | | | | | <mi_read_dynamic_record
+T@10768438: | | | | | | <mi_rkey
+T@10768438: | | | | | | >ha_index_end
+T@10768438: | | | | | | <ha_index_end
+T@10768438: | | | | | | >close_thread_tables
+T@10768438: | | | | | | | >mysql_unlock_tables
+T@10768438: | | | | | | | | >thr_multi_unlock
+T@10768438: | | | | | | | | | lock: data: 0x8a357a0  count: 1
+T@10768438: | | | | | | | | | >thr_unlock
+T@10768438: | | | | | | | | | | lock: data: 0x8a44d9c  thread: 1076843872  lock: 0x8a44738
+T@10768438: | | | | | | | | | | info: updating status:  key_file: 1024  data_file: 0
+T@10768438: | | | | | | | | | | lock: No waiting read locks to free
+T@10768438: | | | | | | | | | <thr_unlock
+T@10768438: | | | | | | | | <thr_multi_unlock
+T@10768438: | | | | | | | | >unlock_external
+T@10768438: | | | | | | | | | >mi_lock_database
+T@10768438: | | | | | | | | | | enter: lock_type: 2  old lock 1  r_locks: 0  w_locks: 1 global_changed:  0  open_count: 0  name: '/var/lib/mysql_embedded/mysql/proc.MYI'
+T@10768438: | | | | | | | | | | >flush_key_blocks
+T@10768438: | | | | | | | | | | | enter: keycache: 0x8400ec8
+T@10768438: | | | | | | | | | | | >flush_key_blocks_int
+T@10768438: | | | | | | | | | | | | enter: file: 12  blocks_used: 0  blocks_changed: 0
+T@10768438: | | | | | | | | | | | <flush_key_blocks_int
+T@10768438: | | | | | | | | | | <flush_key_blocks
+T@10768438: | | | | | | | | | | info: changed: 0  w_locks: 0
+T@10768438: | | | | | | | | | | >my_lock
+T@10768438: | | | | | | | | | | | my: Fd: 12  Op: 2  start: 0  Length: 0  MyFlags: 48
+T@10768438: | | | | | | | | | | <my_lock
+T@10768438: | | | | | | | | | <mi_lock_database
+T@10768438: | | | | | | | | <unlock_external
+T@10768438: | | | | | | | | >my_free
+T@10768438: | | | | | | | | | my: ptr: 0x8a35790
+T@10768438: | | | | | | | | <my_free
+T@10768438: | | | | | | | <mysql_unlock_tables
+T@10768438: | | | | | | | info: thd->open_tables: 0x8a41bf0
+T@10768438: | | | | | | | >close_thread_table
+T@10768438: | | | | | | | | >mi_extra
+T@10768438: | | | | | | | | | enter: function: 2
+T@10768438: | | | | | | | | <mi_extra
+T@10768438: | | | | | | | <close_thread_table
+T@10768438: | | | | | | <close_thread_tables
+T@10768438: | | | | | <sp_drop_db_routines
+T@10768438: | | | | | >start_waiting_global_read_lock
+T@10768438: | | | | | <start_waiting_global_read_lock
+T@10768438: | | | | <mysql_rm_db
+T@10768438: | | | <mysql_execute_command
+T@10768438: | | | >query_cache_end_of_result
+T@10768438: | | | <query_cache_end_of_result
+T@10768438: | | | >st_select_lex_unit::cleanup
+T@10768438: | | | | >st_select_lex::cleanup()
+T@10768438: | | | | <st_select_lex::cleanup()
+T@10768438: | | | <st_select_lex_unit::cleanup
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x0
+T@10768438: | | | <my_free
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x0
+T@10768438: | | | <my_free
+T@10768438: | | | >Query_arena::free_items
+T@10768438: | | | <Query_arena::free_items
+T@10768438: | | <mysql_parse
+T@10768438: | | info: query ready
+T@10768438: | | >free_root
+T@10768438: | | | enter: root: 0x8a32a18  flags: 1
+T@10768438: | | <free_root
+T@10768438: | <dispatch_command
+T@10768438: <mysql_real_query
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x8a35520
+T@10768438: <my_free
+T@10768438: >mysql_close
+T@10768438: | >mysql_close_free_options
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x0
+T@10768438: | | <my_free
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x0
+T@10768438: | | <my_free
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x0
+T@10768438: | | <my_free
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x0
+T@10768438: | | <my_free
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x0
+T@10768438: | | <my_free
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x0
+T@10768438: | | <my_free
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x0
+T@10768438: | | <my_free
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x0
+T@10768438: | | <my_free
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x0
+T@10768438: | | <my_free
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x0
+T@10768438: | | <my_free
+T@10768438: | <mysql_close_free_options
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x0
+T@10768438: | <my_free
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8a32648
+T@10768438: | <my_free
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x0
+T@10768438: | <my_free
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x0
+T@10768438: | <my_free
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8a327f0
+T@10768438: | <my_free
+T@10768438: | >~THD()
+T@10768438: | | >my_hash_reset
+T@10768438: | | | enter: hash: 0x8a339a0d
+T@10768438: | | <my_hash_reset
+T@10768438: | | >my_hash_reset
+T@10768438: | | | enter: hash: 0x8a3396cd
+T@10768438: | | <my_hash_reset
+T@10768438: | | >THD::cleanup
+T@10768438: | | | >ha_rollback_trans
+T@10768438: | | | <ha_rollback_trans
+T@10768438: | | | >hash_delete
+T@10768438: | | | <hash_delete
+T@10768438: | | | >mysql_ha_flush
+T@10768438: | | | | enter: tables: (nil)  mode_flags: 0x02
+T@10768438: | | | <mysql_ha_flush
+T@10768438: | | | >hash_free
+T@10768438: | | | | enter: hash: 0x8a33a64d
+T@10768438: | | | <hash_free
+T@10768438: | | | >hash_free
+T@10768438: | | | | enter: hash: 0x8a334fcd
+T@10768438: | | | | >my_free
+T@10768438: | | | | | my: ptr: 0x8a34420
+T@10768438: | | | | <my_free
+T@10768438: | | | <hash_free
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x8a323f0
+T@10768438: | | | <my_free
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x8a33fb0
+T@10768438: | | | <my_free
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x8a33fd8
+T@10768438: | | | <my_free
+T@10768438: | | <THD::cleanup
+T@10768438: | | >innobase_rollback_trx
+T@10768438: | | | trans: aborting transaction
+T@10768438: | | <innobase_rollback_trx
+T@10768438: | | info: freeing security context
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x89fdde8
+T@10768438: | | <my_free
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x8a32658
+T@10768438: | | <my_free
+T@10768438: | | >free_root
+T@10768438: | | | enter: root: 0x8a33484  flags: 0
+T@10768438: | | <free_root
+T@10768438: | | >free_root
+T@10768438: | | | enter: root: 0x8a33c2c  flags: 0
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x8a344a8
+T@10768438: | | | <my_free
+T@10768438: | | <free_root
+T@10768438: | <~THD()
+T@10768438: | >hash_free
+T@10768438: | | enter: hash: 0x8a339a0d
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x8a33f28
+T@10768438: | | <my_free
+T@10768438: | <hash_free
+T@10768438: | >hash_free
+T@10768438: | | enter: hash: 0x8a3396cd
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x8a33ea0
+T@10768438: | | <my_free
+T@10768438: | <hash_free
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8a41bd0
+T@10768438: | <my_free
+T@10768438: | >free_root
+T@10768438: | | enter: root: 0x8a32a18  flags: 0
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x8a3f948
+T@10768438: | | <my_free
+T@10768438: | <free_root
+T@10768438: | >hash_free
+T@10768438: | | enter: hash: 0x8a33128d
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x8a3d948
+T@10768438: | | <my_free
+T@10768438: | <hash_free
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8a329f8
+T@10768438: | <my_free
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8a32030
+T@10768438: | <my_free
+T@10768438: <mysql_close
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x0
+T@10768438: <my_free
+T@10768438: exit: clean_up
+T@10768438: >cleanup
+T@10768438: | >MYSQL_LOG::close
+T@10768438: | | enter: exiting: 5
+T@10768438: | <MYSQL_LOG::close
+T@10768438: <cleanup
+T@10768438: >cleanup
+T@10768438: | >MYSQL_LOG::close
+T@10768438: | | enter: exiting: 5
+T@10768438: | <MYSQL_LOG::close
+T@10768438: <cleanup
+T@10768438: >cleanup
+T@10768438: | >MYSQL_LOG::close
+T@10768438: | | enter: exiting: 5
+T@10768438: | <MYSQL_LOG::close
+T@10768438: <cleanup
+T@10768438: >hash_free
+T@10768438: | enter: hash: 0x83fa140d
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8a35888
+T@10768438: | <my_free
+T@10768438: <hash_free
+T@10768438: >hash_free
+T@10768438: | enter: hash: 0x83fa0e0d
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8a357e0
+T@10768438: | <my_free
+T@10768438: <hash_free
+T@10768438: >free_root
+T@10768438: | enter: root: 0x83fa120  flags: 0
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8a35960
+T@10768438: | <my_free
+T@10768438: <free_root
+T@10768438: >hash_free
+T@10768438: | enter: hash: 0x83f9cc0d
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x840e8f0
+T@10768438: | <my_free
+T@10768438: <hash_free
+T@10768438: >Query_cache::destroy
+T@10768438: | >Query_cache::free_cache
+T@10768438: | <Query_cache::free_cache
+T@10768438: <Query_cache::destroy
+T@10768438: >table_cache_free
+T@10768438: | >close_cached_tables
+T@10768438: | | >hash_delete
+T@10768438: | | | >free_cache_entry
+T@10768438: | | | | >free_io_cache
+T@10768438: | | | | <free_io_cache
+T@10768438: | | | | >closefrm
+T@10768438: | | | | | >mi_close
+T@10768438: | | | | | | enter: base: 8a44ba0  reopen: 1  locks: 0
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x8a465e8
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | | >flush_key_blocks
+T@10768438: | | | | | | | enter: keycache: 0x8400ec8
+T@10768438: | | | | | | | >flush_key_blocks_int
+T@10768438: | | | | | | | | enter: file: 12  blocks_used: 0  blocks_changed: 0
+T@10768438: | | | | | | | <flush_key_blocks_int
+T@10768438: | | | | | | <flush_key_blocks
+T@10768438: | | | | | | >my_close
+T@10768438: | | | | | | | my: fd: 12  MyFlags: 0
+T@10768438: | | | | | | | >my_free
+T@10768438: | | | | | | | | my: ptr: 0x8a343f0
+T@10768438: | | | | | | | <my_free
+T@10768438: | | | | | | <my_close
+T@10768438: | | | | | | >thr_lock_delete
+T@10768438: | | | | | | <thr_lock_delete
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x8a44510
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | | >my_close
+T@10768438: | | | | | | | my: fd: 13  MyFlags: 0
+T@10768438: | | | | | | | >my_free
+T@10768438: | | | | | | | | my: ptr: 0x8a42158
+T@10768438: | | | | | | | <my_free
+T@10768438: | | | | | | <my_close
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x8a44ba0
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | <mi_close
+T@10768438: | | | | | >my_free
+T@10768438: | | | | | | my: ptr: 0x8a32668
+T@10768438: | | | | | <my_free
+T@10768438: | | | | | >hash_free
+T@10768438: | | | | | | enter: hash: 0x8a42004d
+T@10768438: | | | | | <hash_free
+T@10768438: | | | | | >free_root
+T@10768438: | | | | | | enter: root: 0x8a41fb4  flags: 0
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x8a34008
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x8a43018
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x8a42190
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x8a43958
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | | >my_free
+T@10768438: | | | | | | | my: ptr: 0x8a43d40
+T@10768438: | | | | | | <my_free
+T@10768438: | | | | | <free_root
+T@10768438: | | | | <closefrm
+T@10768438: | | | | >my_free
+T@10768438: | | | | | my: ptr: 0x8a41bf0
+T@10768438: | | | | <my_free
+T@10768438: | | | <free_cache_entry
+T@10768438: | | <hash_delete
+T@10768438: | <close_cached_tables
+T@10768438: | >hash_free
+T@10768438: | | enter: hash: 0x83f9bc0d
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x840e9f8
+T@10768438: | | <my_free
+T@10768438: | <hash_free
+T@10768438: <table_cache_free
+T@10768438: >hash_free
+T@10768438: | enter: hash: 0x840ece4d
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x840ed20
+T@10768438: | <my_free
+T@10768438: <hash_free
+T@10768438: >hash_free
+T@10768438: | enter: hash: 0x83fc620d
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8409ea8
+T@10768438: | <my_free
+T@10768438: <hash_free
+T@10768438: >lex_free
+T@10768438: <lex_free
+T@10768438: >hash_free
+T@10768438: | enter: hash: 0x83f9620d
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8409f30
+T@10768438: | <my_free
+T@10768438: <hash_free
+T@10768438: >heap_panic
+T@10768438: <heap_panic
+T@10768438: >mi_panic
+T@10768438: | >mi_log
+T@10768438: | <mi_log
+T@10768438: | >free_tree
+T@10768438: | | enter: tree: 0x8a2d8b0
+T@10768438: | | >free_root
+T@10768438: | | | enter: root: 0x8a2d9dc  flags: 0
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x8a2da10
+T@10768438: | | | <my_free
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x8a2f9f8
+T@10768438: | | | <my_free
+T@10768438: | | <free_root
+T@10768438: | <free_tree
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8a2d8b0
+T@10768438: | <my_free
+T@10768438: <mi_panic
+T@10768438: >myrg_panic
+T@10768438: <myrg_panic
+T@10768438: >innobase_end
+T@10768438: | >hash_free
+T@10768438: | | enter: hash: 0x83fa460d
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x8a2d7a8
+T@10768438: | | <my_free
+T@10768438: | <hash_free
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x840f510
+T@10768438: | <my_free
+T@10768438: <innobase_end
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x840f4f8
+T@10768438: <my_free
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x840f450
+T@10768438: <my_free
+T@10768438: >hash_free
+T@10768438: | enter: hash: 0x83f9c00d
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x840f128
+T@10768438: | <my_free
+T@10768438: <hash_free
+T@10768438: >delete_elements
+T@10768438: | >end_key_cache
+T@10768438: | | enter: key_cache: 0x8400ec8
+T@10768438: | | >my_large_free
+T@10768438: | | | >my_free
+T@10768438: | | | | my: ptr: 0x420a0008
+T@10768438: | | | <my_free
+T@10768438: | | <my_large_free
+T@10768438: | | >my_free
+T@10768438: | | | my: ptr: 0x427b5008
+T@10768438: | | <my_free
+T@10768438: | | status: used: 0  changed: 0  w_requests: 0  writes: 0  r_requests: 0  reads: 0
+T@10768438: | <end_key_cache
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8400ec8
+T@10768438: | <my_free
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8400480
+T@10768438: | <my_free
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8400460
+T@10768438: | <my_free
+T@10768438: <delete_elements
+T@10768438: >hash_free
+T@10768438: | enter: hash: 0x83f7f80d
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8400490
+T@10768438: | <my_free
+T@10768438: <hash_free
+T@10768438: >end_thr_alarm
+T@10768438: <end_thr_alarm
+T@10768438: >my_free_file_info
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x84015d8
+T@10768438: | <my_free
+T@10768438: <my_free_file_info
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x8400528
+T@10768438: <my_free
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x8400560
+T@10768438: <my_free
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x84015a8
+T@10768438: <my_free
+T@10768438: >free_root
+T@10768438: | enter: root: 0xbfefd240  flags: 0
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x84013c0
+T@10768438: | <my_free
+T@10768438: <free_root
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x840e808
+T@10768438: <my_free
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x840e818
+T@10768438: <my_free
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x8400550
+T@10768438: <my_free
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x8400518
+T@10768438: <my_free
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x0
+T@10768438: <my_free
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x0
+T@10768438: <my_free
+T@10768438: >bitmap_free
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x840e828
+T@10768438: | <my_free
+T@10768438: <bitmap_free
+T@10768438: >hash_free
+T@10768438: | enter: hash: 0x83f9ee0d
+T@10768438: | >my_free
+T@10768438: | | my: ptr: 0x8a31d08
+T@10768438: | <my_free
+T@10768438: <hash_free
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x83fff90
+T@10768438: <my_free
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x8409e78
+T@10768438: <my_free
+T@10768438: >my_free
+T@10768438: | my: ptr: 0x8403610
+T@10768438: <my_free
+T@10768438: quit: Error messages freed
+T@10768438: quit: got thread count lock
+T@10768438: quit: done with cleanup
+T@10768438: >my_end
+T@10768438: | info: Shutting down: print_info: 1
+T@10768438: | >my_once_free
+T@10768438: | <my_once_free
+
+User time 0.26, System time 0.05
+Maximum resident set size 0, Integral resident set size 0
+Non-physical pagefaults 4189, Physical pagefaults 0, Swaps 0
+Blocks in 0 out 0, Messages in 0 out 0, Signals 0
+Voluntary context switches 207, Involuntary context switches 3515

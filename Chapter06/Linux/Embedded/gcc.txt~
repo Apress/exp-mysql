@@ -1,0 +1,4 @@
+gcc example1_linux.c -o example1_linux -lz `/usr/bin/mysql_config --include --libmysqld-libs`
+
+
+/usr/local/share/mysql 

@@ -1,0 +1,9 @@
+/* If NAME_PREFIX is specified substitute the variables and functions
+   names.  */
+#define yyparse MYSQLparse
+#define yylex   MYSQLlex
+#define yyerror MYSQLerror
+#define yylval  MYSQLlval
+#define yychar  MYSQLchar
+#define yydebug MYSQLdebug
+#define yynerrs MYSQLnerrs

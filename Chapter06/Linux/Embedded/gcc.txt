@@ -1,0 +1,3 @@
+g++ example1_linux.c -g -o example1_linux -lz -I/usr/include/mysql -L/usr/lib/mysql -lmysqld -lz -lpthread -lcrypt -lnsl -lm -lpthread -lc -lnss_files -lnss_dns -lresolv -lc -lnss_files -lnss_dns -lresolv -lrt 
+
+/usr/local/share/mysql 
